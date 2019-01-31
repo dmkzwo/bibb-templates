@@ -1,0 +1,29 @@
+.fr-breadcrumb-navigation__item {
+    display: inline-block;
+}
+
+.fr-breadcrumb-navigation__link {
+    @include font-italic;
+    
+    display: inline-block;
+    font-size: 15px;
+    line-height: 22px;
+    color: $theme-color-breadcrumb-navigation-link-cl;
+    
+    .fr-breadcrumb-navigation__item:not(:last-child) > & {
+        &:after {
+            content: ' »';
+        }
+    }
+    
+    .fr-breadcrumb-navigation__item:last-child > & {
+        font-weight: normal;
+        color: $theme-color-breadcrumb-navigation-link-cl-active;
+    }
+    
+    &:hover,
+    &:focus {
+        color: $theme-color-breadcrumb-navigation-link-cl-hover;
+        text-decoration: underline;
+    }
+}

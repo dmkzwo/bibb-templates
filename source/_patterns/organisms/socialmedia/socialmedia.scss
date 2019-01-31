@@ -1,0 +1,106 @@
+.c-twitter {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    margin-bottom: $content-element-spacer-bottom;
+
+    @include media-breakpoint-up(lg) {
+        padding-right: 50px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.c-twitter__media {
+    margin-right: 20px;
+    
+    img {
+        width: 80px;
+    }
+}
+
+.c-twitter__headline {
+    @include fs(22,26,conex-light);
+    
+    margin-bottom: 5px;
+    
+    > strong {
+        @include fs(22,26,conex-med);
+    }
+}
+
+.c-twitter__content {
+    @include fs(17,23,conex);
+    
+    margin-bottom: 15px;
+}
+
+.c-twitter__item {
+    display: inline-block;
+    
+    &:not(:first-child) {
+        margin-left: 30px;
+    }
+}
+
+.c-twitter__link {
+    @include fs(15,18,bold);
+    
+    color: $color-social-media-twitter-link-cl;
+    
+    &--comment {
+        @include icon-link(comment, 20);
+    }
+    
+    &--retweet {
+        @include icon-link(retweet, 25);
+    }
+    
+    &--like {
+        @include icon-link(like, 20);
+    }
+}
+
+// Social media links
+$footer-social-links-height: 56;
+$footer-social-links-line-height: 20;
+$footer-social-links-padding: ($footer-social-links-height - $footer-social-links-line-height) / 2;
+
+.c-socialmedia-links__list-item {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    
+    @include media-breakpoint-up(lg) {
+        margin-bottom: 20px;
+        display: block;
+    }
+}
+
+.c-socialmedia-links__link {
+    @include svg-style(30, 30, $color-text-default);
+    
+    span {
+        @include fs(18,30,conex-med);
+        @include move-down(2);
+        
+        padding-left: 5px;
+        
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+    }
+    
+    @include media-breakpoint-up(lg) {
+        @include svg-style(40, 40, white);
+        
+        span {
+            @include fs(22,40,conex-med);
+    
+            color: white;
+            padding-left: 22px;
+        }
+    }
+}

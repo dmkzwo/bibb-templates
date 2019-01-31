@@ -1,0 +1,49 @@
+{
+  "pid": 1,
+  "level": 1,
+  "url": "page1.php",
+  "label": "Das BIBB",
+  "subItems": [
+    {
+      "pid": 11,
+      "url": "#",
+      "label": "Link 11",
+      "hasSubItems": true
+    },
+    {
+      "pid": 12,
+      "url": "#",
+      "label": "Link 12"
+    },
+    {
+      "pid": 13,
+      "url": "#",
+      "label": "Link 13"
+    },
+    {
+      "pid": 14,
+      "url": "#",
+      "label": "Link 14"
+    },
+    {
+      "pid": 14,
+      "url": "#",
+      "label": "Link 14"
+    },
+    {
+      "pid": 14,
+      "url": "#",
+      "label": "Link 14"
+    },
+    {
+      "pid": 14,
+      "url": "#",
+      "label": "Link 14"
+    },
+    {
+      "pid": 14,
+      "url": "#",
+      "label": "Link 14"
+    }
+  ]
+}

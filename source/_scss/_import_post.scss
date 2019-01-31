@@ -1,0 +1,32 @@
+/* Hamburgers */
+@import 'vendor/custom-hamburgers';
+
+/* Slick carousel */
+@import 'slick.scss';
+@import 'vendor/slick-theme';
+
+/* General definitions */
+@import 'general/layout';
+@import 'general/default';
+
+/* Icon Font */
+@import 'fonts/iconfont';
+@import 'fonts/icons';
+
+/* Sprites */
+//@import 'sprite'; // png
+// @import 'sprites/view/sprite'; // svg
+
+/* Content */
+@import 'general/content/images';
+@import 'general/content/forms';
+@import 'general/content/modals';
+@import 'general/content/sliders';
+@import 'general/content/toggles';
+
+/* Patterns */
+@import 'import_pattern';
+
+/* Print */
+@import 'print/layout';
+@import 'print/elements';

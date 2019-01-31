@@ -1,0 +1,44 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    line-height: 1;
+}
+
+input,
+textarea {
+    border: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+button {
+    border: 0;
+}
+
+// modal
+.modal-header {
+    padding-bottom: 0;
+}

@@ -1,0 +1,133 @@
+$keyColor1: #003571;
+$keyColor2: #60810e;
+$keyColor3: #63666a;
+
+// Top Navigation
+$theme-color-top-navigation-name-cl: $keyColor1;
+$theme-color-top-navigation-link-text-hover: $keyColor1;
+$theme-color-top-navigation-link-user-bg: $keyColor1;
+
+// Navigation
+$theme-color-main-navigation-bg: $keyColor1;
+$theme-color-main-navigation-cl: $keyColor1;
+$theme-color-main-navigation-link-cl: white;
+$theme-color-main-navigation-breadcrumb-border: #39699f;
+
+// Breadcrumb navigation
+$theme-color-breadcrumb-navigation-bg: $keyColor1;
+$theme-color-breadcrumb-navigation-link-cl: white;
+$theme-color-breadcrumb-navigation-link-cl-hover: white;
+$theme-color-breadcrumb-navigation-link-cl-active: #b2c1d2;
+
+// Page navigation
+$theme-color-page-navigation-actpage-bg: $keyColor2;
+$theme-color-page-navigation-childlink-active-cl: $keyColor1;
+
+// Icon navigation
+$theme-color-icon-navigation-link-hover-cl: $keyColor2;
+
+// Box navigation
+$theme-color-box-navigation-link-bg: #b42f4b;
+$theme-color-box-navigation-link-cl: white;
+$theme-color-box-navigation-link-hover-bg: $keyColor2;
+$theme-color-box-navigation-link-hover-cl: white;
+
+// Layout
+$theme-color-layout-color1-bg: #4c7096;
+$theme-color-layout-color1-cl: white;
+$theme-color-layout-color1-special-cl: red;
+$theme-color-layout-color2-bg: #63666a;
+$theme-color-layout-color2-cl: white;
+$theme-color-layout-color2-special-cl: #f59c00;
+
+// Header
+$theme-color-cookie-bar-bg: black;
+$theme-color-cookie-bar-cl: white;
+$theme-color-cookie-bar-button-bg: $keyColor2;
+$theme-color-cookie-bar-button-cl: white;
+$theme-color-stage-bg: $keyColor1;
+$theme-color-stage-cl: white;
+$theme-color-stage-overlay-bg: white;
+$theme-color-stage-overlay-cl: $keyColor1;
+$theme-color-stage-overlay-mobile-bg: transparent;
+$theme-color-stage-overlay-mobile-cl: white;
+$theme-color-stage-overlay-link-hover-cl: $keyColor1;
+$theme-color-stage-static-overlay-bg: white;
+$theme-color-stage-static-overlay-cl: $color-text-default;
+$theme-color-stage-static-overlay-mobile-cl: white;
+$theme-color-stage-static-overlay-mobile-bg: $keyColor1;
+$theme-color-stage-static-overlay-border-bg: $keyColor1;
+
+// News Header
+$theme-color-header-tab-content-overlay-bg: white;
+$theme-color-header-tab-content-overlay-cl: $color-text-default;
+$theme-color-header-tab-content-overlay-mobile-bg: darkgreen;
+$theme-color-header-tab-content-overlay-mobile-cl: white;
+$theme-color-header-tab-content-border-bg: blue;
+$theme-color-header-tab-content-border-cl: white;
+$theme-color-header-tab-cl: $color-text-default;
+
+// Footer
+$theme-color-footer-bg: $keyColor1;
+$theme-color-footer-cl: white;
+$theme-color-footer-social-links-bg: $keyColor2;
+$theme-color-footer-social-links-cl: white;
+$theme-image-footer-bg: '/images/framework/bg_footer.png';
+
+// Headlines
+$theme-color-headline-main-cl: $keyColor1;
+$theme-color-subline-main-cl: $keyColor1;
+
+// Links
+$theme-color-link-cl: $keyColor2;
+
+// Lists
+$theme-color-bullet: $keyColor2;
+
+// Quote
+$theme-color-quote-cl: $keyColor2;
+$theme-color-quote-image: $keyColor2;
+
+// Accentuation
+$theme-color-accentuation-cl: $keyColor2;
+
+// Accentuation Box
+$theme-color-accentuation-box-keycolor1-bg: $keyColor1;
+$theme-color-accentuation-box-keycolor1-cl: white;
+
+$theme-color-accentuation-box-keycolor2-bg: $keyColor2;
+$theme-color-accentuation-box-keycolor2-cl: white;
+
+$theme-color-accentuation-box-keycolor3-bg: $keyColor3;
+$theme-color-accentuation-box-keycolor3-cl: white;
+
+// Three Teasers
+$theme-color-three-teasers-triangle: #a2d10c;
+
+// Forms
+$theme-color-form-button-standard-bg: $keyColor1;
+$theme-color-form-button-standard-cl: white;
+$theme-color-form-filter-active-cl: $keyColor1;
+
+// A-Z
+$theme-color-az-active-bg: $keyColor1;
+$theme-color-az-active-cl: white;
+
+// Tabs
+$theme-color-tabs-az-active-bg: $keyColor1;
+$theme-color-tabs-az-active-cl: white;
+$colors-tabs-text-selection-cl: $keyColor1;
+
+// Teasers
+$theme-color-teaser-extended-download-cl: $keyColor2;
+$theme-color-teaser-extended-label-bg: $keyColor2;
+$theme-color-teaser-extended-label-cl: white;
+$theme-color-result-teaser-link-cl: $keyColor2;
+
+// Counter
+$theme-color-counter-bg: white;
+$theme-color-counter-cl: $keyColor1;
+$theme-color-counter-border: $keyColor1;
+
+// Pagination
+$theme-color-pagination-link-active-cl: $keyColor1;

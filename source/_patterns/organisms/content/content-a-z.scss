@@ -1,0 +1,5 @@
+.c-content-a-z {
+    margin-bottom: 20px;
+    
+    @include a-z-line(18, 4px, 7px, $color-az-default-bg, $color-text-default, $color-az-inactive-bg, $color-text-default, $color-az-hover-bg, $color-az-hover-cl, $theme-color-az-active-bg, $theme-color-az-active-cl);
+}

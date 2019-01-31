@@ -1,0 +1,63 @@
+{
+  "pid": 2,
+  "level": 1,
+  "url": "page2.php",
+  "label": "Themen",
+  "hideInLayer": true,
+  "subItems": [
+    {
+      "pid": 21,
+      "url": "#",
+      "label": "Berufe",
+      "hasSubItems": true
+    },
+    {
+      "pid": 22,
+      "url": "#",
+      "label": "Praxis und Programme",
+      "hasSubItems": true
+    },
+    {
+      "pid": 23,
+      "url": "#",
+      "label": "Forschung",
+      "hasSubItems": true
+    },
+    {
+      "pid": 24,
+      "url": "#",
+      "label": "Berufsbildung international",
+      "hasSubItems": true
+    },
+    {
+      "pid": 25,
+      "url": "#",
+      "label": "Übergänge in Ausbildung und Beruf",
+      "hasSubItems": true
+    },
+    {
+      "pid": 26,
+      "url": "#",
+      "label": "Berufliche Ausbildung",
+      "hasSubItems": true
+    },
+    {
+      "pid": 27,
+      "url": "#",
+      "label": "Qualifikations- und Kompetenzentwicklung",
+      "hasSubItems": true
+    },
+    {
+      "pid": 28,
+      "url": "#",
+      "label": "Berufliche Weiterbildung",
+      "hasSubItems": true
+    },
+    {
+      "pid": 29,
+      "url": "#",
+      "label": "Daten | Bildungsberichterstattung",
+      "hasSubItems": true
+    }
+  ]
+}

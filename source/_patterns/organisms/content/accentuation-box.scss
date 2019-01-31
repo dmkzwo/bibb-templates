@@ -1,0 +1,227 @@
+.c-accentuation-box {
+    background: $color-accentuation-box-standard-bg;
+    padding: 25px;
+    margin-bottom: $content-element-spacer-bottom;
+    
+    .c-accentuation-box + & {
+        margin-top: -$content-element-spacer-bottom + 8px;
+    }
+    
+    h3 {
+        @include fs(22, 25, conex-med);
+        
+        margin-bottom: 15px;
+    }
+    
+    h4 {
+        @include fs(15, 21, conex-ita);
+        
+        margin-bottom: 10px;
+    }
+
+    &--with-image {
+        h4 {
+            @include fs(15, 21, med);
+        }
+    }
+    
+    p {
+        @include fs(17, 23);
+        
+        margin-bottom: 20px;
+    }
+    
+    p > a,
+    li > a {
+        @include fs(15, 21, med);
+        @include link-behaviour-std;
+        @include link-intern(15);
+        
+        color: inherit;
+    }
+    
+    ul,
+    ol {
+        list-style: none;
+        padding: 0;
+        
+        li {
+            @include fs(17, 23, ita);
+            
+            padding-left: 23px;
+            position: relative;
+            margin-bottom: 10px;
+            
+            &:before {
+                @include posabs-tl;
+            }
+        }
+    }
+    
+    ol {
+        counter-reset: ol-li-counter;
+    }
+    
+    ol li {
+        counter-increment: ol-li-counter;
+        
+        &:before {
+            content: counter(ol-li-counter) '. ';
+        }
+    }
+    
+    ul li {
+        @include icon(bullet, 8, 23);
+        
+        &:before {
+            color: inherit;
+        }
+    }
+    
+    &.c-accentuation-box--with-links {
+        ul li,
+        ol li {
+            padding-left: 0;
+            
+            &:before {
+                content: '';
+            }
+        }
+    }
+    
+    @include media-breakpoint-only(md) {
+        display: flex;
+        align-items: stretch;
+        
+        //&--with-image {
+        //    display: block;
+        //}
+    }
+    
+    @include media-breakpoint-up(xl) {
+        display: flex;
+        align-items: stretch;
+    }
+}
+
+.c-accentuation-box__image {
+    @include media-breakpoint-only(md) {
+        margin-bottom: 20px;
+    }
+    
+    @include media-breakpoint-only(lg) {
+        margin-bottom: 20px;
+    }
+
+    @include media-breakpoint-down(md) {
+        margin-right: 20px;
+        
+        .c-image-container {
+            width: $content-image-landscape-width;
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        margin-right: 20px;
+    
+        .c-image-container {
+            width: $content-image-landscape-width;
+        }
+    }
+}
+
+.c-accentuation-box__media {
+    margin-right: 20px;
+
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 20px;
+    }
+    
+    @include media-breakpoint-only(lg) {
+        margin-bottom: 20px;
+    }
+    
+    img {
+        width: 115px;
+    }
+}
+
+.c-accentuation-box__icon {
+    margin-right: 20px;
+    
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 20px;
+    }
+    
+    @include media-breakpoint-only(lg) {
+        margin-bottom: 20px;
+    }
+    
+    img {
+        width: 50px;
+    }
+}
+
+.c-accentuation-box__content {
+    width: 100%;
+    flex-grow: 1;
+    
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+.c-accentuation-box--white {
+    background-color: white;
+    border-bottom: 1px solid $color-accentuation-box-white-border-cl;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.c-accentuation-box--color-1 {
+    background-color: $theme-color-accentuation-box-keycolor1-bg;
+    
+    h3,
+    h4,
+    p,
+    p > a,
+    li {
+        color: $theme-color-accentuation-box-keycolor1-cl;
+    }
+    
+    p > a {
+        @include link-behaviour-std($theme-color-accentuation-box-keycolor1-cl);
+    }
+}
+
+.c-accentuation-box--color-2 {
+    background-color: $theme-color-accentuation-box-keycolor2-bg;
+    
+    h3,
+    h4,
+    p,
+    p > a,
+    li {
+        color: $theme-color-accentuation-box-keycolor2-cl;
+    }
+    
+    p > a {
+        @include link-behaviour-std($theme-color-accentuation-box-keycolor2-cl);
+    }
+}
+
+.c-accentuation-box--color-3 {
+    background-color: $theme-color-accentuation-box-keycolor3-bg;
+    
+    h3,
+    h4,
+    p,
+    p > a,
+    li {
+        color: $theme-color-accentuation-box-keycolor3-cl;
+    }
+
+    p > a {
+        @include link-behaviour-std($theme-color-accentuation-box-keycolor3-cl);
+    }
+}

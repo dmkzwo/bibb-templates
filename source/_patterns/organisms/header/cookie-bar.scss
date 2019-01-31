@@ -1,0 +1,50 @@
+.fr-cookie-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: rgba($theme-color-cookie-bar-bg, 0.85);
+    padding: 45px 0;
+}
+
+.fr-cookie-bar__container {
+    display: flex;
+}
+
+.fr-cookie-bar__text {
+    @include fs(19, 26, conex-med);
+    
+    color: $theme-color-cookie-bar-cl;
+    padding-right: 30px;
+    
+    @include media-breakpoint-up(md) {
+        padding-right: 100px;
+    }
+    
+    > a {
+        @include fs(19, 26, conex-med);
+        
+        color: inherit;
+        text-decoration: underline;
+    }
+}
+
+.fr-cookie-bar__button {
+    @include fs(15,15,conex-med);
+    
+    display: inline-block;
+    background-color: rgba($theme-color-cookie-bar-button-bg, 0.9);
+    color: $theme-color-cookie-bar-button-cl;
+    padding: 10px 40px;
+    
+    &:hover,
+    &:focus {
+        color: $theme-color-cookie-bar-button-cl;
+        background-color: $theme-color-cookie-bar-button-bg;
+    }
+    
+    &:focus {
+        text-decoration: underline;
+    }
+}

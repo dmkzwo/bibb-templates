@@ -1,0 +1,31 @@
+.c-content-footnotes {
+    border-top: 1px solid $color-content-line;
+    padding-top: 25px;
+    margin-bottom: $content-element-spacer-bottom;
+}
+
+.c-content-footnotes__list {
+    counter-reset: ol-li-counter;
+    list-style: none;
+    padding: 0;
+}
+
+.c-content-footnote {
+    @include fs(15,21);
+    
+    counter-increment: ol-li-counter;
+    padding-left: 15px;
+    position: relative;
+    margin-bottom: 15px;
+    
+    &:before {
+        @include posabs-tl;
+        @include fs(15,21,med-ita);
+        
+        content: counter(ol-li-counter);
+    }
+}
+
+.c-content-footnote__title {
+    @include fs(15,21,med-ita);
+}

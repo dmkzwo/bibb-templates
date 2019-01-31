@@ -1,0 +1,39 @@
+.c-popup__title {
+    @include fs(30,36,conex-med);
+    
+    color: $color-popup-special-cl;
+    margin-bottom: 30px;
+}
+
+.c-popup__title-link {
+    @include fs(15,21,med);
+    @include link-intern(13);
+    @include link-behaviour-std($color-popup-special-cl);
+    
+    color: $color-popup-special-cl;
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.c-popup {
+    h3 {
+        @include fs(26,32,conex-med);
+    
+        margin-bottom: 20px;
+    }
+    
+    p {
+        @include fs(19,25);
+        
+        margin-bottom: 20px;
+    }
+    
+    p > a[href^='http'] {
+        @include fs(15,21,med);
+        @include link-extern(24);
+        @include link-behaviour-std($color-popup-special-cl);
+    
+        color: $color-popup-special-cl;
+    }
+}

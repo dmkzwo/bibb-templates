@@ -1,0 +1,187 @@
+$image-icon-background-size: 26px;
+$image-icon-background-size-small: 26px;
+$image-icon-size: 15;
+$image-icon-size-small: 15;
+
+.c-image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    @include media-breakpoint-down(sm) {
+        .fr-header-stage-type-1 & {
+            display: block;
+        }
+    }
+}
+
+.c-image-container__copyright-layer {
+    @include fs(13, 16, med);
+    
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    padding: 12px 30px 12px 10px;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    
+    &--active {
+        transform: translate(0);
+        cursor: pointer;
+    }
+}
+
+.c-image-container__copyright-layer-close {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    z-index: 1;
+    
+    svg {
+        width: 12px;
+        height: 12px;
+        fill: white;
+    }
+}
+
+.c-image-container__copyright-link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    width: $image-icon-background-size;
+    height: $image-icon-background-size;
+    background: rgba(0, 0, 0, 0.55);
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    text-align: center;
+    line-height: 0;
+    
+    &:hover,
+    &:focus {
+        background: rgba(255, 255, 255, 0.55);
+        
+        i {
+            @include icon-color($color-text-default);
+        }
+    }
+    
+    &--active {
+        opacity: 0;
+    }
+    
+    i {
+        @include center-vertical;
+        @include icon-color(white);
+        
+        font-size: $image-icon-size * 1px;
+        display: inline-block;
+    }
+}
+
+:not(.c-content-container) figcaption {
+    @include fs(15, 21);
+    
+    padding-top: $content-image-caption-spacer;
+}
+
+.c-content-slider--image {
+    figcaption {
+        @include fs(12, 15);
+    
+        padding-top: 10px;
+    }
+}
+
+[data-toggle='lightbox'] {
+    @include icon(magnifier, $image-icon-size);
+    
+    &:before {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        display: inline-block;
+        width: $image-icon-background-size;
+        height: $image-icon-background-size;
+        padding: ($image-icon-background-size - ($image-icon-size * 1px))/2;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 1;
+        transition: opacity 0.5s ease;
+        color: white;
+        
+        .c-image-container--active & {
+            opacity: 0;
+        }
+    }
+    
+    &:focus,
+    &:hover {
+        @include icon-color($color-text-default);
+        
+        &:before {
+            background: rgba(255, 255, 255, 0.5);
+        }
+    }
+}
+
+//@include media-breakpoint-down(sm) {
+//    [data-toggle='lightbox']:before {
+//        display: none;
+//    }
+//}
+
+// smaller sizes for teaser images
+.c-teaser,
+.c-content-slider--image,
+.c-small-teaser {
+    .c-image-container__copyright-link {
+        width: $image-icon-background-size-small;
+        height: $image-icon-background-size-small;
+        
+        i {
+            font-size: $image-icon-size-small * 1px;
+        }
+    }
+    
+    [data-toggle='lightbox'] {
+        @include icon-size($image-icon-size-small);
+    
+        &:before {
+            width: $image-icon-background-size-small;
+            height: $image-icon-background-size-small;
+            padding: ($image-icon-background-size-small - ($image-icon-size-small * 1px))/2;
+        }
+    }
+}
+
+.c-image-round {
+    img {
+        // clip-path: circle(162px at center);
+        border-radius: 50%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.ekko-lightbox-container {
+    margin-bottom: 10px;
+}
+
+// IE bugfix [https://github.com/ashleydw/lightbox/issues/277]
+.ekko-lightbox .modal-dialog {
+    flex: 100%;
+    //flex: 100% !important;
+    margin-left: 0;
+    margin-right: 0;
+}

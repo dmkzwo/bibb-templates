@@ -1,0 +1,31 @@
+{
+  "bodyClass": "bibb",
+
+  "headlineMainContent": "Headline H1 lorem ipsum lorem ipsum lorem ipsum lorem lorem ipsum lorem ipsum lorem",
+  "headline_test": "headline global",
+  "paragraphTextContent": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+  "iconHeadlineLabel": "Überschrift mit Icon (Default) lorem ipsum lorem ipsum lorem ipsum lorem",
+  "iconHeadlineLinkLabel": "weitere Infos",
+  "paragraphContent": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+  "listItemContent": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+  "h2Content": "H2-Zwischenüberschrift: Lorem ipsum dolor sit amet, consetetur sad ipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et",
+  "h3Content": "Headline H3 Lorem ipsum dolor sit amet, consetetur sad ipscing elitr dolor sit amet, consetetur sad ipscing elitr",
+  "h4Content": "Headline H4 Lorem ipsum dolor sit amet, consetetur sad ipscing elitr dolor sit amet, consetetur sad ipscing elitr",
+  "linkLabel": "Standard Link lorem ipsum Lorem ipsum dolor sit amet, consetetur sad ipscing elitr dolor sit amet, consetetur sad ipscing elitr",
+
+  "linkBlockIntro": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.",
+  "linkBlockLinkDownloadLabel": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy Lorem ipsum dolor sit amet, consetetur sad ipscing elitr (XY KB)",
+  "linkBlockLinkInternLabel": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy Lorem ipsum dolor sit amet, consetetur sad ipscing elitr",
+  "linkBlockLinkExternLabel": "Externer Link",
+
+  "anchorLinkLabel": "Sprungmarke lorem ipsum dolor sit amet, consetetur sadipscing elitr Lorem ipsum dolor sit amet, consetetur sad ipscing elitr",
+
+  "quoteText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore eos magna aliquyam erat magna.",
+  "quoteCaption": "Lorem ipsum dolor sit amet, consetetur sadipscing Lorem ipsum dolor sit amet, consetetur sad ipscing elitr",
+
+  "accentuationText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt  labore et dolore eos magna aliquyam erat magna.",
+
+  "imageCaption": "Bildunterschrift: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt  labore et dolore eos magna aliquyam erat magna.",
+  "imageCopyright": "&copy; Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt  labore et dolore eos magna aliquyam erat magna."
+
+}

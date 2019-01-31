@@ -1,0 +1,44 @@
+{
+  "pid": 292,
+  "level": 3,
+  "url": "#",
+  "label": "Ausbildung und Erwerbstätigkeit",
+  "subItems": [
+    {
+      "pid": 2921,
+      "url": "#",
+      "label": "Ausbildungsvergütung",
+      "hasSubItems": true
+    },
+    {
+      "pid": 2922,
+      "url": "#",
+      "label": "Auszubildenden-Daten der Berufsbildungsstatistik 31.12. (Datensystem Auszubildende)",
+      "hasSubItems": true
+    },
+    {
+      "pid": 2923,
+      "url": "#",
+      "label": "BIBB-Erhebung 'Neu abgeschlossene Ausbildungsverträge zum 30.09.'",
+      "hasSubItems": true
+    },
+    {
+      "pid": 2924,
+      "url": "#",
+      "label": "BIBB/BAuA-Erwerbstätigenbefragung - Arbeit und Beruf im Wandel, Erwerb und Verwertung beruflicher Qualifikationen",
+      "hasSubItems": true
+    },
+    {
+      "pid": 2925,
+      "url": "#",
+      "label": "Analysen auf Basis der BA-Beschäftigungsstatistik",
+      "hasSubItems": true
+    },
+    {
+      "pid": 2926,
+      "url": "#",
+      "label": "Nicht formal Qualifizierte (nfQ)",
+      "hasSubItems": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+.modal-header {
+    .close {
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+.modal-title {
+    @include fs(22,26,conex-med);
+    
+    margin-bottom: 10px;
+}
+
+.ekko-lightbox-container {
+    margin-bottom: 20px;
+}
+
+@include media-breakpoint-down(sm) {
+    .modal-body {
+        padding: 0 20px 50px 20px;
+    }
+}

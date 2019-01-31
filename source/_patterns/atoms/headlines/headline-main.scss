@@ -1,0 +1,6 @@
+.c-headline-main {
+    @include fs(30, 36, conex-med);
+    
+    color: $theme-color-headline-main-cl;
+    margin-bottom: 24px;
+}

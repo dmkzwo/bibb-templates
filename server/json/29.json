@@ -1,0 +1,50 @@
+{
+  "pid": 29,
+  "level": 2,
+  "url": "#",
+  "label": "Daten | Bildungsberichterstattung",
+  "subItems": [
+    {
+      "pid": 291,
+      "url": "#",
+      "label": "Übergänge in Ausbildung",
+      "hasSubItems": true
+    },
+    {
+      "pid": 292,
+      "url": "#",
+      "label": "Ausbildung und Erwerbstätigkeit",
+      "hasSubItems": true
+    },
+    {
+      "pid": 293,
+      "url": "#",
+      "label": "Datenreport zum Berufsbildungsbericht",
+      "hasSubItems": false
+    },
+    {
+      "pid": 294,
+      "url": "#",
+      "label": "Indikatoren zur Bildungsberichterstattung",
+      "hasSubItems": true
+    },
+    {
+      "pid": 295,
+      "url": "#",
+      "label": "Integrierte Ausbildungsberichterstattung - iABE",
+      "hasSubItems": true
+    },
+    {
+      "pid": 296,
+      "url": "#",
+      "label": "Expertenmonitor",
+      "hasSubItems": true
+    },
+    {
+      "pid": 297,
+      "url": "#",
+      "label": "Referenz-Betriebs-System",
+      "hasSubItems": true
+    }
+  ]
+}

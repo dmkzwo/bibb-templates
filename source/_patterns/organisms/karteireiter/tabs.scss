@@ -1,0 +1,254 @@
+.c-tabs {
+    margin-bottom: $content-element-spacer-bottom;
+}
+
+.c-tabs__tab {
+    display: inline-block;
+}
+
+@include media-breakpoint-down(sm) {
+    .c-tabs__tab-link {
+        display: inline-block;
+        padding: 0;
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .c-tabs__tab-link {
+        display: inline-block;
+        padding: 8px 10px;
+        border-bottom: 3px solid white;
+        
+        &.active {
+            border-bottom: 3px solid $color-tabs-nav-border;
+        }
+    }
+}
+
+.c-tabs__tab-link-inside {
+    @include fs(22, 23, conex-semibold);
+    
+    opacity: 0.35;
+    
+    .active > &,
+    :hover > & {
+        opacity: 1;
+    }
+    
+    @include media-breakpoint-down(sm) {
+        text-decoration: underline;
+    }
+}
+
+.c-tabs__pane {
+    .c-accentuation-box {
+        margin-bottom: 5px;
+        margin-top: 0;
+    }
+    
+    .c-toggle__link {
+        margin-top: -5px;
+        
+        > .focus {
+            @include icon(arrow-down, 8, 25);
+            
+            display: inline-block;
+            width: 100%;
+            height: 25px;
+            background-color: $color-tabs-toggle-link-bg;
+            position: relative;
+            
+            &:before {
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                text-align: center;
+            }
+        }
+        
+        .focus:hover,
+        &:focus > .focus {
+            background-color: $color-tabs-toggle-link-hover-bg;
+            
+            &:before {
+                color: $color-tabs-toggle-link-hover-cl;
+            }
+        }
+    
+        &--active {
+            > .focus {
+                &:before {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+}
+
+.c-tabs__az {
+    background-color: $color-tabs-az-container-bg;
+    padding: 25px 20px;
+    margin-bottom: 5px;
+    
+    @include a-z-line(18, 4px, 7px, $color-tabs-az-default-bg, $color-text-default, $color-tabs-az-inactive-bg, $color-text-default, $color-tabs-az-hover-bg, $color-tabs-az-hover-cl, $theme-color-tabs-az-active-bg, $theme-color-tabs-az-active-cl);
+}
+
+.c-tabs-download-language {
+    background-color: $color-tabs-download-language-bg;
+    padding: 0 20px;
+}
+
+.c-tabs-subline {
+    @include fs(22,26,conex-med);
+    
+    padding: 5px 20px;
+    background-color: $color-tabs-subline-bg;
+    color: $color-tabs-subline-cl;
+}
+
+.c-tabs-download-language__container {
+    width: 100%;
+    
+    td {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+    
+    tr:first-child {
+        td {
+            padding-top: 20px;
+        }
+    }
+    
+    tr:last-child {
+        td {
+            padding-bottom: 20px;
+        }
+    }
+    
+    td:first-child {
+        border-right: 4px solid white;
+        padding-right: 20px;
+        padding-left: 0;
+        width: 100%;
+        
+        a {
+            @include fs(15,18,med);
+            @include link-behaviour-std;
+            @include link-download;
+        }
+    }
+}
+
+.c-tabs-top__link {
+    > .focus {
+        @include icon(arrow-down, 8, 25);
+        
+        display: inline-block;
+        width: 100%;
+        height: 25px;
+        background-color: $color-tabs-toggle-link-bg;
+        position: relative;
+        
+        &:before {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            text-align: center;
+            transform: rotate(180deg);
+        }
+    }
+    
+    .focus:hover,
+    &:focus > .focus {
+        background-color: $color-tabs-toggle-link-hover-bg;
+        
+        &:before {
+            color: $color-tabs-toggle-link-hover-cl;
+        }
+    }
+}
+
+.c-tabs-special {
+    background-color: $color-tabs-default-bg;
+    padding: 25px 20px;
+    margin-bottom: 5px;
+}
+
+.c-tabs-special__search {
+    @include media-breakpoint-only(md) {
+        padding-right: 20px;
+    }
+    
+    @include media-breakpoint-up(lg) {
+        padding-right: 70px;
+    }
+}
+
+.c-tabs-special__az {
+    @include media-breakpoint-only(md) {
+        padding-left: 20px;
+    }
+    
+    @include media-breakpoint-up(lg) {
+        padding-left: 70px;
+    }
+    
+    @include a-z-block(17, 10px, 5, 9px, white, $color-text-default, $color-tabs-az-inactive-bg, $color-text-default, $color-tabs-az-hover-bg, $color-tabs-az-hover-cl, $theme-color-tabs-az-active-bg, $theme-color-tabs-az-active-cl);
+    
+    button {
+        width: 100%;
+    }
+}
+
+.c-tabs-special__headline {
+    @include fs(15, 19, conex-med);
+    
+    display: block;
+    margin-bottom: 7px;
+}
+
+// Text Selector
+
+.c-tabs-text-selection {
+    margin-bottom: 20px;
+}
+
+.c-tabs-text-selection__headline {
+    @include fs(15,21,med);
+    
+    display: inline-block;
+}
+
+.c-tabs-text-selection__list {
+    display: inline-block;
+}
+
+.c-tabs-text-selection__item {
+    display: inline-block;
+    
+    &:not(:first-child) {
+        &:before {
+            content: '| ';
+        }
+    }
+}
+
+.c-tabs-text-selection__link {
+    @include fs(15,21);
+    
+    &:not(.c-tabs-text-selection__link--active) {
+        @include link-behaviour-std;
+    }
+    
+    &--active {
+        @include fs(15,21,med);
+        
+        color: $colors-tabs-text-selection-cl;
+    }
+}

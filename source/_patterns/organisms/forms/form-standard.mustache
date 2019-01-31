@@ -1,0 +1,33 @@
+{{> molecules-form-error-messages }}
+
+<div class="c-form-container">
+
+    <h2>{{ formSubline }}</h2>
+    <ol>
+        <li>{{ formListElement }}</li>
+        <li>{{ formListElement }}</li>
+    </ol>
+
+    <form class="c-form">
+        {{> molecules-form-element-text }}
+        {{> molecules-form-element-select }}
+        <fieldset>
+            <legend class="c-form__legend c-form__legend--main">{{ fieldsetLegend }}</legend>
+            {{> molecules-form-element-text-short }}
+            {{> organisms-form-row-double }}
+            <div class="c-form__row c-form__row--double">
+                {{> organisms-form-element-double-select }}
+                {{> molecules-form-element-select }}
+            </div>
+            <div class="c-form__row c-form__row--double">
+                {{> molecules-form-element-select }}
+                {{> molecules-form-element-select-error }}
+            </div>
+            {{> organisms-form-element-checkbox-single }}
+            {{> organisms-form-element-checkbox-multiple }}
+            {{> organisms-form-element-radiobuttons }}
+        </fieldset>
+        {{> organisms-form-row-button-single-right }}
+    </form>
+
+</div>

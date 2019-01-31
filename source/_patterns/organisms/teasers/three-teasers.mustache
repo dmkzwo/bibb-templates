@@ -1,0 +1,40 @@
+<div class="c-three-teasers">
+
+    <div class="row no-gutters">
+        <div class="col-xl-3">
+
+            <ul class="nav c-three-teasers__tabs" role="tablist">
+                <li class="c-three-teasers__tab">
+                    <a class="c-three-teasers__tab-link active" id="tab1-tt" data-toggle="tab" href="#tab1-tt-content"
+                       role="tab"
+                       aria-controls="tab1-content" aria-selected="true"><span class="c-three-teasers__tab-link-inside" tabindex="-1">{{ threeTeasersTab1 }}</span></a>
+                </li>
+                <li class="c-three-teasers__tab">
+                    <a class="c-three-teasers__tab-link" id="tab2-tt" data-toggle="tab" href="#tab2-tt-content" role="tab"
+                       aria-controls="tab2-content" aria-selected="false"><span class="c-three-teasers__tab-link-inside" tabindex="-1">{{ threeTeasersTab2 }}</span></a>
+                </li>
+                <li class="c-three-teasers__tab">
+                    <a class="c-three-teasers__tab-link" id="tab3-tt" data-toggle="tab" href="#tab3-tt-content" role="tab"
+                       aria-controls="tab3-content" aria-selected="false"><span class="c-three-teasers__tab-link-inside" tabindex="-1">{{ threeTeasersTab3 }}</span></a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="col-xl-9">
+
+            <div class="tab-content c-three-teasers__panes">
+                <div class="tab-pane c-three-teasers__pane fade show active" id="tab1-tt-content" role="tabpanel" aria-labelledby="tab1-tt">
+                    {{> organisms-three-teasers-teaser }}
+                </div>
+                <div class="tab-pane c-three-teasers__pane fade" id="tab2-tt-content" role="tabpanel" aria-labelledby="tab2-tt">
+                    {{> organisms-three-teasers-teaser }}
+                </div>
+                <div class="tab-pane c-three-teasers__pane fade" id="tab3-tt-content" role="tabpanel" aria-labelledby="tab3-tt">
+                    {{> organisms-three-teasers-teaser }}
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

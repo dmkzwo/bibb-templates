@@ -1,0 +1,164 @@
+body {
+    background-color: $color-background-body;
+}
+
+@include media-breakpoint-down(xs) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .col-md-6 {
+        margin-bottom: 30px;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .col-md-spacer-bottom {
+        margin-bottom: $content-element-spacer-bottom;
+    }
+}
+
+.fr-main-content {
+    position: relative;
+    z-index: 1;
+}
+
+.fr-container-inside {
+    position: relative;
+    height: inherit;
+}
+
+.fr-main-column {
+    padding-top: 45px;
+    overflow: hidden;
+    
+    @include media-breakpoint-up(lg) {
+        padding-right: $main-column-padding-right;
+    }
+}
+
+.fr-rc-column {
+    padding-top: 45px;
+}
+
+.fr-container__inside {
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+.fr-container__outside {
+    overflow-x: hidden;
+}
+
+.fr-container-color-standard {
+    background-color: $color-container-standard-bg;
+}
+
+.fr-container-color-1 {
+    background-color: $theme-color-layout-color1-bg;
+}
+
+.fr-container-color-2 {
+    background-color: $theme-color-layout-color2-bg;
+}
+
+.fr-container__outside--two-colors {
+    padding-top: $container-padding-top;
+    padding-bottom: $container-padding-bottom;
+
+    @include media-breakpoint-up(lg) {
+        background: url('/images/framework/bg_socialmedia.png') repeat-y center center;
+        background-size: 100% 1px;
+        padding-top: 0;
+        padding-bottom: 0;
+        
+        .col-lg-4 {
+            background-color: #63666a;
+        }
+    }
+}
+
+.fr-two-colors-container {
+    padding-top: $container-padding-top;
+    padding-bottom: $container-padding-bottom;
+    height: 100%;
+    
+    @include media-breakpoint-down(md) {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    &--dark {
+        @include media-breakpoint-up(lg) {
+            background-color: #63666a;
+        }
+    }
+}
+
+.fr-container__outside--padding {
+    padding-top: $container-padding-top;
+    padding-bottom: $container-padding-bottom;
+}
+
+.fr-container__outside--padding-top {
+    padding-top: $container-padding-top;
+}
+
+.fr-container__outside--padding-bottom {
+    padding-bottom: $container-padding-bottom;
+}
+
+.fr-container__outside--padding-top-large {
+    padding-top: $container-padding-top-large;
+}
+
+.fr-container__outside--padding-bottom-large {
+    padding-bottom: $container-padding-bottom-large;
+}
+
+.fr-container__outside--with-background {
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+}
+
+.fr-row--spacer-bottom {
+    margin-bottom: $content-element-spacer-bottom/2;
+}
+
+.fr-layout-column-padding-left {
+    padding-left: 16px;
+}
+
+.fr-layout-column-padding-right {
+    padding-right: 16px;
+}
+
+.fr-inner-container {
+    margin: 0 auto;
+    
+    @include media-breakpoint-only(md) {
+        max-width: map-get($container-max-widths, md);
+        padding: 0 10px;
+    }
+    
+    @include media-breakpoint-only(sm) {
+        max-width: map-get($container-max-widths, sm);
+        padding: 0 10px;
+    }
+    
+    @include media-breakpoint-only(xs) {
+        max-width: map-get($container-max-widths, xs);
+    }
+    
+    @include media-breakpoint-only(xxs) {
+        max-width: map-get($container-max-widths, xxs);
+    }
+}
+
+.fr-content-container {
+    padding: 25px;
+}

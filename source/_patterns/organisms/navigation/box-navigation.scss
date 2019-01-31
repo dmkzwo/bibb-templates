@@ -1,0 +1,65 @@
+$box-navigation-spayer-horizontal: 20px;
+$box-navigation-spayer-vertical: 20px;
+
+.fr-box-navigation__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    
+    .fr-box-navigation__item {
+        margin-bottom: $box-navigation-spayer-vertical;
+        width: 100%;
+        
+        @include media-breakpoint-up(lg) {
+            width: calc(25% - #{$box-navigation-spayer-horizontal} * 0.75);
+        }
+        
+        @include media-breakpoint-between(xs, md) {
+            width: calc(50% - #{$box-navigation-spayer-horizontal} * 0.5);
+        }
+    }
+}
+
+.fr-box-navigation__link {
+    display: block;
+    position: relative;
+    background-color: $theme-color-box-navigation-link-bg;
+    text-align: center;
+    height: 220px;
+    padding-top: 45px;
+    
+    &:hover,
+    &:focus {
+        background-color: $theme-color-box-navigation-link-hover-bg;
+    }
+}
+
+.fr-box-navigation__icon {
+    height: 85px;
+    width: 100%;
+    fill: $theme-color-box-navigation-link-cl;
+    
+    :hover > &,
+    :focus > & {
+        fill: $theme-color-box-navigation-link-hover-cl;
+    }
+}
+
+.fr-box-navigation__label {
+    @include fs(22,26,conex-med);
+    
+    display: block;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 0 20px;
+    color: $theme-color-box-navigation-link-cl;
+    
+    :hover > &,
+    :focus > & {
+        color: $theme-color-box-navigation-link-cl;
+    }
+}

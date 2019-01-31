@@ -1,0 +1,29 @@
+<div class="fr-header-search-layer js-header-search-layer">
+    <div class="container">
+        <div class="fr-header-search-layer__inside">
+            <a href="#" class="fr-header-search-layer__close js-header-search-layer-close" title="Suchlayer schließen">
+                <svg><use href="/images/sprites/misc.svg#close" xlink:href="/images/sprites/misc.svg#close"></use></svg>
+            </a>
+            <div class="row">
+                <div class="col-md-6 order-md-7">
+                    <div class="fr-header-search-layer__search">
+                        <form>
+                            {{> molecules-form-element-text }}
+                            <div class="c-form-row c-form-row--align-right">
+                                <button class="fr-header-search-layer__search-button">Suchen</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-6 order-md-1">
+                    <div class="fr-header-search-layer__quick-access-container">
+                        <p class="fr-header-search-layer__quick-access-headline">Schlagworte A-Z. Bitte wählen Sie einen
+                            Anfangsbuchstaben:</p>
+                        {{> molecules-a-z }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

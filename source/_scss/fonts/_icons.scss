@@ -1,0 +1,220 @@
+@mixin icon($type, $fs: 12, $lh: 1) {
+    
+    &:before {
+        /* use !important to prevent issues with browser extensions that change fonts */
+        font-family: 'BIBB_Relaunch_2018' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    
+        display: inline-block;
+        font-size: $fs * 1px;
+        color: $color-text-default;
+        
+        @if ($lh != 1) {
+            line-height: $lh * 1px;
+        }
+        
+        @if $type == bullet {
+            content: "\e900";
+        
+        } @else if $type == copyright {
+            content: "\e901";
+    
+        } @else if $type == download {
+            content: "\e902";
+    
+        } @else if $type == magnifier {
+            content: "\e903";
+    
+        } @else if $type == extern {
+            content: "\e904";
+    
+        } @else if $type == arrow-right {
+            content: "\e905";
+    
+        } @else if $type == arrow-down {
+            content: "\e906";
+    
+        } @else if $type == triangle-down {
+            content: "\e907";
+    
+        } @else if $type == triangle-right {
+            content: "\e908";
+    
+        } @else if $type == angle-left {
+            content: "\e909";
+    
+            //.icon-Contact_RC:before {
+            //    content: "\e90a";
+            //    color: #63666a;
+            //}
+            //.icon-Download_RC:before {
+            //    content: "\e90b";
+            //    color: #63666a;
+            //}
+        } @else if $type == mail {
+            content: "\e90c";
+    
+            //.icon-Hints_RC:before {
+            //    content: "\e90d";
+            //    color: #63666a;
+            //}
+            //.icon-Link_Bracket_RC:before {
+            //    content: "\e90e";
+            //    color: #63666a;
+            //}
+            //.icon-Newsletter_RC:before {
+            //    content: "\e90f";
+            //    color: #63666a;
+            //}
+            //.icon-Partners_RC:before {
+            //    content: "\e910";
+            //    color: #63666a;
+            //}
+        } @else if $type == phone {
+            content: "\e911";
+    
+            //.icon-Publications-RC:before {
+            //    content: "\e912";
+            //    color: #63666a;
+            //}
+            //.icon-RSS_RC:before {
+            //    content: "\e913";
+            //    color: #63666a;
+            //}
+            //.icon-Share_RC:before {
+            //    content: "\e914";
+            //    color: #63666a;
+            //}
+            //.icon-Twitter_RC:before {
+            //    content: "\e915";
+            //    color: #63666a;
+            //}
+        } @else if $type == user {
+            content: "\e916";
+    
+        } @else if $type == play {
+            content: "\e917";
+    
+        } @else if $type == angle-up {
+            content: "\e918";
+    
+        } @else if $type == angle-down {
+            content: "\e919";
+    
+        } @else if $type == angle-right {
+            content: "\e91a";
+    
+        } @else if $type == close {
+            content: "\e91b";
+    
+        } @else if $type == comment {
+            content: "\e91c";
+    
+        } @else if $type == like {
+            content: "\e91d";
+    
+        } @else if $type == retweet {
+            content: "\e91e";
+    
+        }
+    }
+}
+
+@mixin icon-color($color) {
+    &:before {
+        color: $color;
+    }
+}
+
+@mixin icon-size($fs: 12, $lh: 1) {
+    &:before {
+        font-size: $fs * 1px;
+    
+        @if ($lh != 1) {
+            line-height: $lh * 1px;
+        }
+    }
+}
+
+
+.icon-Arrow_Slider_Left:before {
+    content: "\e909";
+    color: #63666a;
+}
+.icon-Contact_RC:before {
+    content: "\e90a";
+    color: #63666a;
+}
+.icon-Download_RC:before {
+    content: "\e90b";
+    color: #63666a;
+}
+.icon-E-Mail_RC:before {
+    content: "\e90c";
+    color: #63666a;
+}
+.icon-Hints_RC:before {
+    content: "\e90d";
+    color: #63666a;
+}
+.icon-Link_Bracket_RC:before {
+    content: "\e90e";
+    color: #63666a;
+}
+.icon-Newsletter_RC:before {
+    content: "\e90f";
+    color: #63666a;
+}
+.icon-Partners_RC:before {
+    content: "\e910";
+    color: #63666a;
+}
+.icon-Phone_RC:before {
+    content: "\e911";
+    color: #63666a;
+}
+.icon-Publications-RC:before {
+    content: "\e912";
+    color: #63666a;
+}
+.icon-RSS_RC:before {
+    content: "\e913";
+    color: #63666a;
+}
+.icon-Share_RC:before {
+    content: "\e914";
+    color: #63666a;
+}
+.icon-Twitter_RC:before {
+    content: "\e915";
+    color: #63666a;
+}
+.icon-User_RC:before {
+    content: "\e916";
+    color: #63666a;
+}
+.icon-Playbutton:before {
+    content: "\e917";
+    color: #63666a;
+}
+.icon-Arrow_Slider_Up:before {
+    content: "\e918";
+    color: #63666a;
+}
+.icon-Arrow_Slider_Down:before {
+    content: "\e919";
+    color: #63666a;
+}
+.icon-Arrow_Slider_Right:before {
+    content: "\e91a";
+    color: #63666a;
+}

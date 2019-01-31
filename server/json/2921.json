@@ -1,0 +1,32 @@
+{
+  "pid": 2921,
+  "level": 4,
+  "url": "#",
+  "label": "Ausbildungsvergütung",
+  "subItems": [
+    {
+      "pid": 29211,
+      "url": "#",
+      "label": "Fachbeiträge",
+      "hasSubItems": false
+    },
+    {
+      "pid": 29212,
+      "url": "#",
+      "label": "Datenbank Ausbildungsvergütungen",
+      "hasSubItems": false
+    },
+    {
+      "pid": 29213,
+      "url": "#",
+      "label": "Hintergrundinformationen Ausbildungsvergütungen",
+      "hasSubItems": false
+    },
+    {
+      "pid": 29214,
+      "url": "#",
+      "label": "Pressemitteilungen Ausbildungsvergütung",
+      "hasSubItems": false
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+* {
+    @include font-regular;
+    
+    color: $color-text-default;
+    // -webkit-font-smoothing: antialiased;
+}
+
+html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+@-moz-document url-prefix() {
+    body {
+        font-weight: lighter !important;
+    }
+}
+
+a {
+    color: $color-text-default;
+}
+
+figure {
+    line-height: 0;
+}
+
+caption {
+    caption-side: top;
+    color: $color-text-default;
+}

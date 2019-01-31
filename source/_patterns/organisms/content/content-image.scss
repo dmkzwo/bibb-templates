@@ -1,0 +1,24 @@
+$content-image-padding-right: 200px;
+
+.c-content-image {
+    margin-bottom: $content-element-spacer-bottom;
+    position: relative;
+    
+    @include media-breakpoint-up(lg) {
+        padding-right: $content-image-padding-right;
+    }
+}
+
+.c-content-image figcaption {
+    @include fs(15,21);
+    
+    padding-top: $content-image-caption-spacer;
+    
+    @include media-breakpoint-up(lg) {
+        position: absolute;
+        top: 45px - $content-image-caption-spacer;
+        right: 0;
+        z-index: 1;
+        width: $content-image-padding-right - 20px;
+    }
+}

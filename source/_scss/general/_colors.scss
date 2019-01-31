@@ -1,0 +1,167 @@
+$color-background-body: #fff;
+//$color-text-default: #63666a;
+//$color-text-default: #525b5c;
+$color-text-default: #586162;
+$color-top-bar-link: #f00;
+
+// Top navigation
+$color-top-navigation-bg: #efeff0;
+$color-top-navigation-link-text: #919396;
+$color-top-navigation-link-bg: transparent;
+$color-top-navigation-link-bg-hover: transparent;
+$color-top-navigation-link-search-cl: white;
+$color-top-navigation-link-search-bg: #848485;
+$color-top-navigation-link-search-hover-bg: transparent;
+$color-top-navigation-link-user-cl: white;
+$color-top-navigation-link-user-hover-bg: transparent;
+$color-top-navigation-user-layer-border: #d8d8d8;
+
+// Search layer
+$color-search-layer-bg: #efeff0;
+
+// Main navigation
+$color-main-navigation-subitems: #d8d8d8;
+
+//$color-main-navigation-layer-link-border: #d8d8d8;
+$color-main-navigation-layer-link-border: #e8e8e8;
+$color-main-navigation-layer-text: $color-text-default;
+
+// Page navigation
+$color-page-navigation-parent-link-bg: #919396;
+$color-page-navigation-parent-link-hover-bg: #848485;
+$color-page-navigation-parent-link-text: white;
+$color-page-navigation-siblings-link-bg: #d8d8d8;
+$color-page-navigation-siblings-link-bg-hover: $color-text-default;
+$color-page-navigation-actpage-text: white;
+$color-page-navigation-actpage-list-bg: #efeff0;
+$color-page-navigation-actpage-list-text: $color-text-default;
+$color-page-navigation-actpage-list-text-hover: $color-text-default;
+
+// Topic navigation
+$color-topic-navigation-bg: #efeff0;
+$color-topic-navigation-hover-bg: #848485;
+$color-topic-navigation-hover-cl: white;
+
+// Icon navigation
+$color-icon-navigation-hover-bg: #848485;
+$color-icon-navigation-hover-cl: white;
+$color-icon-navigation-border: rgba(208, 209, 210, 0.8);
+
+// Layout
+$color-container-standard-bg: #efeff0;
+
+// Right column
+$color-rc-grey1-bg: #f8f8f8;
+$color-rc-grey2-bg: #efeff0;
+$color-rc-grey3-bg: #919396;
+$color-rc-grey3-cl: #fff;
+$color-rc-grey4-bg: #63666a;
+$color-rc-grey4-cl: #fff;
+
+// Headlines
+
+$color-headline-main: #003571;
+
+$color-headline-icon-border: $color-text-default;
+
+// Lines
+$color-content-line: $color-text-default;
+$color-content-line-light: #efeff0;
+
+// Anchors
+$color-anchor-border: #efeff0;
+
+// Tables
+$color-table-header-bg: #efeff0;
+$color-table-td-border-color: #d8d8d8;
+
+// Forms
+$color-formfield-bg: white;
+
+// Accentuation Box
+$color-accentuation-box-standard-bg: #efeff0;
+$color-accentuation-box-white-border-cl: #d8d8d8;
+
+// Glossary
+$color-glossary-link-cl: rgba(0, 53, 113, 0.5);
+$color-glossary-link-hover-cl: #003571;
+
+$color-popup-special-cl: #003571;
+
+// Contact teaser
+$color-contact-teaser-bg: #efeff0;
+
+// Small teaser
+$color-small-teaser-bg: white;
+
+// Accordion
+$color-accordion-header-cl: $color-text-default;
+$color-accordion-header-bg: #efeff0;
+$color-accordion-header-hover-cl: white;
+$color-accordion-header-hover-bg: #848485;
+
+// Three teasers
+$color-three-teasers-tab-cl: rgba($color-text-default, 0.6);
+$color-three-teasers-tab-bg: #efeff0;
+$color-three-teasers-tab-border: white;
+$color-three-teasers-tab-active-cl: white;
+$color-three-teasers-tab-active-bg: #848485;
+$color-three-teasers-tab-hover-cl: white;
+$color-three-teasers-tab-hover-bg: #848485;
+$color-three-teasers-pane-bg: #efeff0;
+
+//$color-three-teasers-tab-cl: $color-text-default;
+//$color-three-teasers-tab-bg: white;
+//$color-three-teasers-tab-border: #efeff0;
+//$color-three-teasers-tab-active-cl: $color-text-default;
+//$color-three-teasers-tab-active-bg: #efeff0;
+//$color-three-teasers-tab-hover-cl: white;
+//$color-three-teasers-tab-hover-bg: #848485;
+//$color-three-teasers-pane-bg: #efeff0;
+
+// Meta table
+$color-meta-table-bg: #efeff0;
+
+// A-Z
+$color-az-default-bg: #d8d8d8;
+$color-az-inactive-bg: #efeff0;
+$color-az-hover-bg: #63666a;
+$color-az-hover-cl: white;
+
+// Tabs
+$color-tabs-nav-border: #525357;
+$color-tabs-default-bg: #efeff0;
+$color-tabs-toggle-link-bg: #d8d8d8;
+$color-tabs-toggle-link-hover-bg: #848485;
+$color-tabs-toggle-link-hover-cl: white;
+$color-tabs-subline-bg: #63666a;
+$color-tabs-subline-cl: white;
+$color-tabs-az-container-bg: #efeff0;
+$color-tabs-az-default-bg: #d8d8d8;
+$color-tabs-az-inactive-bg: #e6e6e6;
+$color-tabs-az-hover-bg: #63666a;
+$color-tabs-az-hover-cl: white;
+$color-tabs-download-language-bg: #efeff0;
+
+// Forms
+$color-form-bg: #efeff0;
+$color-form-field-bg: white;
+$color-form-select-arrow-bg: #d8d8d8;
+$color-form-button-secondary-bg: #63666a;
+$color-form-button-secondary-cl: white;
+$color-form-error-border: #da2b15;
+$color-form-error-message-bg: #da2b15;
+$color-form-error-message-cl: white;
+$color-form-error-label-cl: #da2b15;
+
+// Order
+$color-order-status-cl: #d8d8d8;
+$color-order-status-active-cl: $color-text-default;
+$color-order-status-border: #d8d8d8;
+$color-order-status-border-active: $color-text-default;
+$color-order-table-border-main: $color-text-default;
+$color-order-table-border-secondary: #d8d8d8;
+$color-order-table-input-bg: #efeff0;
+
+// Social media
+$color-social-media-twitter-link-cl: #b1b3b5;

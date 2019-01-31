@@ -1,0 +1,32 @@
+.c-anchor-links {
+    @include clearfix;
+    
+    margin-bottom: 40px;
+}
+
+.c-anchor-links__item {
+    &:not(:last-child) {
+        border-bottom: 1px solid $color-anchor-border;
+    }
+}
+
+.c-anchor-link {
+    display: block;
+    padding: 10px 0 10px 30px;
+    position: relative;
+}
+
+.c-anchor-link__icon {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: 1;
+    height: 22px;
+    width: 15px;
+    fill: $color-text-default;
+}
+
+.c-anchor-link__label {
+    @include fs(15, 22);
+    @include link-behaviour-std();
+}

@@ -1,0 +1,119 @@
+BIBB Templates
+
+Startseite BIBB
+Vgl. Seitenaufbau der engl. BIBB-Seite:<br>
+<a href="screens/BIBB_EN.jpg">BIBB_EN.jpg</a><br>
+<a href="screens/Seitentypen_BIBB.jpg">Seitentypen_BIBB.jpg</a><br>
+
+Seiten ohne rechte Spalte
+
+Themengruppenstartseite
+Übersicht Standardmodule:<br>
+<a href="screens/TGST_VE1.jpg">TGST_VE1.jpg</a><br>
+Optionaler Text unter der Bühne (nur hier!)<br>
+<a href="screens/TGST_VE2.jpg">TGST_VE2.jpg</a><br>
+
+Archiv-Liste
+Relevant für:<br>
+<a href="screens/Pressearchiv_Liste_VE_Jahrgang.jpg">Pressearchiv_Liste_VE_Jahrgang.jpg</a><br>
+<a href="screens/Pressearchiv_Liste_VE_Übersicht.jpg">Pressearchiv_Liste_VE_Übersicht.jpg</a><br>
+<a href="screens/Veranstaltung_Liste.jpg">Veranstaltung_Liste.jpg</a><br>
+<a href="screens/Veranstaltung-Doku-Liste.jpg">Veranstaltung-Doku-Liste.jpg</a><br>
+<a href="screens/VOEVZ_9_Publikationen_BWP_Archiv.jpg">VOEVZ_9_Publikationen_BWP_Archiv.jpg</a><br>
+
+
+Blättermodule (volle Breite)
+Themenspezifische Icons je Überschrift: siehe Übersicht Überschriften (s.u.).
+
+
+Suchergebnisseite
+Relevant für:<br>
+<a href="screens/Suchergebnisliste.jpg">Suchergebnisliste.jpg</a><br>
+
+
+Seiten mit rechter Spalte
+
+Inhaltseite Standard
+
+Übersicht Inhaltselemente der rechten Spalte:<br>
+<a href="screens/RC-Module.jpg">RC-Module.jpg</a><br>
+
+Spezialelemente
+Erweiterter Teaser relevant für BIBB-Publikationen:<br>
+<a href="screens/VOEVZ_1_Startseite_Publikationen.jpg">VOEVZ_1_Startseite_Publikationen.jpg</a><br>
+<a href="screens/VOEVZ_2_Publikation_Detail.jpg">VOEVZ_2_Publikation_Detail.jpg</a><br>
+<a href="screens/VOEVZ_3_Publikation-Suchergebnisliste.jpg">VOEVZ_3_Publikation-Suchergebnisliste.jpg</a><br>
+<a href="screens/VOEVZ_8_Publikationen_BWP_Start.jpg">VOEVZ_8_Publikationen_BWP_Start.jpg</a><br>
+<br>Metadaten-Tabelle relevant für Veranstaltungen:<br>
+<a href="screens/Veranstaltung_Detail.jpg">Veranstaltung_Detail.jpg</a><br>
+<br>A-Z im Content relevant für Glossary in Kombination mit einem Akkordeon<br>
+Video und Fußnoten relevant für Inhaltsseiten
+
+
+Formulare
+u.a. relevant für:<br>
+Veröffentlichungen (Suche und erweiterte Suche)<br>
+DaPro-Suche<br>
+Und:<br>
+<a href="screens/VOEVZ_10_Publikationen_BWP_Archivsuche.jpg">VOEVZ_10_Publikationen_BWP_Archivsuche.jpg</a><br>
+<a href="screens/VOEVZ_3_Publikation-Suchergebnisliste.jpg">VOEVZ_3_Publikation-Suchergebnisliste.jpg</a><br>
+
+Blättermodule
+
+Bestellprozess
+Relevant für:<br>
+<a href="screens/VOEVZ_5_Publikationen_Warenkorb.jpg">VOEVZ_5_Publikationen_Warenkorb.jpg</a><br>
+<a href="screens/VOEVZ_6_Publikationen_Warenkorb_Bestelldaten.jpg">VOEVZ_6_Publikationen_Warenkorb_Bestelldaten.jpg</a><br>
+<a href="screens/VOEVZ_7_Publikationen_Warenkorb_Bestelluebersicht.jpg">VOEVZ_7_Publikationen_Warenkorb_Bestelluebersicht.jpg</a><br>
+
+
+Karteireiter
+
+Presse (Startseite)
+Relevant für:<br>
+<a href="screens/Presse_Start.jpg">Presse_Start.jpg</a><br>
+
+Presse (Detailseite)
+Relevant für:<br>
+<a href="screens/Presse_Detail.jpg">Presse_Detail.jpg</a><br>
+<a href="screens/Internetartikel.jpg">Internetartikel.jpg</a><br>
+
+
+Ergebnisliste
+s.o. Spezialelemente, vgl.:<br>
+<a href="screens/VOEVZ_3_Publikation-Suchergebnisliste.jpg">VOEVZ_3_Publikation-Suchergebnisliste.jpg</a><br>
+
+Reihe
+Relevant für:<br>
+<a href="screens/VOEVZ_4_Publikationen_Periodika_Reihen.jpg">VOEVZ_4_Publikationen_Periodika_Reihen.jpg</a><br>
+
+Themenseite
+Relevant für: <br>
+<a href="screens/THEMEN_Seite.jpg">THEMEN_Seite.jpg</a><br>
+
+Inhaltsseite Standard (lange Texte)
+
+
+Fachportale
+Startseite Fachportal (statisch) / Datenportal
+
+Relevant für Ausbildungplus, Deqavet (Bühnengrafik nicht freigegeben):<br>
+<a href="screens/FACHPORTAL-statisch_nf.jpg">FACHPORTAL-statisch_nf.jpg</a><br>
+<a href="screens/FACHPORTAL-statisch_nf2.jpg">FACHPORTAL-statisch_nf2.jpg</a><br>
+<a href="screens/FACHPORTAL_Datenportal-statisch_nf.jpg">FACHPORTAL_Datenportal-statisch_nf.jpg</a><br>
+
+Startseite Fachportal (News)
+Relevant für Foraus (Bühnengrafik nicht freigegeben):<br>
+<a href="screens/FACHPORTAL-news_nf.jpg">FACHPORTAL-news_nf.jpg</a><br>
+
+Inhaltsseite (Fachportal)
+Portalspezifische Farben sind exemplarisch rot/blau hinterlegt.<br>
+<a href="screens/Seitentypen_Fachportale.jpg">Seitentypen_Fachportale.jpg</a><br>
+
+Zusammenstellungen
+Übersicht Überschriften
+
+
+Übersicht Seitentypen im BIBB-Auftritt:
+
+

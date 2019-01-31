@@ -1,0 +1,288 @@
+@mixin center-vertical {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin clearfix {
+    &:after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+}
+
+@mixin posabs-tl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+@mixin boxshadow-header {
+    box-shadow: 0 4px 10px 0 rgba(127, 127, 127, 0.2);
+}
+
+// Positioning
+
+@mixin move-up($distance) {
+    transform: translateY(-1px * $distance);
+}
+
+@mixin move-down($distance) {
+    transform: translateY(1px * $distance);
+}
+
+// SVGs
+
+@mixin svg-style($width, $height, $color: $color-text-default) {
+    svg {
+        width: $width * 1px;
+        height: $height * 1px;
+        fill: $color;
+    }
+}
+
+@mixin svg-width($width) {
+    svg {
+        width: $width * 1px;
+    }
+}
+
+@mixin svg-color($color: $color-text-default) {
+    svg {
+        fill: $color;
+    }
+}
+
+// Headlines
+
+@mixin headline-large {
+    @include fs(30, 36, conex-med);
+    
+    @include media-breakpoint-down(sm) {
+        @include fs(22, 26, conex-med);
+    }
+}
+
+// Links
+
+@mixin link-intern($paddingLeft: 15) {
+    display: inline-block;
+    position: relative;
+    padding-left: $paddingLeft * 1px;
+    
+    &:before {
+        @include posabs-tl;
+        
+        content: '»';
+        color: inherit;
+    }
+}
+
+@mixin icon-link($iconName, $paddingLeft, $fs: 14, $lh: 18) {
+    @include icon($iconName, $fs, $lh);
+    
+    display: inline-block;
+    position: relative;
+    padding-left: $paddingLeft * 1px;
+    
+    &:before {
+        @include posabs-tl;
+        @include icon(download, $fs, $lh);
+        
+        color: inherit;
+    }
+}
+
+@mixin link-extern($paddingLeft: 20) {
+    @include icon-link(extern, $paddingLeft);
+}
+
+@mixin link-download($paddingLeft: 20) {
+    @include icon-link(download, $paddingLeft);
+}
+
+@mixin link-mail($paddingLeft: 20) {
+    @include icon-link(mail, $paddingLeft);
+}
+
+@mixin link-phone($paddingLeft: 20) {
+    @include icon-link(phone, $paddingLeft);
+}
+
+@mixin link-auto-icon($paddingLeft, $multiplier: 1.25) {
+    @include link-intern($paddingLeft);
+    
+    &[href^='http'] {
+        @include link-extern($paddingLeft * $multiplier);
+    }
+    
+    &[href^='mailto'] {
+        @include link-mail($paddingLeft * $multiplier);
+    }
+    
+    &[href^='tel:'] {
+        @include link-phone($paddingLeft * $multiplier);
+    }
+    
+    &[href$='.pdf'],
+    &[href$='.zip'],
+    &[href$='.doc'],
+    &[href$='.docx'] {
+        @include link-download($paddingLeft * $multiplier);
+    }
+}
+
+@mixin link-behaviour-std($color: $color-text-default) {
+    &:hover {
+        // font-style: italic;
+        font-weight: 600;
+        color: $color;
+    }
+    
+    &:focus {
+        text-decoration: underline;
+        color: $color;
+    }
+}
+
+@mixin hover-behaviour-std($color: $color-text-default) {
+    &:hover {
+        // font-style: italic;
+        font-weight: 600;
+        color: $color;
+    }
+}
+
+// A-Z
+
+@mixin a-z($fontSize, $spacing, $width, $paddingHor) {
+    .c-az {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .c-az__item {
+        display: inline-block;
+        margin-right: $spacing;
+        margin-bottom: $spacing;
+    }
+    
+    .c-az__link {
+        @include fs($fontSize,$fontSize,med);
+        @include link-behaviour-std();
+        
+        display: inline-block;
+        padding: $paddingHor 0;
+        width: $width;
+        text-align: center;
+        background-color: white;
+    }
+
+    .c-az__item:last-child > .c-az__link {
+        width: 2*$width+$spacing;
+    }
+}
+
+@mixin a-z-block($fontSize, $spacing, $elemPerRow, $paddingHor, $colorDefaultBg, $colorDefaultCl, $colorInactiveBg, $colorInactiveCl, $colorHoverBg, $colorHoverCl, $colorActiveBg, $colorActiveCl) {
+    $spacingcorr: $spacing * ($elemPerRow - 1) / $elemPerRow;
+    $width: 100% / $elemPerRow;
+    
+    .c-az {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .c-az__item {
+        display: inline-block;
+        width: calc(#{$width} - #{$spacingcorr});
+        margin-bottom: $spacing;
+    }
+    
+    .c-az__link {
+        @include fs($fontSize,$fontSize,med);
+        
+        display: inline-block;
+        padding: $paddingHor 0;
+        width: 100%;
+        text-align: center;
+        background-color: $colorDefaultBg;
+        color: $colorDefaultCl;
+    
+        &--inactive {
+            background-color: $colorInactiveBg;
+            color: $colorInactiveCl;
+        }
+    
+        &--active {
+            background-color: $colorActiveBg;
+            color: $colorActiveCl;
+        }
+    
+        &:not(.c-az__link--inactive):not(.c-az__link--active) {
+            &:hover,
+            &:focus {
+                background-color: $colorHoverBg;
+                color: $colorHoverCl;
+            }
+        }
+    }
+    
+    .c-az__item:last-child {
+        width: calc(#{2*$width} - #{$spacingcorr - 2px});
+    }
+}
+
+@mixin a-z-line($fontSize, $spacing, $paddingHor, $colorDefaultBg, $colorDefaultCl, $colorInactiveBg, $colorInactiveCl, $colorHoverBg, $colorHoverCl, $colorActiveBg, $colorActiveCl) {
+    .c-az {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: -2px;
+        margin-right: -2px;
+    }
+    
+    .c-az__item {
+        display: inline-block;
+        //padding-right: $spacing;
+        width: calc(99.9% / 26);
+        padding: 0 2px;
+        
+        @include media-breakpoint-down(sm) {
+            width: calc(99.9% / 13);
+            margin-bottom: $spacing;
+        }
+    }
+    
+    .c-az__link {
+        @include fs($fontSize,$fontSize,med);
+        //@include link-behaviour-std();
+        
+        display: inline-block;
+        width: 100%;
+        padding: $paddingHor 0;
+        text-align: center;
+        background-color: $colorDefaultBg;
+        color: $colorDefaultCl;
+        
+        &--inactive {
+            background-color: $colorInactiveBg;
+            color: $colorInactiveCl;
+        }
+    
+        &--active {
+            background-color: $colorActiveBg;
+            color: $colorActiveCl;
+        }
+        
+        &:not(.c-az__link--inactive):not(.c-az__link--active) {
+            &:hover,
+            &:focus {
+                background-color: $colorHoverBg;
+                color: $colorHoverCl;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.fr-content-footer {
+    margin-top: 50px;
+    border-top: 1px solid $color-content-line;
+    padding-top: 22px;
+    margin-bottom: $content-element-spacer-bottom;
+    text-align: right;
+    
+    .c-icon-link__label {
+        @include fs(15,25,med-ita);
+        
+        display: inline-block;
+    }
+}
+
+.fr-content-footer__item {
+    display: inline-block;
+    
+    &:not(:last-child) {
+        padding-right: 15px;
+        border-right: 1px solid $color-content-line-light;
+        margin-right: 15px;
+    }
+}

@@ -1,0 +1,83 @@
+{{> organisms-skiplink-navigation }}
+
+<div class="h-dev-breakpoint">BP:</div>
+
+<header class="fr-header-content">
+    {{> organisms-top-navigation }}
+    {{> organisms-search-layer }}
+    {{> organisms-main-navigation }}
+    {{> organisms-header-stage-type-4 }}
+</header>
+
+<div class="fr-main-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <main class="fr-main-column">
+
+                    {{> organisms-order-status }}
+                    {{> organisms-order-headline }}
+
+                    <div class="c-order-intro">
+                        <p>
+                            Sie sind eingeloggt als:<br>
+                            <strong>test@bibb.de</strong>
+                        </p>
+                        <p>
+                            Bitte geben Sie Ihre Rechnungs- und Lieferanschrift an
+                        </p>
+                    </div>
+
+                    <div class="c-order-address-container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                {{> organisms-order-address }}
+                            </div>
+                            <div class="col-md-6">
+                                {{> organisms-order-address }}
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="c-form c-form--content">
+
+                        <div class="c-form__element">
+                            <fieldset>
+                                <legend class="c-form__legend c-form__legend--hidden">Form Label</legend>
+                                <div class="c-form__checkbox-option">
+                                    <input type="checkbox" id="form-field-id"
+                                           class="c-form__input c-form__input-option">
+                                    <label class="c-form__label-option" for="form-field-id">Lorem ipsum dolor sit amet,
+                                        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                                        dolore eos magna aliquyam erat</label>
+                                </div>
+                                <div class="c-form__checkbox-option">
+                                    <input type="checkbox" id="form-field-id"
+                                           class="c-form__input c-form__input-option">
+                                    <label class="c-form__label-option" for="form-field-id">Lorem ipsum dolor sit amet,
+                                        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                                        dolore eos magna aliquyam erat</label>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        {{> organisms-order-table }}
+                        {{> organisms-form-row-button-double }}
+
+                    </form>
+
+                </main>
+            </div>
+            <div class="col-lg-4">
+                <aside class="fr-rc-column">
+                    {{> organisms-page-navigation }}
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{> organisms-footer-social-links }}
+{{> organisms-footer }}
+
+{{> organisms-popup }}

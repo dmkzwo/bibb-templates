@@ -1,0 +1,16 @@
+.c-icon-link {
+    position: relative;
+    padding-left: 35px;
+    min-height: 25px;
+    display: inline-block;
+}
+
+.c-icon-link__icon {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 25px;
+    height: 25px;
+    fill: $color-text-default;
+}

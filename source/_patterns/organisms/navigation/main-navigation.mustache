@@ -1,0 +1,50 @@
+<!--<div class="fr-main-navigation js-main-navigation">-->
+<nav class="fr-main-navigation js-main-navigation" id="target_nav"
+     data-initial='[{"pid": "2", "label": "Themen"}, {"pid": "29", "label": "Daten | Bildungsberichterstattung"}, {"pid": "292", "label": "Ausbildung und Erwerbstätigkeit"}, {"pid": "2926", "label": "Nicht formal Qualifizierte (nfQ)", "subItems": false}]'>
+    <!--data-initial='[{"pid": "2", "label": "Themen"}, {"pid": "29", "label": "Daten | Bildungsberichterstattung"}, {"pid": "292", "label": "Ausbildung und Erwerbstätigkeit"}]'>-->
+    <!--data-initial='[{"pid": "1", "label": "Das BIBB"}, {"pid": "11", "label": "Link 11"}, {"pid": "100", "label": "Link 100"}]'>-->
+    <div class="fr-main-navigation__header">
+        <div class="container">
+            <div class="fr-main-navigation__header-inside">
+                {{> organisms-main-navigation-logo }}
+                <div class="fr-main-navigation__bar">
+                    <div class="js-main-nav-burger-container fr-main-navigation-burger-container">
+                        <button data-pid="0" aria-label="Menu" aria-controls="main-navigation-layer"
+                                class="hamburger hamburger--collapse js-main-nav-burger fr-main-navigation-burger"
+                                type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                    <ul class="fr-main-navigation__bar-list">
+                        <li class="fr-main-navigation__bar-item">
+                            <a href="#" data-pid="1" class="js-main-nav-item fr-main-navigation__bar-link">Das BIBB</a>
+                        </li>
+                        <li class="fr-main-navigation__bar-item">
+                            <a href="#" data-pid="2" class="js-main-nav-item fr-main-navigation__bar-link">Themen</a>
+                        </li>
+                        <li class="fr-main-navigation__bar-item">
+                            <a href="#" data-pid="3" class="js-main-nav-item fr-main-navigation__bar-link">Unser
+                                Service</a>
+                        </li>
+                    </ul>
+                    <div class="fr-main-navigation__search-box">
+                        <a href="#" class="js-search-layer-toggle fr-main-navigation__search">
+                            <svg>
+                                <use href="/images/sprites/topnav.svg#magnifier"
+                                     xlink:href="/images/sprites/topnav.svg#magnifier"></use>
+                            </svg>
+                            <span>Suche</span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-navigation-layer" class="fr-main-navigation__layer-container"></div>
+
+</nav>
+<div class="fr-main-navigation__placeholder js-main-navigation-placeholder">&nbsp;</div>

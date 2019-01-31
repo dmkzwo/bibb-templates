@@ -1,0 +1,29 @@
+<div class="c-teaser c-teaser-extended c-teaser-extended--with-image c-teaser-extended--with-border">
+    <figure class="c-teaser-extended__media">
+        {{> atoms-image-media }}
+    </figure>
+
+    <div class="c-teaser-extended__content">
+        {{> atoms-teaser-meta }}
+        {{> molecules-teaser-headline-with-label }}
+        {{> atoms-teaser-subline }}
+        {{> atoms-teaser-text }}
+        {{> molecules-teaser-meta-table }}
+        <p class="c-teaser-extended__link-box">
+            {{> atoms-teaser-link }}
+        </p>
+        <p class="c-teaser-extended__link-box">
+            {{> atoms-teaser-download }}
+        </p>
+        <p class="c-teaser-extended__link-box">
+            {{> atoms-form-button-standard }}
+        </p>
+
+        <p class="c-teaser-extended__link-box">
+            <a href="#" class="js-content-toggle c-teaser-extended__toggle-link" data-toggle-target="toggle-target2">{{ teaserExtendedToggle }}</a>
+        </p>
+        <div id="toggle-target2" class="h-toggle-target c-teaser-extended__toggle-content">
+            {{ teaserExtendedToggleTarget }}
+        </div>
+    </div>
+</div>

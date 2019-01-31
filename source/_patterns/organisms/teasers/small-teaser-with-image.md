@@ -1,0 +1,3 @@
+---
+title: Kurzmeldung (mit Bild)
+---

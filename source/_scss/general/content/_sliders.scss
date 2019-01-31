@@ -1,0 +1,338 @@
+$slider-dot-distance: 50px;
+
+.container--slider {
+    position: relative;
+    
+    @include media-breakpoint-only(sm) {
+        max-width: map-get($container-max-widths, sm) + 20px;
+        left: 10px;
+    }
+    
+    @include media-breakpoint-only(md) {
+        max-width: map-get($container-max-widths, md) + 20px;
+        left: 10px;
+    }
+    
+    @include media-breakpoint-only(lg) {
+        max-width: map-get($container-max-widths, lg) + 20px;
+        left: 10px;
+    }
+    
+    @include media-breakpoint-up(xl) {
+        max-width: map-get($container-max-widths, xl) + 20px;
+        left: 10px;
+    }
+}
+
+// Fullwidth slider and overall settings
+
+.slick-slider:not(.slick-vertical):not(.slick-stage) {
+    width: inherit;
+    
+    .slick-list {
+        width: inherit;
+        
+        @include media-breakpoint-up(sm) {
+            overflow: visible;
+        }
+    }
+    
+    &.slick-dotted {
+        margin-bottom: $slider-dot-distance;
+    }
+    
+    .slick-slide {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+        
+        &[aria-hidden='true'] {
+            opacity: 0.2;
+        }
+    }
+    
+    // Dots
+    
+    .slick-dots {
+        bottom: -$slider-dot-distance;
+        
+        li {
+            margin: 0 2px;
+            
+            button {
+                &:before {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    
+    // Slider navigation
+    
+    .slick-prev,
+    .slick-next {
+        z-index: 10000;
+        height: 100%;
+        width: 1000px;
+        
+        &:before {
+            position: absolute;
+            top: 76px;
+            z-index: 1;
+            transform: translateY(-50%);
+            opacity: 0.5;
+        }
+        
+        &:hover,
+        &:focus {
+            &:before {
+                opacity: 0.8;
+            }
+        }
+    }
+    
+    .slick-prev {
+        @include icon(angle-left, 30, 30);
+        
+        left: 0;
+        top: 0;
+        transform: translateX(-1000px);
+        
+        &:before {
+            right: 40px;
+        }
+    }
+    
+    .slick-next {
+        @include icon(angle-right, 30, 30);
+        
+        right: 0;
+        top: 0;
+        transform: translateX(1000px);
+        
+        &:before {
+            left: 30px;
+        }
+    }
+}
+
+// Vertical slider
+
+$vertical-slider-height: 330px;
+$vertical-slider-gradient-height: 80px;
+$vertical-slider-icon-width: 15;
+$vertical-slider-icon-height: 10;
+
+.c-vertical-slider {
+    .slick-list {
+        overflow: visible;
+    }
+    
+    .slick-prev,
+    .slick-next {
+        z-index: 10000;
+        width: $vertical-slider-icon-width * 1px;
+        height: $vertical-slider-icon-width * 1px;
+        right: 0;
+        transform: translate(0, 0);
+        opacity: 0.7;
+        
+        &:hover {
+            opacity: 1;
+        }
+    }
+    
+    .slick-prev {
+        @include icon(angle-up, $vertical-slider-icon-height, $vertical-slider-icon-height);
+        @include icon-color(white);
+        
+        top: 0;
+        left: auto;
+    }
+    
+    .slick-next {
+        @include icon(angle-down, $vertical-slider-icon-height, $vertical-slider-icon-height);
+        @include icon-color(white);
+        
+        top: auto;
+        bottom: -$vertical-slider-gradient-height;
+    }
+    
+    // needed for static version
+    //@include media-breakpoint-up(md) {
+    height: $vertical-slider-height;
+    //}
+}
+
+.c-vertical-slider-container {
+    overflow: hidden;
+    position: relative;
+    
+    // needed for static version
+    //@include media-breakpoint-up(md) {
+    padding-bottom: $vertical-slider-gradient-height;
+    max-height: $vertical-slider-height + $vertical-slider-gradient-height;
+    
+    &:after {
+        content: ' ';
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: $vertical-slider-gradient-height;
+        background: linear-gradient(to bottom, rgba(99, 102, 106, 0) 0%, rgba(99, 102, 106, 1) 100%);
+    }
+    //}
+}
+
+// no slider on mobile devices (needed for static version)
+//@include media-breakpoint-down(sm) {
+//    .c-vertical-slider {
+//        .slick-slide:not(:first-child):not(:nth-child(2)):not(:nth-child(3)) {
+//            display: none;
+//        }
+//    }
+//}
+
+// Content and RC Slider
+
+$content-slider-outer-padding: 100px;
+$content-slider-inner-padding: 20px;
+$content-slider-arrow-width: 15px;
+
+$content-slider-rc-outer-padding: 40px;
+$content-slider-rc-inner-padding: 10px;
+$content-slider-rc-arrow-width: 15px;
+
+.fr-main-column .c-content-slider-container {
+    overflow: hidden;
+    margin-bottom: $content-element-spacer-bottom;
+    
+    @include media-breakpoint-only(sm) {
+        padding: 0 $content-slider-outer-padding;
+    }
+    
+    @include media-breakpoint-up(md) {
+        padding: 0 $content-slider-outer-padding;
+    }
+}
+
+.fr-rc-column .c-content-slider-container {
+    overflow: hidden;
+    margin-bottom: $content-element-spacer-bottom;
+    
+    @include media-breakpoint-only(sm) {
+        padding: 0 $content-slider-outer-padding;
+    }
+    
+    @include media-breakpoint-only(md) {
+        padding: 0 $content-slider-outer-padding;
+    }
+    
+    @include media-breakpoint-up(lg) {
+        padding: 0 $content-slider-rc-outer-padding;
+    }
+}
+
+.fr-main-column .slick-slider:not(.slick-vertical):not(.slick-stage) {
+    &.c-content-slider {
+        .slick-slide {
+            > div {
+                @include media-breakpoint-up(sm) {
+                    padding: 0 $content-slider-inner-padding/2;
+                }
+            }
+        }
+        
+        .slick-prev {
+            &:before {
+                @include media-breakpoint-up(sm) {
+                    right: ($content-slider-outer-padding - $content-slider-arrow-width)/2;
+                }
+            }
+        }
+        
+        .slick-next {
+            &:before {
+                @include media-breakpoint-up(sm) {
+                    left: ($content-slider-outer-padding - $content-slider-arrow-width)/2;
+                }
+            }
+        }
+    }
+}
+
+.fr-rc-column .slick-slider:not(.slick-vertical):not(.slick-stage) {
+    &.c-content-slider {
+        .slick-slide {
+            > div {
+                padding: 0 $content-slider-inner-padding/2;
+                
+                @include media-breakpoint-up(sm) {
+                    padding: 0 ($content-slider-rc-inner-padding / 2);
+                }
+            }
+        }
+        
+        .slick-prev {
+            &:before {
+                @include media-breakpoint-up(sm) {
+                    right: ($content-slider-outer-padding - $content-slider-arrow-width)/2;
+                }
+                
+                @include media-breakpoint-up(lg) {
+                    right: ($content-slider-rc-outer-padding - $content-slider-rc-arrow-width)/2;
+                }
+            }
+        }
+        
+        .slick-next {
+            &:before {
+                @include media-breakpoint-up(sm) {
+                    left: ($content-slider-outer-padding - $content-slider-arrow-width)/2;
+                }
+                
+                @include media-breakpoint-up(lg) {
+                    left: ($content-slider-rc-outer-padding - $content-slider-rc-arrow-width)/2;
+                }
+            }
+        }
+    }
+}
+
+// Theming
+
+.fr-container-color-1 {
+    .slick-slider:not(.slick-vertical):not(.slick-stage) {
+        .slick-prev,
+        .slick-next {
+            &:before {
+                color: $theme-color-layout-color1-cl;
+            }
+        }
+        
+        .slick-dots {
+            li {
+                button:before {
+                    color: $theme-color-layout-color1-cl;
+                }
+            }
+        }
+    }
+    
+    .c-vertical-slider {
+        .slick-prev,
+        .slick-next {
+            @include icon-color($theme-color-layout-color1-cl);
+        }
+    }
+}
+
+.fr-container-color-2 {
+    .c-vertical-slider {
+        .slick-prev,
+        .slick-next {
+            @include icon-color($theme-color-layout-color2-cl);
+        }
+    }
+}

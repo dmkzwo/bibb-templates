@@ -1,0 +1,25 @@
+{
+  "pid": 0,
+  "level": 0,
+  "url": "page0.php",
+  "label": "Startseite",
+  "subItems": [
+    {
+      "pid": 1,
+      "url": "#",
+      "label": "Das BIBB",
+      "hasSubItems": true
+    },
+    {
+      "pid": 2,
+      "url": "#",
+      "label": "Themen",
+      "hasSubItems": true
+    },
+    {
+      "pid": 3,
+      "url": "#",
+      "label": "Unser Service"
+    }
+  ]
+}

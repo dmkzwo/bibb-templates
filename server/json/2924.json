@@ -1,0 +1,26 @@
+{
+  "pid": 2924,
+  "level": 4,
+  "url": "#",
+  "label": "BIBB/BAuA-Erwerbstätigenbefragung - Arbeit und Beruf im Wandel, Erwerb und Verwertung beruflicher Qualifikationen",
+  "subItems": [
+    {
+      "pid": 29241,
+      "url": "#",
+      "label": "BIBB/BAuA - Erwerbstätigenbefragung 2018",
+      "hasSubItems": false
+    },
+    {
+      "pid": 29242,
+      "url": "#",
+      "label": "BIBB/BAuA - Erwerbstätigenbefragung 2012",
+      "hasSubItems": true
+    },
+    {
+      "pid": 29243,
+      "url": "#",
+      "label": "BIBB/BAuA - Erwerbstätigenbefragung 2006",
+      "hasSubItems": true
+    }
+  ]
+}

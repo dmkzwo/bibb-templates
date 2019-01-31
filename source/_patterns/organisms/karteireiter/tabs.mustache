@@ -1,0 +1,22 @@
+<div class="c-tabs">
+    {{> organisms-tab-nav }}
+
+    <div class="tab-content c-tabs__panes">
+        <div class="tab-pane c-tabs__pane fade show active" id="tab1-content" role="tabpanel" aria-labelledby="tab1">
+            {{> organisms-accentuation-box-with-subline }}
+            {{> organisms-accentuation-box }}
+            <div class="js-toggle-tab c-toggle" data-togglelink="weitere Elemente anzeigen">
+                {{> organisms-accentuation-box }}
+                {{> organisms-accentuation-box }}
+            </div>
+        </div>
+        <div class="tab-pane c-tabs__pane fade" id="tab2-content" role="tabpanel" aria-labelledby="tab2">
+            {{> organisms-accentuation-box-with-media }}
+            {{> organisms-accentuation-box }}
+        </div>
+        <div class="tab-pane c-tabs__pane fade" id="tab3-content" role="tabpanel" aria-labelledby="tab2">
+            {{> organisms-accentuation-box }}
+            {{> organisms-accentuation-box }}
+        </div>
+    </div>
+</div>

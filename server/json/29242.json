@@ -1,0 +1,38 @@
+{
+  "pid": 29242,
+  "level": 5,
+  "url": "#",
+  "label": "BIBB/BAuA - Erwerbstätigenbefragung 2012",
+  "subItems": [
+    {
+      "pid": 292421,
+      "url": "#",
+      "label": "Konzeption",
+      "hasSubItems": false
+    },
+    {
+      "pid": 292422,
+      "url": "#",
+      "label": "Methodik",
+      "hasSubItems": false
+    },
+    {
+      "pid": 292423,
+      "url": "#",
+      "label": "Publikationen des BIBB",
+      "hasSubItems": false
+    },
+    {
+      "pid": 292424,
+      "url": "#",
+      "label": "Publikationen der BAuA",
+      "hasSubItems": false
+    },
+    {
+      "pid": 292425,
+      "url": "#",
+      "label": "Datenzugang",
+      "hasSubItems": false
+    }
+  ]
+}

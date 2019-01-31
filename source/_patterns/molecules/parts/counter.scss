@@ -1,0 +1,44 @@
+.c-counter-container {
+    position: relative;
+}
+
+.c-counter {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    text-align: center;
+    border-radius: 50px;
+    border: 3px solid $theme-color-counter-border;
+    background-color: $theme-color-counter-bg;
+}
+
+.c-counter__inside {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.c-counter__pre {
+    @include fs(10,20);
+    
+    color: $theme-color-counter-cl;
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+.c-counter__num {
+    @include fs(36,26,med);
+    
+    color: $theme-color-counter-cl;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.c-counter__post {
+    @include fs(10,20);
+    
+    color: $theme-color-counter-cl;
+    text-align: center;
+}

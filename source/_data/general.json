@@ -1,0 +1,107 @@
+{
+  "bodyClass": "bibb",
+  "pageTypeClass": "",
+
+  "headlineStage": "Überschrift im Header",
+  "headlineTeaserStage": "Verfahrenstechnologe Metall: Modernisierte Ausbildung tritt am 1. August in Kraft",
+  "teaserLinkStage": "Es geht heiß her beim Erzeugen und Umformen von Stahl, Kupfer, Aluminium oder Gold. Die Ausbildung wurde an veränderte Geschäftsprozesse und technologische Entwicklungen angepasst und trägt eine neue Berufsbezeichnung.",
+  "teaserTabStage": "Evolution oder Revolution? Zukunft der Berufsbildung im deutschsprachigen Raum",
+  "headlineTeaserStageFp": "Fachportal",
+  "textTeaserStageFp": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat",
+  "linkTeaserStageFp": "weiterlesen",
+
+  "headlineMainContent": "Headline H1 Content",
+  "headline_test": "headline global",
+  "paragraphTextContent": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+  "iconHeadlineLabel": "Überschrift lorem ipsum",
+  "iconHeadlineLinkLabel": "weitere Infos",
+  "paragraphContent": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+  "listItemContent": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+  "h2Content": "H2-Zwischenüberschrift",
+  "h3Content": "Headline H3",
+  "h4Content": "Headline H4",
+  "linkLabel": "Standard Link lorem ipsum",
+  "linkLabelMail": "Manfred Mustermann",
+  "linkLabelPhone": "0228 123-5678",
+
+  "linkBlockIntro": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.",
+  "linkBlockLinkDownloadLabel": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy (XY KB)",
+  "linkBlockLinkInternLabel": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy",
+  "linkBlockLinkExternLabel": "Externer Link",
+
+  "anchorLinkLabel": "Sprungmarke lorem ipsum dolor sit amet, consetetur sadipscing elitr",
+
+  "quoteText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore eos magna aliquyam erat magna.",
+  "quoteCaption": "Lorem ipsum dolor sit amet, consetetur sadipscing",
+
+  "accentuationText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt  labore et dolore eos magna aliquyam erat magna.",
+
+  "imageTitle": "Bildtitel",
+  "imageCaption": "Bildunterschrift: Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
+  "imageCopyright": "&copy; Lorem ipsum dolor sit amet",
+  "imageCaptionPopup": "Lorem ipsum dolor sit amet, consetetur sadi pscing elitr, sed diam nonumy eirmod tempor",
+
+  "teaserHeadlineLarge": "Lorem ipsum dolor sit amet, consetetur sadi pscing elitr, sed diam nonumy eirmod tempor",
+  "teaserTextLarge": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua, sed diam nonumy eirmod tempor invidunt ut labore. ",
+  "teaserHeadline": "Lorem ipsum dolor sit amet consetetur sadi",
+  "teaserText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.",
+  "teaserTextShort": "Berufsbildung stärken, Perspektiven schaffen – Das internationale Engagement der Bundesregierung",
+  "teaserMeta": "Ort/Tag, Datum",
+  "teaserLink": "weiterlesen",
+  "teaserLinkLong": "weiterlesen",
+  "teaserMetaTableLabel": "Meta",
+  "teaserMetaTableValue": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod",
+  "teaserSubline": "Lorem ipsum",
+  "teaserLinkDownload": "Herunterladen",
+  "teaserButton": "Lorem ipsum",
+  "teaserExtendedToggle": "anzeigen",
+  "teaserExtendedToggleTarget": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+
+  "contactTeaserHeadline": "Dr. Marianne Musterfrau",
+  "contactTeaserText": "Kaufmännische Berufe, Berufe der Medienwirtschaft und Logistik",
+  "contactTeaserPhoneNumber": "0228123-4567",
+  "contactTeaserPhone": "0228 123-4567",
+
+  "topicNavigationLink": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
+  "iconNavigationLink": "Lorem ipsum dolor sit amet consetetur",
+
+  "textTwoColumns": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore eos magna aliquyam erat magna. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore eos magna aliquyam erat magna. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore eos magna aliquyam erat magna.",
+
+  "accordionHeader": "Akkordeon Element",
+
+  "threeTeasersTab1": "Lorem ipsum dolor sit amet, consetetur sadipscing elitrconsetetur sadipscing elitr",
+  "threeTeasersTab2": "Lorem ipsum dolor sit amet, consetetur sadipscing elitrconsetetur sadipscing elitr",
+  "threeTeasersTab3": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
+
+  "tabsTab1": "Projekte",
+  "tabsTab2": "Datenreport",
+  "tabsTab3": "Literaturhinweise",
+
+  "metaTableCaption": "Tabellenüberschrift",
+  "metaTableTh": "Label:",
+  "metaTableTd": "Lorem ipsum dolor sit amet",
+  "metaTableThLong": "Label ipsum dolor sit amet:",
+  "metaTableTdLong": "Lorem ipsum dolor sit amet, consetetur sadipscing elitrconsetetur sadipscing elitr",
+
+  "userInfo": "Name Vorname",
+  "userFunction": "Funktionsbereich",
+
+  "sitemapLinkText": "Lorem ipsum dolor",
+
+  "formLabel": "Form Label",
+  "formLabelInline": "von:",
+  "formLabelCheckbox": "Lorem ipsum dolor sit amet, consetetur sadipscing",
+  "formLabelButton": "Ergebnisse anzeigen",
+  "formLabelButtonAddLink": "Zusatzlink",
+  "formOptionLabel": "Label ipsum dolor sit amet",
+  "formSubline": "Label ipsum dolor sit amet",
+  "formListElement": "Lorem ipsum dolor sit amet, consetetur sadipscing elitrconsetetur sadipscing elitr",
+  "fieldsetLegend": "Fieldset Legend",
+  "formErrorMessages": "Bitte kontrollieren Sie Ihre Formulareingaben! Sie müssen mindestens ein Feld ausfüllen!",
+
+  "paginationHeadline": "Ergebnisse 1 bis 10",
+
+  "orderDetailMeta": "Lorem ipsum dolor sit",
+  "orderDetailTitle": "Zuwanderung in Zeiten von Fachkräfteengpässen auf dem deutschen Arbeitsmarkt",
+  "orderDetailPrice": "Einzelpreis 34,90 € (inkl. MwSt.)"
+}

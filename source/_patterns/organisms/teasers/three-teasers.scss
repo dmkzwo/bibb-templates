@@ -1,0 +1,151 @@
+.c-three-teasers {
+    margin-bottom: $content-element-spacer-bottom;
+}
+
+.c-three-teasers__tabs {
+    @include media-breakpoint-between(md,lg) {
+        width: 100%;
+        display: flex;
+        align-items: stretch;
+    }
+    
+    @include media-breakpoint-only(xl) {
+        height: 100%;
+        border-right: 2px solid white;
+    }
+}
+
+.c-three-teasers__tab {
+    display: block;
+    
+    @include media-breakpoint-between(xxs,md) {
+        width: 100%;
+        border-bottom: 1px solid $color-three-teasers-tab-border;
+    }
+    
+    @include media-breakpoint-only(lg) {
+        flex-grow: 1;
+        width: 33.333%;
+        border-bottom: 1px solid white;
+    }
+    
+    @include media-breakpoint-only(xl) {
+        width: 100%;
+        height: 33.333%;
+        flex-grow: 1;
+        
+        &:not(:last-child) {
+            border-bottom: 1px solid $color-three-teasers-tab-border;
+        }
+    }
+}
+
+.c-three-teasers__tab-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+    > span {
+        @include fs(20,24,conex-med);
+    
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 15px 20px 15px 20px;
+        color: $color-three-teasers-tab-cl;
+        background-color: $color-three-teasers-tab-bg;
+    }
+    
+    @include media-breakpoint-between(md,lg) {
+        .c-three-teasers__tab:not(:last-child) & {
+            border-right: 1px solid $color-three-teasers-tab-border;
+            
+            &.active {
+                border-right: 1px solid white;
+            }
+        }
+    }
+
+    &.active {
+        > span {
+            color: $color-three-teasers-tab-active-cl;
+            background-color: $color-three-teasers-tab-active-bg;
+    
+            @include media-breakpoint-only(lg) {
+                @include icon(triangle-down,15,15);
+                @include icon-color($theme-color-three-teasers-triangle);
+    
+                &:before {
+                    position: absolute;
+                    bottom: 0;
+                    left: 20px;
+                    z-index: 1;
+                    transform: translateY(100%) translateY(1px);
+                    //transform: translateX(-50%) translateY(100%) translateY(1px);
+                }
+            }
+            
+            @include media-breakpoint-up(xl) {
+                @include icon(triangle-right,25,25);
+                @include icon-color($theme-color-three-teasers-triangle);
+    
+                &:before {
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    z-index: 1;
+                    transform: translateX(100%) translateX(2px) translateY(-50%);
+                }
+            }
+        }
+    }
+    
+    &:hover {
+        > span {
+            color: $color-three-teasers-tab-hover-cl;
+            background-color: $color-three-teasers-tab-hover-bg;
+        }
+    }
+    
+    &:focus {
+        > span {
+            text-decoration: underline;
+            color: $color-three-teasers-tab-hover-cl;
+            background-color: $color-three-teasers-tab-hover-bg;
+        }
+    }
+}
+
+.c-three-teasers__pane {
+    background-color: $color-three-teasers-pane-bg;
+}
+
+.c-three-teasers__teaser {
+    figure {
+        @include media-breakpoint-between(xxs,md) {
+            border-bottom: 2px solid white;
+        }
+    }
+}
+
+.c-three-teasers__teaser-text-container {
+    padding: 30px 15px 15px 20px;
+    position: relative;
+
+    @include media-breakpoint-between(xs,md) {
+        @include icon(triangle-down,15,15);
+        @include icon-color($theme-color-three-teasers-triangle);
+    
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 20px;
+            z-index: 1;
+        }
+    }
+    
+    @include media-breakpoint-up(xl) {
+        padding: 15px 15px 15px 30px;
+    }
+}

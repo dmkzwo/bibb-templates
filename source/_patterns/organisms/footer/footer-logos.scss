@@ -1,0 +1,58 @@
+.fr-footer-logos__inside {
+    padding: 25px 0;
+    
+    @include media-breakpoint-up(lg) {
+        padding: 50px 0;
+    }
+}
+
+.fr-footer-logos__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fr-footer-logos__list-item {
+    width: 50%;
+    padding: 10px 3px;
+    text-align: center;
+    
+    @include media-breakpoint-only(sm) {
+        width: 33.333%;
+        padding: 15px 3px;
+    }
+    
+    @include media-breakpoint-only(md) {
+        width: 25%;
+        padding: 15px 3px;
+    }
+    
+    @include media-breakpoint-only(lg) {
+        width: 25%;
+        padding: 20px 3px;
+    }
+    
+    @include media-breakpoint-up(xl) {
+        width: 20%;
+        padding: 20px 3px;
+    }
+}
+
+.fr-footer-logos__link {
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.fr-footer-logos__logo {
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    opacity: 0.5;
+    
+    :focus > &,
+    :hover > & {
+        filter: grayscale(0);
+        opacity: 1;
+    }
+}

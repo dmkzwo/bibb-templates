@@ -1,0 +1,53 @@
+.c-link-block {
+    margin-bottom: $content-element-spacer-bottom;
+}
+
+.c-link-block__intro {
+    @include fs(17,23);
+    
+    margin-bottom: 12px;
+}
+
+.c-link-block__link-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.c-link-block__list-item {
+    margin-bottom: 12px;
+}
+
+.c-link-block__link {
+    @include fs(15,18,med);
+    @include link-behaviour-std;
+
+    color: $theme-color-link-cl;
+    position: relative;
+    padding-left: 20px;
+    display: block;
+    
+    &:before {
+        @include posabs-tl;
+        
+        color: inherit;
+    }
+    
+    &:hover {
+        color: $theme-color-link-cl;
+    }
+}
+
+.c-link-block__link--intern {
+    &:before {
+        content: '»';
+    }
+}
+
+.c-link-block__link--download {
+    @include icon(download, 14, 18);
+    
+    &:before {
+        color: inherit;
+    }
+}

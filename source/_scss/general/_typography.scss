@@ -1,0 +1,112 @@
+@mixin font-regular {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin font-italic {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+@mixin font-med {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@mixin font-light {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+@mixin font-med-italic {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+@mixin font-semibold {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@mixin font-bold {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@mixin font-conex {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin font-conex-italic {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+@mixin font-conex-med {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@mixin font-conex-semibold {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@mixin font-conex-med-italic {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+@mixin font-conex-light {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+@mixin fs($fontSize, $lineHeight, $font: reg) {
+    @if $font == ita {
+        @include font-italic;
+    } @else if $font == med {
+        @include font-med;
+    } @else if $font == light {
+        @include font-light;
+    } @else if $font == semi {
+        @include font-semibold;
+    } @else if $font == med-ita {
+        @include font-med-italic;
+    } @else if $font == bold {
+        @include font-bold;
+    } @else if $font == conex {
+        @include font-conex;
+    } @else if $font == conex-ita {
+        @include font-conex-italic;
+    } @else if $font == conex-med {
+        @include font-conex-med;
+    } @else if $font == conex-semibold {
+        @include font-conex-semibold;
+    } @else if $font == conex-med-ita {
+        @include font-conex-med-italic;
+    } @else if $font == conex-light {
+        @include font-conex-light;
+    } @else {
+        @include font-regular;
+    }
+    
+    font-size: $fontSize/16 * 1rem;
+    line-height: $lineHeight/$fontSize;
+    //font-size: $fontSize * 1px;
+    //line-height: $lineHeight * 1px;
+}

@@ -1,0 +1,89 @@
+{{> organisms-skiplink-navigation }}
+
+<div class="h-dev-breakpoint">BP:</div>
+
+<header class="fr-header-content">
+    {{> organisms-top-navigation }}
+    {{> organisms-search-layer }}
+    {{> organisms-main-navigation }}
+</header>
+
+<div class="fr-main-content fr-main-content--overview">
+
+    {{> organisms-header-stage-type-1 }}
+
+    <a id="target_content"></a>
+    <div class="fr-container__outside fr-container__outside--padding-top fr-container__outside--padding-bottom fr-container-color-standard">
+        <div class="container">
+            <div class="h-hide-xs">
+                {{> molecules-headline-icon }}
+            </div>
+        </div>
+        <div class="container container--slider">
+            {{> organisms-icon-navigation }}
+        </div>
+    </div>
+
+    <div class="fr-container__outside fr-container__outside--padding-top-large fr-container__outside--padding-bottom-large fr-container-color-standard fr-container__outside--with-background" style="background-image: url('/images/content/bg_congress_teaser.png');">
+        <div class="container">
+            <div class="fr-container__inside">
+                {{> organisms-single-teaser-round }}
+            </div>
+        </div>
+    </div>
+
+    <div class="fr-container__outside fr-container__outside--padding-top fr-container__outside--padding-bottom">
+        <div class="container">
+            {{> molecules-headline-icon }}
+        </div>
+        <div class="container container--slider">
+            {{> organisms-teaser-row-slider-image-static }}
+        </div>
+    </div>
+
+    <div class="fr-container__outside fr-container__outside--padding-top fr-container__outside--padding-bottom fr-container-color-standard">
+        <div class="container">
+            <div class="fr-container__inside">
+                {{> molecules-headline-icon }}
+                {{> organisms-small-teaser-box }}
+            </div>
+        </div>
+    </div>
+
+    <div class="fr-container__outside fr-container__outside--padding-top fr-container__outside--padding-bottom fr-container-color-2">
+        <div class="container">
+            <div class="fr-container__inside">
+                {{> molecules-headline-icon }}
+                {{> organisms-vertical-teaser-container }}
+            </div>
+        </div>
+    </div>
+
+
+    <div class="fr-container__outside fr-container__outside--padding-top fr-container__outside--padding-bottom">
+        <div class="container">
+            {{> molecules-headline-icon }}
+        </div>
+        <div class="container container--slider">
+            {{> organisms-teaser-row-slider-media }}
+        </div>
+    </div>
+
+    {{> organisms-socialmedia }}
+
+    <div class="fr-container__outside fr-container__outside--padding-top fr-container__outside--padding-bottom fr-container-color-1">
+        <div class="container">
+            {{> molecules-headline-icon }}
+        </div>
+        <div class="container container--slider">
+            {{> organisms-teaser-row-slider-video }}
+        </div>
+    </div>
+
+</div>
+
+{{> organisms-footer-logos }}
+{{> organisms-footer-social-links }}
+{{> organisms-footer }}
+
+{{> organisms-popup }}

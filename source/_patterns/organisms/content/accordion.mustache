@@ -1,0 +1,66 @@
+<div class="c-accordion" id="accordionExample">
+
+    <div class="c-accordion__element">
+        <div class="c-accordion__header" id="headingOne">
+            <h5 class="mb-0">
+                <button class="c-accordion__header-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                    1: {{ accordionHeader }}
+                </button>
+            </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="c-accordion__body">
+                {{> atoms-headline-h3 }}
+                {{> atoms-paragraph }}
+                {{> molecules-unordered-list }}
+                {{> molecules-ordered-list }}
+                {{> molecules-link-paragraph }}
+            </div>
+        </div>
+    </div>
+
+    <div class="c-accordion__element">
+        <div class="c-accordion__header" id="headingTwo">
+            <h5 class="mb-0">
+                <button class="c-accordion__header-link" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                    2: {{ accordionHeader }}
+                </button>
+            </h5>
+        </div>
+
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="c-accordion__body">
+                {{> atoms-headline-h3 }}
+                {{> atoms-paragraph }}
+                {{> molecules-unordered-list }}
+                {{> molecules-ordered-list }}
+                {{> molecules-link-paragraph }}
+            </div>
+        </div>
+    </div>
+
+    <div class="c-accordion__element">
+        <div class="c-accordion__header" id="headingThree">
+            <h5 class="mb-0">
+                <button class="c-accordion__header-link" type="button" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree">
+                    3: {{ accordionHeader }}
+                </button>
+            </h5>
+        </div>
+
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="c-accordion__body">
+                {{> atoms-headline-h3 }}
+                {{> atoms-paragraph }}
+                {{> molecules-unordered-list }}
+                {{> molecules-ordered-list }}
+                {{> molecules-link-paragraph }}
+            </div>
+        </div>
+    </div>
+
+</div>

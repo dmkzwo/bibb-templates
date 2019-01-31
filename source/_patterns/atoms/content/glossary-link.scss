@@ -1,0 +1,9 @@
+.c-glossary-link {
+    border-bottom: 2px solid $color-glossary-link-cl;
+    cursor: help;
+    
+    &:hover {
+        color: $color-text-default;
+        border-bottom: 2px solid $color-glossary-link-hover-cl;
+    }
+}

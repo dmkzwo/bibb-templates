@@ -1,0 +1,59 @@
+<div class="fr-header-stage-type-7">
+    <div class="container">
+        <div class="fr-tab-header">
+
+            <div class="row">
+                <div class="col-lg-9 fr-tab-header__left">
+                    <div class="fr-inner-container">
+
+                        <div class="tab-content fr-tab-header__panes">
+                            <div class="tab-pane fr-tab-header__pane fade show active" id="tab1-content" role="tabpanel"
+                                 aria-labelledby="tab1">
+                                {{> organisms-header-tab-pane }}
+                            </div>
+                            <div class="tab-pane fr-tab-header__pane fade" id="tab2-content" role="tabpanel"
+                                 aria-labelledby="tab2">
+                                {{> organisms-header-tab-pane }}
+                            </div>
+                            <div class="tab-pane fr-tab-header__pane fade" id="tab3-content" role="tabpanel"
+                                 aria-labelledby="tab2">
+                                {{> organisms-header-tab-pane }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 fr-tab-header__right">
+                    <div class="fr-inner-container">
+                        <ul class="nav fr-tab-header__tabs" role="tablist">
+                            <li class="fr-tab-header__tab">
+                                <a class="fr-tab-header__tab-link active" id="tab1" data-toggle="tab"
+                                   href="#tab1-content"
+                                   role="tab"
+                                   aria-controls="tab1-content" aria-selected="true"><span
+                                        class="fr-tab-header__tab-link-inside"
+                                        tabindex="-1">{{ threeTeasersTab1 }}</span></a>
+                            </li>
+                            <li class="fr-tab-header__tab">
+                                <a class="fr-tab-header__tab-link" id="tab2" data-toggle="tab" href="#tab2-content"
+                                   role="tab"
+                                   aria-controls="tab2-content" aria-selected="false"><span
+                                        class="fr-tab-header__tab-link-inside"
+                                        tabindex="-1">{{ threeTeasersTab2 }}</span></a>
+                            </li>
+                            <li class="fr-tab-header__tab">
+                                <a class="fr-tab-header__tab-link" id="tab3" data-toggle="tab" href="#tab3-content"
+                                   role="tab"
+                                   aria-controls="tab3-content" aria-selected="false"><span
+                                        class="fr-tab-header__tab-link-inside"
+                                        tabindex="-1">{{ threeTeasersTab3 }}</span></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

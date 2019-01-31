@@ -1,0 +1,113 @@
+.c-rc-box {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.c-rc-box__part {
+    margin-bottom: 20px;
+    
+    &:not(:last-child) {
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba($color-text-default, 0.5);
+    }
+    
+    h3,
+    h4 {
+        @include fs(19, 25, conex-med);
+        
+        margin-bottom: 15px;
+    }
+    
+    p {
+        @include fs(15, 21);
+        
+        margin-bottom: 15px;
+    }
+    
+    li {
+        margin-bottom: 5px;
+    }
+    
+    p > a,
+    li > a {
+        @include fs(15, 21, med);
+        @include link-behaviour-std;
+        @include link-auto-icon(15);
+    }
+    
+    figcaption {
+        @include fs(15, 21);
+        
+        margin-bottom: 15px;
+    }
+    
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+.c-rc-box__part--contact {
+    p {
+        margin-bottom: 6px;
+    }
+}
+
+.c-rc-box__user-info {
+    @include fs(15, 21);
+    @include icon(user, 13, 21);
+
+    padding-left: 20px;
+    position: relative;
+    
+    &:before {
+        @include posabs-tl;
+    }
+    
+    strong {
+        @include fs(15, 21, med);
+    }
+}
+
+@mixin theme-rc-box($color, $bgColor) {
+    background-color: $bgColor;
+    
+    .c-rc-box__part {
+        border-color: rgba($color, 0.5);
+        
+        h3,
+        h4,
+        p,
+        p > a,
+        li > a,
+        figcaption {
+            color: $color;
+        }
+        
+        p > a,
+        li > a {
+            @include link-behaviour-std($color);
+        }
+    }
+    
+    .c-rc-box__user-info {
+        @include icon-color($color);
+
+        color: $color;
+        
+        strong {
+            color: $color;
+        }
+    }
+}
+
+.c-rc-box--grey2 {
+    @include theme-rc-box($color-text-default, $color-rc-grey2-bg);
+}
+
+.c-rc-box--grey3 {
+    @include theme-rc-box($color-rc-grey3-cl, $color-rc-grey3-bg);
+}
+
+.c-rc-box--grey4 {
+    @include theme-rc-box($color-rc-grey4-cl, $color-rc-grey4-bg);
+}

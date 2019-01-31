@@ -1,0 +1,455 @@
+$form-field-text-height: 35px;
+$form-field-text-font-size: 15;
+$form-field-text-line-height: 19;
+$form-field-select-height: 28px;
+$form-button-height: 35px;
+$form-button-font-size: 15;
+$form-field-text-padding-vertical: ($form-field-text-height - $form-field-text-line-height*1px)/2;
+$form-button-padding-vertical: ($form-button-height - $form-button-font-size*1px)/2;
+
+@mixin formfield-text-standard {
+    @include fs($form-field-text-font-size, $form-field-text-line-height);
+    
+    width: 100%;
+    background: $color-form-field-bg;
+    padding: $form-field-text-padding-vertical 5px;
+    border: 0;
+    vertical-align: middle;
+}
+
+@mixin form-button {
+    @include fs($form-button-font-size, $form-button-font-size, conex-med);
+    
+    padding: $form-button-padding-vertical 20px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.c-form-container {
+    background-color: $color-form-bg;
+    margin-bottom: $content-element-spacer-bottom;
+    padding: 25px 38px;
+    
+    @include media-breakpoint-down(xs) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .fr-rc-column & {
+        padding: 0;
+    }
+    
+    h2,
+    h3,
+    h4 {
+        @include fs(15, 23, conex-med);
+        
+        margin-bottom: 20px;
+    }
+    
+    p {
+        @include fs(15, 21, conex);
+        
+        margin-bottom: 20px;
+    }
+    
+    ul,
+    ol {
+        padding-left: 15px;
+        margin-bottom: 20px;
+    }
+    
+    li {
+        @include fs(15, 21, conex);
+    }
+}
+
+.c-form__row--double {
+    @include media-breakpoint-up(md) {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+    }
+}
+
+.c-form__row--inline {
+    @include media-breakpoint-up(md) {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+.c-form__row-button--single-right {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+.c-form__row-button--double {
+    @include media-breakpoint-down(xs) {
+        text-align: right;
+        
+        > :first-child {
+            margin-bottom: 20px;
+        }
+    }
+    
+    @include media-breakpoint-up(xs) {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+.c-form__element {
+    width: 100%;
+    margin-bottom: 30px;
+    
+    .fr-rc-column & {
+        margin-bottom: 20px;
+    }
+    
+    @include media-breakpoint-up(md) {
+        .c-form__row--double &:first-child {
+            padding-right: 28px;
+        }
+        
+        .c-form__row--double &:last-child {
+            padding-left: 28px;
+        }
+        
+        &--short {
+            width: calc(50% - 28px);
+        }
+    }
+}
+
+.c-form__element-inline-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+    > div {
+        width: calc(50% - 10px);
+    }
+}
+
+.c-form__tooltip-container {
+    position: relative;
+    padding-right: 30px;
+    line-height: 0;
+}
+
+.c-form__tooltip-link {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.c-form__label,
+.c-form__legend {
+    @include fs(15, 23, conex-med);
+    
+    display: block;
+    margin-bottom: 5px;
+    
+    &--error {
+        color: $color-form-error-label-cl;
+    }
+    
+    &--hidden {
+        display: none;
+    }
+}
+
+.c-form__legend--main {
+    margin-bottom: 20px;
+}
+
+// Input Text
+
+.c-form__input-text {
+    @include formfield-text-standard;
+}
+
+@include media-breakpoint-down(sm) {
+    .c-form__row--inline {
+        .c-form__input-text {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+// Select
+
+.c-form__select-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: $form-field-select-height;
+    line-height: 0;
+    background: $color-form-field-bg;
+    overflow: hidden;
+    
+    &:after {
+        display: block;
+        content: '»';
+        transform: rotate(90deg);
+        font-size: 12px;
+        line-height: 28px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: $form-field-select-height;
+        text-align: center;
+        background: $color-form-select-arrow-bg;
+        pointer-events: none;
+    }
+}
+
+.c-form__select {
+    @include fs(13, 13, conex);
+    
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0;
+    background: $color-form-field-bg;
+    background-image: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0 $form-field-select-height 0 0.5em;
+    cursor: pointer;
+    
+    &::-ms-expand {
+        display: none;
+    }
+}
+
+.c-form--simple {
+    .c-form__select-container {
+        background: transparent;
+        
+        &:after {
+            background: transparent;
+            font-weight: bold;
+        }
+    }
+
+    .c-form__select {
+        @include fs(15, 21, med);
+    }
+}
+
+// Checkbox
+
+.c-form__checkbox-option,
+.c-form__radio-option {
+    position: relative;
+}
+
+.c-form__input-option {
+    @include posabs-tl;
+    
+    top: 4px;
+    line-height: 21px;
+}
+
+.c-form__label-option {
+    @include fs(15,21,conex);
+    
+    padding-left: 22px;
+    
+    > a {
+        color: $color-text-default;
+        text-decoration: underline;
+        
+        &:hover,
+        &:focus {
+            color: $color-text-default;
+        }
+    }
+}
+
+.c-form--content {
+    margin-bottom: $content-element-spacer-bottom;
+    
+    .c-form__input-option {
+        top: 5px;
+    }
+    
+    .c-form__label-option {
+        @include fs(17, 23);
+        
+        padding-left: 25px;
+    }
+}
+
+.c-form__input-error {
+    border-left: 4px solid $color-form-error-border;
+}
+
+.c-form__button-container {
+    text-align: right;
+    
+    .c-form__row-button--double &:first-child {
+        text-align: right;
+    }
+    
+    .c-form__row--inline & {
+        margin-left: 20px;
+    }
+}
+
+.c-form__button {
+    @include form-button;
+    
+    &--standard {
+        background-color: $theme-color-form-button-standard-bg;
+        color: $theme-color-form-button-standard-cl;
+        
+        &:hover,
+        &:focus {
+            background-color: $color-form-button-secondary-bg;
+            color: $color-form-button-secondary-cl;
+        }
+    }
+    
+    &--secondary {
+        background-color: $color-form-button-secondary-bg;
+        color: $color-form-button-secondary-cl;
+        
+        &:hover,
+        &:focus {
+            background-color: $theme-color-form-button-standard-bg;
+            color: $theme-color-form-button-standard-cl;
+        }
+    }
+}
+
+.c-form__button-add-link-container {
+    display: block;
+}
+
+.c-form__button-add-link {
+    @include fs(13, 21, conex-med);
+    @include link-behaviour-std();
+    @include link-intern(15);
+    
+    margin-top: 5px;
+}
+
+.c-form__error-messages {
+    @include fs(15, 21, med);
+    
+    text-transform: uppercase;
+    background-color: $color-form-error-message-bg;
+    color: $color-form-error-message-cl;
+    padding: 15px 20px;
+    margin-bottom: 5px;
+}
+
+// Form filter
+.c-form-filter {
+    margin-bottom: $content-element-spacer-bottom;
+
+    
+    
+    th,
+    td {
+        background-color: $color-form-bg;
+        vertical-align: top;
+        padding-top: 10px;
+    }
+    
+    th {
+        @include fs(15,21,conex-med);
+        
+        padding-left: 20px;
+        padding-right: 20px;
+        
+        @include media-breakpoint-up(md) {
+            white-space: nowrap;
+        }
+    }
+    
+    td {
+        padding-right: 20px;
+        width: 60%;
+
+        @include media-breakpoint-up(md) {
+            width: 100%;
+        }
+    }
+}
+
+.c-form-filter__table {
+    width: 100%;
+}
+
+.c-form-filter__row {
+    &--single {
+        th,
+        td {
+            padding-bottom: 10px;
+            border-bottom: 5px solid white;
+        }
+    }
+    
+    &--multiple-top {
+        th,
+        td {
+            padding-top: 25px;
+        }
+    }
+    
+    &--multiple-bottom {
+        th,
+        td {
+            padding-bottom: 20px;
+            border-bottom: 5px solid white;
+        }
+    }
+}
+
+.c-form-filter__elem {
+    @include fs(15,21);
+    
+    &--active {
+        @include fs(15,21,med);
+    
+        color: $theme-color-form-filter-active-cl;
+    }
+}
+
+.c-form-filter__selector-item {
+    display: inline-block;
+    
+    &:not(:first-child) {
+        &:before {
+            display: inline-block;
+            content: '|';
+            padding: 0 5px;
+        }
+    }
+}
+
+.c-form-filter__selector-active {
+    @include fs(15,21,med);
+    
+    color: $theme-color-form-filter-active-cl;
+}
+
+.c-form-filter__selector-link {
+    &:hover,
+    &:focus {
+        color: $theme-color-form-filter-active-cl;
+    }
+}

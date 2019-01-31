@@ -1,0 +1,42 @@
+.c-meta-table {
+    margin-bottom: $content-element-spacer-bottom;
+    background-color: $color-meta-table-bg;
+    padding: 20px;
+    
+    caption {
+        @include fs(22,25,conex-med);
+        
+        margin-bottom: 15px;
+    }
+    
+    td,
+    th {
+        padding-bottom: 5px;
+        vertical-align: top;
+    }
+    
+    th {
+        @include fs(17,25,conex-med);
+        
+        padding-right: 20px;
+        white-space: nowrap;
+    }
+    
+    td {
+        @include fs(17,25);
+        
+        > a {
+            @include fs(15,18,med);
+            @include link-intern;
+            @include link-behaviour-std;
+        }
+    }
+}
+
+.c-meta-table__container {
+    overflow-y: auto;
+}
+
+.c-meta-table__table {
+    min-width: 600px;
+}

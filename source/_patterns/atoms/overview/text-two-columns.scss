@@ -1,0 +1,8 @@
+.c-two-columns {
+    @include fs(17,23);
+    
+    @include media-breakpoint-up(md) {
+        columns: 2;
+        column-gap: 20px;
+    }
+}

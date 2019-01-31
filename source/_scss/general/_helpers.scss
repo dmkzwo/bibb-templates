@@ -1,0 +1,60 @@
+.h-invisible {
+    visibility: hidden;
+}
+
+.h-hidden {
+    display: none;
+}
+
+.h-center-content {
+    text-align: center;
+}
+
+.h-hide-xs {
+    display: block;
+    
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
+}
+
+.h-skip {
+    position: absolute;
+    top: -32768px;
+    left: -32768px;
+    z-index: 100000;
+}
+
+.h-skip:focus,
+.h-skip:active {
+    position: static;
+    top: 0;
+    left: 0;
+}
+
+.h-skiplinks {
+    position: absolute;
+    top: 0;
+    left: -32768px;
+    z-index: 1000000;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.h-skiplinks .h-skip:focus,
+.h-skiplinks .h-skip:active {
+    left: 32768px;
+    outline: 0 none;
+    position: absolute;
+    width: 100%;
+}
+
+.h-skiplinks .h-skip {
+    background-color: white;
+    padding: 4px 0;
+    border-bottom: 1px solid black;
+}

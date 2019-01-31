@@ -1,0 +1,16 @@
+.c-content-intro {
+    margin-bottom: 50px;
+
+    p {
+        @include fs(22,30,med-ita);
+        
+        margin-bottom: 42px;
+    }
+}
+
+.c-content-intro__subline {
+    @include fs(15,21,conex-med);
+    
+    color: $theme-color-subline-main-cl;
+    margin-bottom: 15px;
+}
