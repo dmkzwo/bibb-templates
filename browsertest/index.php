@@ -81,7 +81,8 @@ $pageInfo = [];
 
 $pageInfo['pages-homepage-standard'] = [
     'headline' => 'Startseite BIBB',
-    'description' => 'Vgl. Seitenaufbau der engl. BIBB-Seite:<br>
+    'description' => 'Die Funktionsnavigation zeigt den Zustand bei Login ("Mein Login")<br>
+Vgl. Seitenaufbau der engl. BIBB-Seite (Logout):<br>
 <a href="screens/BIBB_EN.jpg">BIBB_EN.jpg</a><br>
 
 ',
@@ -167,7 +168,7 @@ $pageInfo['pages-contentpage-forms'] = [
 
 $pageInfo['pages-contentpage-slider'] = [
     'headline' => 'Blättermodule',
-    'description' => '',
+    'description' => 'Blättermodule für Bildergalerien, Videos, Teaser mit Cover und Teaser ohne Bild sind in der Content-Spalte einsetzbar (die Texte zwischen den Blättermodulen dienen nur der Veranschaulichung der Einbettung der Module im Content).',
     'screens' => []
 ];
 
