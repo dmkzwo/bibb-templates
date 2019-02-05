@@ -6,6 +6,11 @@
 @import '../_patterns/molecules/content/quote';
 @import '../_patterns/molecules/headlines/headlines';
 @import '../_patterns/molecules/parts/counter';
+@import '../_patterns/organisms/footer/content-footer';
+@import '../_patterns/organisms/footer/footer-logos';
+@import '../_patterns/organisms/footer/footer-social-links';
+@import '../_patterns/organisms/footer/footer';
+@import '../_patterns/organisms/forms/forms';
 @import '../_patterns/organisms/content/accentuation-box';
 @import '../_patterns/organisms/content/accordion';
 @import '../_patterns/organisms/content/anchor-links';
@@ -16,16 +21,12 @@
 @import '../_patterns/organisms/content/footnotes';
 @import '../_patterns/organisms/content/link-block';
 @import '../_patterns/organisms/content/meta-table';
-@import '../_patterns/organisms/footer/content-footer';
-@import '../_patterns/organisms/footer/footer-logos';
-@import '../_patterns/organisms/footer/footer-social-links';
-@import '../_patterns/organisms/footer/footer';
-@import '../_patterns/organisms/forms/forms';
 @import '../_patterns/organisms/header/cookie-bar';
 @import '../_patterns/organisms/header/header-stage';
 @import '../_patterns/organisms/header/search-layer';
 @import '../_patterns/organisms/karteireiter/tabs';
 @import '../_patterns/organisms/media/video';
+@import '../_patterns/organisms/order/order';
 @import '../_patterns/organisms/navigation/box-navigation';
 @import '../_patterns/organisms/navigation/breadcrumb-navigation';
 @import '../_patterns/organisms/navigation/icon-navigation';
@@ -33,7 +34,6 @@
 @import '../_patterns/organisms/navigation/page-navigation';
 @import '../_patterns/organisms/navigation/top-navigation';
 @import '../_patterns/organisms/navigation/topic-navigation';
-@import '../_patterns/organisms/order/order';
 @import '../_patterns/organisms/pagination/pagination';
 @import '../_patterns/organisms/popups/popup';
 @import '../_patterns/organisms/right-column/right-column';

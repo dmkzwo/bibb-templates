@@ -6,7 +6,6 @@ const config = common.config;
 
 const pathBootstrap = 'node_modules/bootstrap/dist/css/';
 
-// SASS Compilation
 gulp.task('vendor-css', function(){
     return gulp.src(pathBootstrap + 'bootstrap.min.css')
         .pipe(gulp.dest(common.resolvePath(config.paths.source.css + '/vendor')));

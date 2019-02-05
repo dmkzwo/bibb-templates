@@ -23,19 +23,9 @@ const scssFilesToWatch = [
     '!' + sourceRootDir + '_scss/_import_pattern.scss'
 ];
 
-// const spriteFilesToWatch = [
-//     'sprites/png/*.png'
-// ];
-
 gulp.task('clear-console', function() {
     clear();
 });
-
-// gulp.task('watch', function() {
-//     gulp.watch(
-//         filesToWatch, ['patternlab:build']
-//     );
-// });
 
 gulp.task('watch', ['sass:watch']);
 
@@ -50,10 +40,3 @@ gulp.task('scss-lint:watch', function() {
         scssFilesToWatch, ['scss-lint']
     );
 });
-
-
-// gulp.task('sprite:watch', function() {
-//     gulp.watch(
-//         spriteFilesToWatch, ['sprite']
-//     );
-// });

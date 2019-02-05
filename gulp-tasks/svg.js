@@ -36,7 +36,6 @@ const svgConfigTopnav = {
 gulp.task('svg', ['svgStandard', 'svgHeadline', 'svgTopnav']);
 
 gulp.task('svgStandard', [], function () {
-//return gulp.src('**/*.svg', { cwd: 'path/to/assets' })
     return gulp.src(common.resolvePath(config.paths.source.root + 'images/svg/*.svg'))
         .pipe(rsp.remove({
             properties: [rsp.PROPS_FILL]

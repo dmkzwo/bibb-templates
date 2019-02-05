@@ -23,15 +23,6 @@ function serve() {
     );
 }
 
-// function serve() {
-//     return patternlab.serve({
-//             cleanPublic: config.cleanPublic
-//         }
-//     ).then(() => {
-//         // do something else when this promise resolves
-//     });
-// }
-
 gulp.task('patternlab:version', function () {
     patternlab.version();
 });

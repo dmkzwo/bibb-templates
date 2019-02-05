@@ -57,6 +57,46 @@ Zum Laden von Navigationsstrukturen per AJAX muss im Testbetrieb ein Server gest
 oder 
 
     php -S 127.0.0.1:2222    
+    
+## Entwicklung
+
+Zusätzlich zu den beiden oben genannten Prozessen, müssen während der Entwicklung noch die Prozesse zur Generierung der CSS- und JS-Dateien gestartet bzw. manuell ausgeführt werden.  
+In automatischen Fall sind dies also in der Summe die folgenden Prozesse:
+
+    gulp patternlab:serve
+    php -S localhost:2222
+    gulp sass:watch
+    ./node_modules/.bin/webpack --watch
+    
+Dadurch werden notwendigen Dateien generiert und PatternLab automatisch aktualisiert.
+
+### Gulp Tasks
+
+#### SASS-Verarbeitung
+
+    gulp sass
+    
+bzw. 
+    
+    gulp sass:watch    
+    
+#### CSS-Linting
+
+Wird implizit vor der SASS-Verarbeitung ausgeführt.
+
+    gulp scss-lint
+    
+#### Generierung der Datei _import_pattern.scss     
+           
+generiert eine Import-Datei (SASS) für alle im pattern-Verzeichnis enthaltenen SCSS-Dateien. Wird implizit vor der SASS-Verarbeitung ausgeführt.
+
+    gulp pattern-import
+    
+#### Generierung der SVG-Sprites
+
+Muss manuell aufgerufen werden.
+
+    gulp svg    
    
 ## Patterns (Atomic Design)
 
@@ -196,7 +236,16 @@ Als Beispiel ist ein weiteres Theme (ohne reale Farben) vorhanden: main-theme1.s
 
 Die SCSS-Dateien werden mit Gulp-Tasks verarbeitet bzw. optimiert (autoprefixer, lint, sourcemaps) und zu einer zentralen CSS-Datei zusammengefasst, die im HEAD eingebunden wird.
 
+    gulp sass:watch
+    
 **Ausnahme:** Die für die Lightbox notwendige CSS-Datei wird extra eingebunden.
+
+### CSS Linting
+
+Der CSS Liner wird von obiger Task automatisch ausgeführt. Das Linting basiert auf der im Projekt-Verzeichnis enthaltenen Datei *.stylelintrc*.
+Der Task kann auch manuell aufgerufen werden:
+
+    gulp scss-lint
 
 ## Javascript
 
@@ -208,6 +257,11 @@ Alle Javascript-Dateien finden sich im Verzeichnis **_javascript** und weiteren 
 
 Die verschiedenen Javascript-Module werden per Webpack (ausgehend von main.js) zu einer zentralen Datei (build.js ) zusammengefasst und vor dem schließenden Body-Tag eingebunden. 
 
+    ./node_modules/.bin/webpack --watch
+    
+Die zugrundeliegende Konfiguration findet sich in:
+
+    ./webpack.config.js    
 
 ## Fonts / Icon-Fonts / Sprites
 
