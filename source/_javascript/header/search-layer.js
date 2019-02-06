@@ -13,6 +13,8 @@ class SearchLayer {
         this.isMoving = false;
         this.isOpen = false;
 
+        this.userLayer = false;
+
         //this.initScrollWatchers();
         this.$wrapper.find('a').attr('tabIndex', -1);
         this.$wrapper.find('input').attr('tabIndex', -1);
@@ -50,6 +52,7 @@ class SearchLayer {
             this.deactivateLayer();
         } else {
             this.activateLayer();
+            this.userLayer.close();
         }
 
         //var _self = this;
@@ -75,6 +78,11 @@ class SearchLayer {
         if (this.isOpen) {
             this.deactivateLayer();
         }
+    }
+
+    setUserLayer(userLayer) {
+        this.userLayer = userLayer;
+        console.log(this.userLayer);
     }
 
     activateLayer() {

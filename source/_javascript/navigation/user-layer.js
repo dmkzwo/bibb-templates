@@ -13,6 +13,8 @@ class UserLayer {
         this.isMoving = false;
         //this.isOpen = false;
 
+        this.searchLayer = false;
+
         this.$wrapper.hide();
         //this.initScrollWatchers();
 
@@ -46,6 +48,7 @@ class UserLayer {
         if (this.isOpen()) {
             this.deactivateLayer();
         } else {
+            this.searchLayer.close();
             this.activateLayer();
         }
 
@@ -72,6 +75,10 @@ class UserLayer {
         if (this.isOpen()) {
             this.deactivateLayer();
         }
+    }
+
+    setSearchLayer(searchLayer) {
+        this.searchLayer = searchLayer;
     }
 
     isOpen() {

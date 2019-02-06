@@ -26,6 +26,10 @@
     flex-wrap: nowrap;
     align-items: flex-end;
     
+    .c-form {
+        flex-shrink: 0;
+    }
+    
     .c-form__select-container {
         margin-bottom: -5px;
     }
@@ -121,6 +125,7 @@
         .c-headline__icon {
             width: 30px;
             height: 30px;
+            min-width: 30px;
         }
     }
 }

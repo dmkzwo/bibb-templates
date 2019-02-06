@@ -47,7 +47,7 @@
     p > a:not(.c-glossary-link) {
         @include fs(17, 23, conex-med);
         @include link-behaviour-std($theme-color-link-cl);
-        @include link-intern(15);
+        @include link-auto-icon(15);
         
         color: $theme-color-link-cl;
     }

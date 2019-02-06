@@ -15,11 +15,13 @@ $printColor: black;
     
     .c-accentuation-box,
     .c-accordion__body {
+        background: none;
         padding-left: 0;
         padding-right: 0;
     }
     
     .c-accordion__header-link {
+        background: none !important;
         padding-left: 0;
         padding-right: 0;
         
@@ -38,6 +40,8 @@ $printColor: black;
         max-width: 5cm !important;
         float: left !important;
         margin-right: 1cm !important;
+        width: 5cm;
+        display: block;
     }
     
     .c-teaser-extended__toggle-link {
@@ -53,7 +57,7 @@ $printColor: black;
     }
     
     .c-image-container__copyright-link {
-        display: none;
+        display: none !important;
     }
     
     [data-toggle='lightbox']:before {
@@ -62,5 +66,13 @@ $printColor: black;
     
     .c-quote__image {
         display: none;
+    }
+    
+    .c-quote__text {
+        margin-left: 0 !important;
+    }
+    
+    .c-quote__caption {
+        margin-left: 1cm !important;
     }
 }

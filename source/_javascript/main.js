@@ -29,11 +29,14 @@ $(document).ready(function () {
     initCopyright();
     initToggles();
 
+    var $userLayerWrapper = $('.js-user-layer');
+    var userLayer = new UserLayer($userLayerWrapper);
+
     var $searchLayerWrapper = $('.js-header-search-layer');
     var searchLayer = new SearchLayer($searchLayerWrapper);
 
-    var $userLayerWrapper = $('.js-user-layer');
-    var userLayer = new UserLayer($userLayerWrapper);
+    userLayer.setSearchLayer(searchLayer);
+    searchLayer.setUserLayer(userLayer);
 
     var $mainNavigationWrapper = $('.js-main-navigation');
     var mainNavigation = new MainNavigation($mainNavigationWrapper, searchLayer, userLayer);

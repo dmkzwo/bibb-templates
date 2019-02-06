@@ -7040,6 +7040,9 @@ caption {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end; }
+  .c-headline__container .c-form {
+    -ms-flex-negative: 0;
+        flex-shrink: 0; }
   .c-headline__container .c-form__select-container {
     margin-bottom: -5px; }
 
@@ -7109,7 +7112,8 @@ caption {
   min-height: 40px; }
   .fr-rc-column .c-headline--icon .c-headline__icon {
     width: 30px;
-    height: 30px; }
+    height: 30px;
+    min-width: 30px; }
 
 @media (max-width: 767.98px) {
   .c-headline__link {
@@ -7577,6 +7581,18 @@ caption {
   margin-bottom: 20px; }
 
 .c-form__input-text {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.26667;
+  width: 100%;
+  background: white;
+  padding: 8px 5px;
+  border: 0;
+  vertical-align: middle; }
+
+.c-form__textarea {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -8389,6 +8405,182 @@ caption {
       z-index: 0;
       content: '»';
       color: inherit; }
+    .c-content-container p > a:not(.c-glossary-link).external-link {
+      display: inline-block;
+      position: relative;
+      padding-left: 18.75px; }
+      .c-content-container p > a:not(.c-glossary-link).external-link:before {
+        /* use !important to prevent issues with browser extensions that change fonts */
+        font-family: 'BIBB_Relaunch_2018' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        display: inline-block;
+        font-size: 14px;
+        color: #586162;
+        line-height: 18px;
+        content: "\e904"; }
+      .c-content-container p > a:not(.c-glossary-link).external-link:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        color: inherit; }
+        .c-content-container p > a:not(.c-glossary-link).external-link:before:before {
+          /* use !important to prevent issues with browser extensions that change fonts */
+          font-family: 'BIBB_Relaunch_2018' !important;
+          speak: none;
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 1;
+          /* Better Font Rendering =========== */
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          display: inline-block;
+          font-size: 14px;
+          color: #586162;
+          line-height: 18px;
+          content: "\e902"; }
+    .c-content-container p > a:not(.c-glossary-link)[href^='mailto'] {
+      display: inline-block;
+      position: relative;
+      padding-left: 18.75px; }
+      .c-content-container p > a:not(.c-glossary-link)[href^='mailto']:before {
+        /* use !important to prevent issues with browser extensions that change fonts */
+        font-family: 'BIBB_Relaunch_2018' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        display: inline-block;
+        font-size: 14px;
+        color: #586162;
+        line-height: 18px;
+        content: "\e90c"; }
+      .c-content-container p > a:not(.c-glossary-link)[href^='mailto']:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        color: inherit; }
+        .c-content-container p > a:not(.c-glossary-link)[href^='mailto']:before:before {
+          /* use !important to prevent issues with browser extensions that change fonts */
+          font-family: 'BIBB_Relaunch_2018' !important;
+          speak: none;
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 1;
+          /* Better Font Rendering =========== */
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          display: inline-block;
+          font-size: 14px;
+          color: #586162;
+          line-height: 18px;
+          content: "\e902"; }
+    .c-content-container p > a:not(.c-glossary-link)[href^='tel:'] {
+      display: inline-block;
+      position: relative;
+      padding-left: 18.75px; }
+      .c-content-container p > a:not(.c-glossary-link)[href^='tel:']:before {
+        /* use !important to prevent issues with browser extensions that change fonts */
+        font-family: 'BIBB_Relaunch_2018' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        display: inline-block;
+        font-size: 14px;
+        color: #586162;
+        line-height: 18px;
+        content: "\e911"; }
+      .c-content-container p > a:not(.c-glossary-link)[href^='tel:']:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        color: inherit; }
+        .c-content-container p > a:not(.c-glossary-link)[href^='tel:']:before:before {
+          /* use !important to prevent issues with browser extensions that change fonts */
+          font-family: 'BIBB_Relaunch_2018' !important;
+          speak: none;
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 1;
+          /* Better Font Rendering =========== */
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          display: inline-block;
+          font-size: 14px;
+          color: #586162;
+          line-height: 18px;
+          content: "\e902"; }
+    .c-content-container p > a:not(.c-glossary-link)[href$='.pdf'], .c-content-container p > a:not(.c-glossary-link)[href$='.zip'], .c-content-container p > a:not(.c-glossary-link)[href$='.doc'], .c-content-container p > a:not(.c-glossary-link)[href$='.docx'], .c-content-container p > a:not(.c-glossary-link).download-link, .c-content-container p > a:not(.c-glossary-link).c-link-block__link--download {
+      display: inline-block;
+      position: relative;
+      padding-left: 18.75px; }
+      .c-content-container p > a:not(.c-glossary-link)[href$='.pdf']:before, .c-content-container p > a:not(.c-glossary-link)[href$='.zip']:before, .c-content-container p > a:not(.c-glossary-link)[href$='.doc']:before, .c-content-container p > a:not(.c-glossary-link)[href$='.docx']:before, .c-content-container p > a:not(.c-glossary-link).download-link:before, .c-content-container p > a:not(.c-glossary-link).c-link-block__link--download:before {
+        /* use !important to prevent issues with browser extensions that change fonts */
+        font-family: 'BIBB_Relaunch_2018' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        display: inline-block;
+        font-size: 14px;
+        color: #586162;
+        line-height: 18px;
+        content: "\e902"; }
+      .c-content-container p > a:not(.c-glossary-link)[href$='.pdf']:before, .c-content-container p > a:not(.c-glossary-link)[href$='.zip']:before, .c-content-container p > a:not(.c-glossary-link)[href$='.doc']:before, .c-content-container p > a:not(.c-glossary-link)[href$='.docx']:before, .c-content-container p > a:not(.c-glossary-link).download-link:before, .c-content-container p > a:not(.c-glossary-link).c-link-block__link--download:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        color: inherit; }
+        .c-content-container p > a:not(.c-glossary-link)[href$='.pdf']:before:before, .c-content-container p > a:not(.c-glossary-link)[href$='.zip']:before:before, .c-content-container p > a:not(.c-glossary-link)[href$='.doc']:before:before, .c-content-container p > a:not(.c-glossary-link)[href$='.docx']:before:before, .c-content-container p > a:not(.c-glossary-link).download-link:before:before, .c-content-container p > a:not(.c-glossary-link).c-link-block__link--download:before:before {
+          /* use !important to prevent issues with browser extensions that change fonts */
+          font-family: 'BIBB_Relaunch_2018' !important;
+          speak: none;
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 1;
+          /* Better Font Rendering =========== */
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          display: inline-block;
+          font-size: 14px;
+          color: #586162;
+          line-height: 18px;
+          content: "\e902"; }
   .c-content-container ul,
   .c-content-container ol {
     list-style: none;
@@ -8620,6 +8812,9 @@ caption {
   font-style: normal;
   font-size: 0.9375rem;
   line-height: 1.2;
+  display: inline-block;
+  position: relative;
+  padding-left: 15px;
   color: blue;
   position: relative;
   padding-left: 20px;
@@ -8630,6 +8825,189 @@ caption {
   .c-link-block__link:focus {
     text-decoration: underline;
     color: #586162; }
+  .c-link-block__link:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    content: '»';
+    color: inherit; }
+  .c-link-block__link.external-link {
+    display: inline-block;
+    position: relative;
+    padding-left: 18.75px; }
+    .c-link-block__link.external-link:before {
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'BIBB_Relaunch_2018' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      display: inline-block;
+      font-size: 14px;
+      color: #586162;
+      line-height: 18px;
+      content: "\e904"; }
+    .c-link-block__link.external-link:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      color: inherit; }
+      .c-link-block__link.external-link:before:before {
+        /* use !important to prevent issues with browser extensions that change fonts */
+        font-family: 'BIBB_Relaunch_2018' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        display: inline-block;
+        font-size: 14px;
+        color: #586162;
+        line-height: 18px;
+        content: "\e902"; }
+  .c-link-block__link[href^='mailto'] {
+    display: inline-block;
+    position: relative;
+    padding-left: 18.75px; }
+    .c-link-block__link[href^='mailto']:before {
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'BIBB_Relaunch_2018' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      display: inline-block;
+      font-size: 14px;
+      color: #586162;
+      line-height: 18px;
+      content: "\e90c"; }
+    .c-link-block__link[href^='mailto']:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      color: inherit; }
+      .c-link-block__link[href^='mailto']:before:before {
+        /* use !important to prevent issues with browser extensions that change fonts */
+        font-family: 'BIBB_Relaunch_2018' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        display: inline-block;
+        font-size: 14px;
+        color: #586162;
+        line-height: 18px;
+        content: "\e902"; }
+  .c-link-block__link[href^='tel:'] {
+    display: inline-block;
+    position: relative;
+    padding-left: 18.75px; }
+    .c-link-block__link[href^='tel:']:before {
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'BIBB_Relaunch_2018' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      display: inline-block;
+      font-size: 14px;
+      color: #586162;
+      line-height: 18px;
+      content: "\e911"; }
+    .c-link-block__link[href^='tel:']:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      color: inherit; }
+      .c-link-block__link[href^='tel:']:before:before {
+        /* use !important to prevent issues with browser extensions that change fonts */
+        font-family: 'BIBB_Relaunch_2018' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        display: inline-block;
+        font-size: 14px;
+        color: #586162;
+        line-height: 18px;
+        content: "\e902"; }
+  .c-link-block__link[href$='.pdf'], .c-link-block__link[href$='.zip'], .c-link-block__link[href$='.doc'], .c-link-block__link[href$='.docx'], .c-link-block__link.download-link, .c-link-block__link.c-link-block__link--download {
+    display: inline-block;
+    position: relative;
+    padding-left: 18.75px; }
+    .c-link-block__link[href$='.pdf']:before, .c-link-block__link[href$='.zip']:before, .c-link-block__link[href$='.doc']:before, .c-link-block__link[href$='.docx']:before, .c-link-block__link.download-link:before, .c-link-block__link.c-link-block__link--download:before {
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'BIBB_Relaunch_2018' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      display: inline-block;
+      font-size: 14px;
+      color: #586162;
+      line-height: 18px;
+      content: "\e902"; }
+    .c-link-block__link[href$='.pdf']:before, .c-link-block__link[href$='.zip']:before, .c-link-block__link[href$='.doc']:before, .c-link-block__link[href$='.docx']:before, .c-link-block__link.download-link:before, .c-link-block__link.c-link-block__link--download:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      color: inherit; }
+      .c-link-block__link[href$='.pdf']:before:before, .c-link-block__link[href$='.zip']:before:before, .c-link-block__link[href$='.doc']:before:before, .c-link-block__link[href$='.docx']:before:before, .c-link-block__link.download-link:before:before, .c-link-block__link.c-link-block__link--download:before:before {
+        /* use !important to prevent issues with browser extensions that change fonts */
+        font-family: 'BIBB_Relaunch_2018' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        display: inline-block;
+        font-size: 14px;
+        color: #586162;
+        line-height: 18px;
+        content: "\e902"; }
   .c-link-block__link:before {
     position: absolute;
     top: 0;
@@ -8720,6 +9098,367 @@ caption {
 
 .c-meta-table__table {
   min-width: 600px; }
+
+.c-tabs {
+  margin-bottom: 45px; }
+
+.c-tabs__tab {
+  display: inline-block; }
+
+@media (max-width: 767.98px) {
+  .c-tabs__tab-link {
+    display: inline-block;
+    padding: 0;
+    margin-right: 15px;
+    margin-bottom: 10px; } }
+
+@media (min-width: 768px) {
+  .c-tabs__tab-link {
+    display: inline-block;
+    padding: 8px 10px;
+    border-bottom: 3px solid white; }
+    .c-tabs__tab-link.active {
+      border-bottom: 3px solid #525357; } }
+
+.c-tabs__tab-link-inside {
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.375rem;
+  line-height: 1.04545;
+  opacity: 0.35; }
+  .active > .c-tabs__tab-link-inside,
+  :hover > .c-tabs__tab-link-inside {
+    opacity: 1; }
+  @media (max-width: 767.98px) {
+    .c-tabs__tab-link-inside {
+      text-decoration: underline; } }
+
+.c-tabs__pane .c-accentuation-box {
+  margin-bottom: 5px;
+  margin-top: 0; }
+
+.c-tabs__pane .c-toggle__link {
+  margin-top: -5px; }
+  .c-tabs__pane .c-toggle__link > .focus {
+    display: inline-block;
+    width: 100%;
+    height: 25px;
+    background-color: #d8d8d8;
+    position: relative; }
+    .c-tabs__pane .c-toggle__link > .focus:before {
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'BIBB_Relaunch_2018' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      display: inline-block;
+      font-size: 8px;
+      color: #586162;
+      line-height: 25px;
+      content: "\e906"; }
+    .c-tabs__pane .c-toggle__link > .focus:before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      text-align: center; }
+  .c-tabs__pane .c-toggle__link .focus:hover,
+  .c-tabs__pane .c-toggle__link:focus > .focus {
+    background-color: #848485; }
+    .c-tabs__pane .c-toggle__link .focus:hover:before,
+    .c-tabs__pane .c-toggle__link:focus > .focus:before {
+      color: white; }
+  .c-tabs__pane .c-toggle__link--active > .focus:before {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+
+.c-tabs__az {
+  background-color: #efeff0;
+  padding: 25px 20px;
+  margin-bottom: 5px; }
+  .c-tabs__az .c-az {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: -2px;
+    margin-right: -2px; }
+  .c-tabs__az .c-az__item {
+    display: inline-block;
+    width: calc(99.9% / 26);
+    padding: 0 2px; }
+    @media (max-width: 767.98px) {
+      .c-tabs__az .c-az__item {
+        width: calc(99.9% / 13);
+        margin-bottom: 4px; } }
+  .c-tabs__az .c-az__link {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.125rem;
+    line-height: 1;
+    display: inline-block;
+    width: 100%;
+    padding: 7px 0;
+    text-align: center;
+    background-color: #d8d8d8;
+    color: #586162; }
+    .c-tabs__az .c-az__link--inactive {
+      background-color: #e6e6e6;
+      color: #586162; }
+    .c-tabs__az .c-az__link--active {
+      background-color: red;
+      color: white; }
+    .c-tabs__az .c-az__link:not(.c-az__link--inactive):not(.c-az__link--active):hover, .c-tabs__az .c-az__link:not(.c-az__link--inactive):not(.c-az__link--active):focus {
+      background-color: #63666a;
+      color: white; }
+
+.c-tabs-download-language {
+  background-color: #efeff0;
+  padding: 0 20px; }
+
+.c-tabs-subline {
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.375rem;
+  line-height: 1.18182;
+  padding: 5px 20px;
+  background-color: #63666a;
+  color: white; }
+
+.c-tabs-download-language__container {
+  width: 100%; }
+  .c-tabs-download-language__container td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px; }
+  .c-tabs-download-language__container tr:first-child td {
+    padding-top: 20px; }
+  .c-tabs-download-language__container tr:last-child td {
+    padding-bottom: 20px; }
+  .c-tabs-download-language__container td:first-child {
+    border-right: 4px solid white;
+    padding-right: 20px;
+    padding-left: 0;
+    width: 100%; }
+    .c-tabs-download-language__container td:first-child a {
+      font-family: 'Fira Sans', sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 0.9375rem;
+      line-height: 1.2;
+      display: inline-block;
+      position: relative;
+      padding-left: 20px; }
+      .c-tabs-download-language__container td:first-child a:hover {
+        font-weight: 600;
+        color: #586162; }
+      .c-tabs-download-language__container td:first-child a:focus {
+        text-decoration: underline;
+        color: #586162; }
+      .c-tabs-download-language__container td:first-child a:before {
+        /* use !important to prevent issues with browser extensions that change fonts */
+        font-family: 'BIBB_Relaunch_2018' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        display: inline-block;
+        font-size: 14px;
+        color: #586162;
+        line-height: 18px;
+        content: "\e902"; }
+      .c-tabs-download-language__container td:first-child a:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        color: inherit; }
+        .c-tabs-download-language__container td:first-child a:before:before {
+          /* use !important to prevent issues with browser extensions that change fonts */
+          font-family: 'BIBB_Relaunch_2018' !important;
+          speak: none;
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 1;
+          /* Better Font Rendering =========== */
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          display: inline-block;
+          font-size: 14px;
+          color: #586162;
+          line-height: 18px;
+          content: "\e902"; }
+
+.c-tabs-top__link > .focus {
+  display: inline-block;
+  width: 100%;
+  height: 25px;
+  background-color: #d8d8d8;
+  position: relative; }
+  .c-tabs-top__link > .focus:before {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'BIBB_Relaunch_2018' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    font-size: 8px;
+    color: #586162;
+    line-height: 25px;
+    content: "\e906"; }
+  .c-tabs-top__link > .focus:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+
+.c-tabs-top__link .focus:hover,
+.c-tabs-top__link:focus > .focus {
+  background-color: #848485; }
+  .c-tabs-top__link .focus:hover:before,
+  .c-tabs-top__link:focus > .focus:before {
+    color: white; }
+
+.c-tabs-special {
+  background-color: #efeff0;
+  padding: 25px 20px;
+  margin-bottom: 5px; }
+
+@media (min-width: 768px) and (max-width: 959.98px) {
+  .c-tabs-special__search {
+    padding-right: 20px; } }
+
+@media (min-width: 960px) {
+  .c-tabs-special__search {
+    padding-right: 70px; } }
+
+@media (min-width: 768px) and (max-width: 959.98px) {
+  .c-tabs-special__az {
+    padding-left: 20px; } }
+
+@media (min-width: 960px) {
+  .c-tabs-special__az {
+    padding-left: 70px; } }
+
+.c-tabs-special__az .c-az {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.c-tabs-special__az .c-az__item {
+  display: inline-block;
+  width: calc(20% - 8px);
+  margin-bottom: 10px; }
+
+.c-tabs-special__az .c-az__link {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.0625rem;
+  line-height: 1;
+  display: inline-block;
+  padding: 9px 0;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  color: #586162; }
+  .c-tabs-special__az .c-az__link--inactive {
+    background-color: #e6e6e6;
+    color: #586162; }
+  .c-tabs-special__az .c-az__link--active {
+    background-color: red;
+    color: white; }
+  .c-tabs-special__az .c-az__link:not(.c-az__link--inactive):not(.c-az__link--active):hover, .c-tabs-special__az .c-az__link:not(.c-az__link--inactive):not(.c-az__link--active):focus {
+    background-color: #63666a;
+    color: white; }
+
+.c-tabs-special__az .c-az__item:last-child {
+  width: calc(40% - 6px); }
+
+.c-tabs-special__az button {
+  width: 100%; }
+
+.c-tabs-special__headline {
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.26667;
+  display: block;
+  margin-bottom: 7px; }
+
+.c-tabs-text-selection {
+  margin-bottom: 20px; }
+
+.c-tabs-text-selection__headline {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.4;
+  display: inline-block; }
+
+.c-tabs-text-selection__list {
+  display: inline-block; }
+
+.c-tabs-text-selection__item {
+  display: inline-block; }
+  .c-tabs-text-selection__item:not(:first-child):before {
+    content: '| '; }
+
+.c-tabs-text-selection__link {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.4; }
+  .c-tabs-text-selection__link:not(.c-tabs-text-selection__link--active):hover {
+    font-weight: 600;
+    color: #586162; }
+  .c-tabs-text-selection__link:not(.c-tabs-text-selection__link--active):focus {
+    text-decoration: underline;
+    color: #586162; }
+  .c-tabs-text-selection__link--active {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.9375rem;
+    line-height: 1.4;
+    color: red; }
 
 .fr-cookie-bar {
   position: fixed;
@@ -9647,367 +10386,6 @@ caption {
     content: '» '; }
   .fr-header-search-layer__search-button:hover {
     font-style: italic; }
-
-.c-tabs {
-  margin-bottom: 45px; }
-
-.c-tabs__tab {
-  display: inline-block; }
-
-@media (max-width: 767.98px) {
-  .c-tabs__tab-link {
-    display: inline-block;
-    padding: 0;
-    margin-right: 15px;
-    margin-bottom: 10px; } }
-
-@media (min-width: 768px) {
-  .c-tabs__tab-link {
-    display: inline-block;
-    padding: 8px 10px;
-    border-bottom: 3px solid white; }
-    .c-tabs__tab-link.active {
-      border-bottom: 3px solid #525357; } }
-
-.c-tabs__tab-link-inside {
-  font-family: 'Fira Sans Extra Condensed', sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 1.375rem;
-  line-height: 1.04545;
-  opacity: 0.35; }
-  .active > .c-tabs__tab-link-inside,
-  :hover > .c-tabs__tab-link-inside {
-    opacity: 1; }
-  @media (max-width: 767.98px) {
-    .c-tabs__tab-link-inside {
-      text-decoration: underline; } }
-
-.c-tabs__pane .c-accentuation-box {
-  margin-bottom: 5px;
-  margin-top: 0; }
-
-.c-tabs__pane .c-toggle__link {
-  margin-top: -5px; }
-  .c-tabs__pane .c-toggle__link > .focus {
-    display: inline-block;
-    width: 100%;
-    height: 25px;
-    background-color: #d8d8d8;
-    position: relative; }
-    .c-tabs__pane .c-toggle__link > .focus:before {
-      /* use !important to prevent issues with browser extensions that change fonts */
-      font-family: 'BIBB_Relaunch_2018' !important;
-      speak: none;
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
-      /* Better Font Rendering =========== */
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      display: inline-block;
-      font-size: 8px;
-      color: #586162;
-      line-height: 25px;
-      content: "\e906"; }
-    .c-tabs__pane .c-toggle__link > .focus:before {
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      text-align: center; }
-  .c-tabs__pane .c-toggle__link .focus:hover,
-  .c-tabs__pane .c-toggle__link:focus > .focus {
-    background-color: #848485; }
-    .c-tabs__pane .c-toggle__link .focus:hover:before,
-    .c-tabs__pane .c-toggle__link:focus > .focus:before {
-      color: white; }
-  .c-tabs__pane .c-toggle__link--active > .focus:before {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg); }
-
-.c-tabs__az {
-  background-color: #efeff0;
-  padding: 25px 20px;
-  margin-bottom: 5px; }
-  .c-tabs__az .c-az {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-left: -2px;
-    margin-right: -2px; }
-  .c-tabs__az .c-az__item {
-    display: inline-block;
-    width: calc(99.9% / 26);
-    padding: 0 2px; }
-    @media (max-width: 767.98px) {
-      .c-tabs__az .c-az__item {
-        width: calc(99.9% / 13);
-        margin-bottom: 4px; } }
-  .c-tabs__az .c-az__link {
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 1.125rem;
-    line-height: 1;
-    display: inline-block;
-    width: 100%;
-    padding: 7px 0;
-    text-align: center;
-    background-color: #d8d8d8;
-    color: #586162; }
-    .c-tabs__az .c-az__link--inactive {
-      background-color: #e6e6e6;
-      color: #586162; }
-    .c-tabs__az .c-az__link--active {
-      background-color: red;
-      color: white; }
-    .c-tabs__az .c-az__link:not(.c-az__link--inactive):not(.c-az__link--active):hover, .c-tabs__az .c-az__link:not(.c-az__link--inactive):not(.c-az__link--active):focus {
-      background-color: #63666a;
-      color: white; }
-
-.c-tabs-download-language {
-  background-color: #efeff0;
-  padding: 0 20px; }
-
-.c-tabs-subline {
-  font-family: 'Fira Sans Extra Condensed', sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 1.375rem;
-  line-height: 1.18182;
-  padding: 5px 20px;
-  background-color: #63666a;
-  color: white; }
-
-.c-tabs-download-language__container {
-  width: 100%; }
-  .c-tabs-download-language__container td {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px; }
-  .c-tabs-download-language__container tr:first-child td {
-    padding-top: 20px; }
-  .c-tabs-download-language__container tr:last-child td {
-    padding-bottom: 20px; }
-  .c-tabs-download-language__container td:first-child {
-    border-right: 4px solid white;
-    padding-right: 20px;
-    padding-left: 0;
-    width: 100%; }
-    .c-tabs-download-language__container td:first-child a {
-      font-family: 'Fira Sans', sans-serif;
-      font-weight: 500;
-      font-style: normal;
-      font-size: 0.9375rem;
-      line-height: 1.2;
-      display: inline-block;
-      position: relative;
-      padding-left: 20px; }
-      .c-tabs-download-language__container td:first-child a:hover {
-        font-weight: 600;
-        color: #586162; }
-      .c-tabs-download-language__container td:first-child a:focus {
-        text-decoration: underline;
-        color: #586162; }
-      .c-tabs-download-language__container td:first-child a:before {
-        /* use !important to prevent issues with browser extensions that change fonts */
-        font-family: 'BIBB_Relaunch_2018' !important;
-        speak: none;
-        font-style: normal;
-        font-weight: normal;
-        font-variant: normal;
-        text-transform: none;
-        line-height: 1;
-        /* Better Font Rendering =========== */
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        display: inline-block;
-        font-size: 14px;
-        color: #586162;
-        line-height: 18px;
-        content: "\e902"; }
-      .c-tabs-download-language__container td:first-child a:before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 0;
-        color: inherit; }
-        .c-tabs-download-language__container td:first-child a:before:before {
-          /* use !important to prevent issues with browser extensions that change fonts */
-          font-family: 'BIBB_Relaunch_2018' !important;
-          speak: none;
-          font-style: normal;
-          font-weight: normal;
-          font-variant: normal;
-          text-transform: none;
-          line-height: 1;
-          /* Better Font Rendering =========== */
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
-          display: inline-block;
-          font-size: 14px;
-          color: #586162;
-          line-height: 18px;
-          content: "\e902"; }
-
-.c-tabs-top__link > .focus {
-  display: inline-block;
-  width: 100%;
-  height: 25px;
-  background-color: #d8d8d8;
-  position: relative; }
-  .c-tabs-top__link > .focus:before {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'BIBB_Relaunch_2018' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    display: inline-block;
-    font-size: 8px;
-    color: #586162;
-    line-height: 25px;
-    content: "\e906"; }
-  .c-tabs-top__link > .focus:before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    text-align: center;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg); }
-
-.c-tabs-top__link .focus:hover,
-.c-tabs-top__link:focus > .focus {
-  background-color: #848485; }
-  .c-tabs-top__link .focus:hover:before,
-  .c-tabs-top__link:focus > .focus:before {
-    color: white; }
-
-.c-tabs-special {
-  background-color: #efeff0;
-  padding: 25px 20px;
-  margin-bottom: 5px; }
-
-@media (min-width: 768px) and (max-width: 959.98px) {
-  .c-tabs-special__search {
-    padding-right: 20px; } }
-
-@media (min-width: 960px) {
-  .c-tabs-special__search {
-    padding-right: 70px; } }
-
-@media (min-width: 768px) and (max-width: 959.98px) {
-  .c-tabs-special__az {
-    padding-left: 20px; } }
-
-@media (min-width: 960px) {
-  .c-tabs-special__az {
-    padding-left: 70px; } }
-
-.c-tabs-special__az .c-az {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-.c-tabs-special__az .c-az__item {
-  display: inline-block;
-  width: calc(20% - 8px);
-  margin-bottom: 10px; }
-
-.c-tabs-special__az .c-az__link {
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 1.0625rem;
-  line-height: 1;
-  display: inline-block;
-  padding: 9px 0;
-  width: 100%;
-  text-align: center;
-  background-color: white;
-  color: #586162; }
-  .c-tabs-special__az .c-az__link--inactive {
-    background-color: #e6e6e6;
-    color: #586162; }
-  .c-tabs-special__az .c-az__link--active {
-    background-color: red;
-    color: white; }
-  .c-tabs-special__az .c-az__link:not(.c-az__link--inactive):not(.c-az__link--active):hover, .c-tabs-special__az .c-az__link:not(.c-az__link--inactive):not(.c-az__link--active):focus {
-    background-color: #63666a;
-    color: white; }
-
-.c-tabs-special__az .c-az__item:last-child {
-  width: calc(40% - 6px); }
-
-.c-tabs-special__az button {
-  width: 100%; }
-
-.c-tabs-special__headline {
-  font-family: 'Fira Sans Extra Condensed', sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.26667;
-  display: block;
-  margin-bottom: 7px; }
-
-.c-tabs-text-selection {
-  margin-bottom: 20px; }
-
-.c-tabs-text-selection__headline {
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.4;
-  display: inline-block; }
-
-.c-tabs-text-selection__list {
-  display: inline-block; }
-
-.c-tabs-text-selection__item {
-  display: inline-block; }
-  .c-tabs-text-selection__item:not(:first-child):before {
-    content: '| '; }
-
-.c-tabs-text-selection__link {
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.4; }
-  .c-tabs-text-selection__link:not(.c-tabs-text-selection__link--active):hover {
-    font-weight: 600;
-    color: #586162; }
-  .c-tabs-text-selection__link:not(.c-tabs-text-selection__link--active):focus {
-    text-decoration: underline;
-    color: #586162; }
-  .c-tabs-text-selection__link--active {
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 0.9375rem;
-    line-height: 1.4;
-    color: red; }
 
 .c-video-link {
   display: inline-block;
@@ -11667,13 +12045,13 @@ caption {
       z-index: 0;
       content: '»';
       color: inherit; }
-    .c-rc-box__part p > a[href^='http'],
-    .c-rc-box__part li > a[href^='http'] {
+    .c-rc-box__part p > a.external-link,
+    .c-rc-box__part li > a.external-link {
       display: inline-block;
       position: relative;
       padding-left: 18.75px; }
-      .c-rc-box__part p > a[href^='http']:before,
-      .c-rc-box__part li > a[href^='http']:before {
+      .c-rc-box__part p > a.external-link:before,
+      .c-rc-box__part li > a.external-link:before {
         /* use !important to prevent issues with browser extensions that change fonts */
         font-family: 'BIBB_Relaunch_2018' !important;
         speak: none;
@@ -11690,15 +12068,15 @@ caption {
         color: #586162;
         line-height: 18px;
         content: "\e904"; }
-      .c-rc-box__part p > a[href^='http']:before,
-      .c-rc-box__part li > a[href^='http']:before {
+      .c-rc-box__part p > a.external-link:before,
+      .c-rc-box__part li > a.external-link:before {
         position: absolute;
         top: 0;
         left: 0;
         z-index: 0;
         color: inherit; }
-        .c-rc-box__part p > a[href^='http']:before:before,
-        .c-rc-box__part li > a[href^='http']:before:before {
+        .c-rc-box__part p > a.external-link:before:before,
+        .c-rc-box__part li > a.external-link:before:before {
           /* use !important to prevent issues with browser extensions that change fonts */
           font-family: 'BIBB_Relaunch_2018' !important;
           speak: none;
@@ -11811,19 +12189,23 @@ caption {
           color: #586162;
           line-height: 18px;
           content: "\e902"; }
-    .c-rc-box__part p > a[href$='.pdf'], .c-rc-box__part p > a[href$='.zip'], .c-rc-box__part p > a[href$='.doc'], .c-rc-box__part p > a[href$='.docx'],
+    .c-rc-box__part p > a[href$='.pdf'], .c-rc-box__part p > a[href$='.zip'], .c-rc-box__part p > a[href$='.doc'], .c-rc-box__part p > a[href$='.docx'], .c-rc-box__part p > a.download-link, .c-rc-box__part p > a.c-link-block__link--download,
     .c-rc-box__part li > a[href$='.pdf'],
     .c-rc-box__part li > a[href$='.zip'],
     .c-rc-box__part li > a[href$='.doc'],
-    .c-rc-box__part li > a[href$='.docx'] {
+    .c-rc-box__part li > a[href$='.docx'],
+    .c-rc-box__part li > a.download-link,
+    .c-rc-box__part li > a.c-link-block__link--download {
       display: inline-block;
       position: relative;
       padding-left: 18.75px; }
-      .c-rc-box__part p > a[href$='.pdf']:before, .c-rc-box__part p > a[href$='.zip']:before, .c-rc-box__part p > a[href$='.doc']:before, .c-rc-box__part p > a[href$='.docx']:before,
+      .c-rc-box__part p > a[href$='.pdf']:before, .c-rc-box__part p > a[href$='.zip']:before, .c-rc-box__part p > a[href$='.doc']:before, .c-rc-box__part p > a[href$='.docx']:before, .c-rc-box__part p > a.download-link:before, .c-rc-box__part p > a.c-link-block__link--download:before,
       .c-rc-box__part li > a[href$='.pdf']:before,
       .c-rc-box__part li > a[href$='.zip']:before,
       .c-rc-box__part li > a[href$='.doc']:before,
-      .c-rc-box__part li > a[href$='.docx']:before {
+      .c-rc-box__part li > a[href$='.docx']:before,
+      .c-rc-box__part li > a.download-link:before,
+      .c-rc-box__part li > a.c-link-block__link--download:before {
         /* use !important to prevent issues with browser extensions that change fonts */
         font-family: 'BIBB_Relaunch_2018' !important;
         speak: none;
@@ -11840,21 +12222,25 @@ caption {
         color: #586162;
         line-height: 18px;
         content: "\e902"; }
-      .c-rc-box__part p > a[href$='.pdf']:before, .c-rc-box__part p > a[href$='.zip']:before, .c-rc-box__part p > a[href$='.doc']:before, .c-rc-box__part p > a[href$='.docx']:before,
+      .c-rc-box__part p > a[href$='.pdf']:before, .c-rc-box__part p > a[href$='.zip']:before, .c-rc-box__part p > a[href$='.doc']:before, .c-rc-box__part p > a[href$='.docx']:before, .c-rc-box__part p > a.download-link:before, .c-rc-box__part p > a.c-link-block__link--download:before,
       .c-rc-box__part li > a[href$='.pdf']:before,
       .c-rc-box__part li > a[href$='.zip']:before,
       .c-rc-box__part li > a[href$='.doc']:before,
-      .c-rc-box__part li > a[href$='.docx']:before {
+      .c-rc-box__part li > a[href$='.docx']:before,
+      .c-rc-box__part li > a.download-link:before,
+      .c-rc-box__part li > a.c-link-block__link--download:before {
         position: absolute;
         top: 0;
         left: 0;
         z-index: 0;
         color: inherit; }
-        .c-rc-box__part p > a[href$='.pdf']:before:before, .c-rc-box__part p > a[href$='.zip']:before:before, .c-rc-box__part p > a[href$='.doc']:before:before, .c-rc-box__part p > a[href$='.docx']:before:before,
+        .c-rc-box__part p > a[href$='.pdf']:before:before, .c-rc-box__part p > a[href$='.zip']:before:before, .c-rc-box__part p > a[href$='.doc']:before:before, .c-rc-box__part p > a[href$='.docx']:before:before, .c-rc-box__part p > a.download-link:before:before, .c-rc-box__part p > a.c-link-block__link--download:before:before,
         .c-rc-box__part li > a[href$='.pdf']:before:before,
         .c-rc-box__part li > a[href$='.zip']:before:before,
         .c-rc-box__part li > a[href$='.doc']:before:before,
-        .c-rc-box__part li > a[href$='.docx']:before:before {
+        .c-rc-box__part li > a[href$='.docx']:before:before,
+        .c-rc-box__part li > a.download-link:before:before,
+        .c-rc-box__part li > a.c-link-block__link--download:before:before {
           /* use !important to prevent issues with browser extensions that change fonts */
           font-family: 'BIBB_Relaunch_2018' !important;
           speak: none;
@@ -12350,6 +12736,182 @@ caption {
     z-index: 0;
     content: '»';
     color: inherit; }
+  .c-teaser__link.external-link {
+    display: inline-block;
+    position: relative;
+    padding-left: 18.75px; }
+    .c-teaser__link.external-link:before {
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'BIBB_Relaunch_2018' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      display: inline-block;
+      font-size: 14px;
+      color: #586162;
+      line-height: 18px;
+      content: "\e904"; }
+    .c-teaser__link.external-link:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      color: inherit; }
+      .c-teaser__link.external-link:before:before {
+        /* use !important to prevent issues with browser extensions that change fonts */
+        font-family: 'BIBB_Relaunch_2018' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        display: inline-block;
+        font-size: 14px;
+        color: #586162;
+        line-height: 18px;
+        content: "\e902"; }
+  .c-teaser__link[href^='mailto'] {
+    display: inline-block;
+    position: relative;
+    padding-left: 18.75px; }
+    .c-teaser__link[href^='mailto']:before {
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'BIBB_Relaunch_2018' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      display: inline-block;
+      font-size: 14px;
+      color: #586162;
+      line-height: 18px;
+      content: "\e90c"; }
+    .c-teaser__link[href^='mailto']:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      color: inherit; }
+      .c-teaser__link[href^='mailto']:before:before {
+        /* use !important to prevent issues with browser extensions that change fonts */
+        font-family: 'BIBB_Relaunch_2018' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        display: inline-block;
+        font-size: 14px;
+        color: #586162;
+        line-height: 18px;
+        content: "\e902"; }
+  .c-teaser__link[href^='tel:'] {
+    display: inline-block;
+    position: relative;
+    padding-left: 18.75px; }
+    .c-teaser__link[href^='tel:']:before {
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'BIBB_Relaunch_2018' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      display: inline-block;
+      font-size: 14px;
+      color: #586162;
+      line-height: 18px;
+      content: "\e911"; }
+    .c-teaser__link[href^='tel:']:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      color: inherit; }
+      .c-teaser__link[href^='tel:']:before:before {
+        /* use !important to prevent issues with browser extensions that change fonts */
+        font-family: 'BIBB_Relaunch_2018' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        display: inline-block;
+        font-size: 14px;
+        color: #586162;
+        line-height: 18px;
+        content: "\e902"; }
+  .c-teaser__link[href$='.pdf'], .c-teaser__link[href$='.zip'], .c-teaser__link[href$='.doc'], .c-teaser__link[href$='.docx'], .c-teaser__link.download-link, .c-teaser__link.c-link-block__link--download {
+    display: inline-block;
+    position: relative;
+    padding-left: 18.75px; }
+    .c-teaser__link[href$='.pdf']:before, .c-teaser__link[href$='.zip']:before, .c-teaser__link[href$='.doc']:before, .c-teaser__link[href$='.docx']:before, .c-teaser__link.download-link:before, .c-teaser__link.c-link-block__link--download:before {
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'BIBB_Relaunch_2018' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      display: inline-block;
+      font-size: 14px;
+      color: #586162;
+      line-height: 18px;
+      content: "\e902"; }
+    .c-teaser__link[href$='.pdf']:before, .c-teaser__link[href$='.zip']:before, .c-teaser__link[href$='.doc']:before, .c-teaser__link[href$='.docx']:before, .c-teaser__link.download-link:before, .c-teaser__link.c-link-block__link--download:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      color: inherit; }
+      .c-teaser__link[href$='.pdf']:before:before, .c-teaser__link[href$='.zip']:before:before, .c-teaser__link[href$='.doc']:before:before, .c-teaser__link[href$='.docx']:before:before, .c-teaser__link.download-link:before:before, .c-teaser__link.c-link-block__link--download:before:before {
+        /* use !important to prevent issues with browser extensions that change fonts */
+        font-family: 'BIBB_Relaunch_2018' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        display: inline-block;
+        font-size: 14px;
+        color: #586162;
+        line-height: 18px;
+        content: "\e902"; }
   .c-teaser--text-simple .c-teaser__link {
     max-width: 450px; }
 
@@ -12819,11 +13381,11 @@ caption {
       z-index: 0;
       content: '»';
       color: inherit; }
-    .c-search-teaser a[href^='http'] {
+    .c-search-teaser a.external-link {
       display: inline-block;
       position: relative;
       padding-left: 18.75px; }
-      .c-search-teaser a[href^='http']:before {
+      .c-search-teaser a.external-link:before {
         /* use !important to prevent issues with browser extensions that change fonts */
         font-family: 'BIBB_Relaunch_2018' !important;
         speak: none;
@@ -12840,13 +13402,13 @@ caption {
         color: #586162;
         line-height: 18px;
         content: "\e904"; }
-      .c-search-teaser a[href^='http']:before {
+      .c-search-teaser a.external-link:before {
         position: absolute;
         top: 0;
         left: 0;
         z-index: 0;
         color: inherit; }
-        .c-search-teaser a[href^='http']:before:before {
+        .c-search-teaser a.external-link:before:before {
           /* use !important to prevent issues with browser extensions that change fonts */
           font-family: 'BIBB_Relaunch_2018' !important;
           speak: none;
@@ -12951,11 +13513,11 @@ caption {
           color: #586162;
           line-height: 18px;
           content: "\e902"; }
-    .c-search-teaser a[href$='.pdf'], .c-search-teaser a[href$='.zip'], .c-search-teaser a[href$='.doc'], .c-search-teaser a[href$='.docx'] {
+    .c-search-teaser a[href$='.pdf'], .c-search-teaser a[href$='.zip'], .c-search-teaser a[href$='.doc'], .c-search-teaser a[href$='.docx'], .c-search-teaser a.download-link, .c-search-teaser a.c-link-block__link--download {
       display: inline-block;
       position: relative;
       padding-left: 18.75px; }
-      .c-search-teaser a[href$='.pdf']:before, .c-search-teaser a[href$='.zip']:before, .c-search-teaser a[href$='.doc']:before, .c-search-teaser a[href$='.docx']:before {
+      .c-search-teaser a[href$='.pdf']:before, .c-search-teaser a[href$='.zip']:before, .c-search-teaser a[href$='.doc']:before, .c-search-teaser a[href$='.docx']:before, .c-search-teaser a.download-link:before, .c-search-teaser a.c-link-block__link--download:before {
         /* use !important to prevent issues with browser extensions that change fonts */
         font-family: 'BIBB_Relaunch_2018' !important;
         speak: none;
@@ -12972,13 +13534,13 @@ caption {
         color: #586162;
         line-height: 18px;
         content: "\e902"; }
-      .c-search-teaser a[href$='.pdf']:before, .c-search-teaser a[href$='.zip']:before, .c-search-teaser a[href$='.doc']:before, .c-search-teaser a[href$='.docx']:before {
+      .c-search-teaser a[href$='.pdf']:before, .c-search-teaser a[href$='.zip']:before, .c-search-teaser a[href$='.doc']:before, .c-search-teaser a[href$='.docx']:before, .c-search-teaser a.download-link:before, .c-search-teaser a.c-link-block__link--download:before {
         position: absolute;
         top: 0;
         left: 0;
         z-index: 0;
         color: inherit; }
-        .c-search-teaser a[href$='.pdf']:before:before, .c-search-teaser a[href$='.zip']:before:before, .c-search-teaser a[href$='.doc']:before:before, .c-search-teaser a[href$='.docx']:before:before {
+        .c-search-teaser a[href$='.pdf']:before:before, .c-search-teaser a[href$='.zip']:before:before, .c-search-teaser a[href$='.doc']:before:before, .c-search-teaser a[href$='.docx']:before:before, .c-search-teaser a.download-link:before:before, .c-search-teaser a.c-link-block__link--download:before:before {
           /* use !important to prevent issues with browser extensions that change fonts */
           font-family: 'BIBB_Relaunch_2018' !important;
           speak: none;
@@ -13180,14 +13742,38 @@ caption {
   body {
     color: black;
     background-color: white; }
+  .fr-header-stage-type-3 {
+    background: none; }
+  .fr-main-navigation__header {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important; }
+  .fr-main-navigation--sticky {
+    position: static !important; }
+  .container {
+    max-width: none;
+    padding-right: 0;
+    padding-left: 0; }
+  .row {
+    display: block; }
+  .fr-main-content > .container > .row > .col-lg-8 {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    max-width: none; }
   .fr-top-navigation,
   .fr-header-search-layer,
   .fr-main-navigation__bar {
     display: none; }
+  .fr-main-navigation__header {
+    margin-bottom: 0.5cm; }
+  .fr-main-navigation__header-inside {
+    padding-top: 0 !important; }
   .fr-main-navigation__logo {
-    position: static; }
+    position: static !important; }
   .fr-header-stage-type-3__inside {
-    min-height: 1px; }
+    min-height: 1px !important;
+    padding-top: 0;
+    padding-bottom: 0; }
   .fr-header-stage-type-4__inside {
     padding-bottom: 0; }
   .fr-header-stage-type-4__headline {
@@ -13197,10 +13783,17 @@ caption {
     display: none; }
   .c-popup {
     display: none; }
+  .fr-main-column {
+    padding-right: 0 !important;
+    padding-top: 0.8cm; }
   .fr-rc-column {
     display: none; }
   .fr-content-footer {
-    display: none; } }
+    display: none; }
+  .fr-footer {
+    padding: 0 !important;
+    background: none !important;
+    border-top: 1px solid black; } }
 
 @media print {
   .c-content-slider-container {
@@ -13211,9 +13804,11 @@ caption {
     display: none; }
   .c-accentuation-box,
   .c-accordion__body {
+    background: none;
     padding-left: 0;
     padding-right: 0; }
   .c-accordion__header-link {
+    background: none !important;
     padding-left: 0;
     padding-right: 0; }
     .c-accordion__header-link:before {
@@ -13225,7 +13820,9 @@ caption {
   .c-content-container__image--portrait {
     max-width: 5cm !important;
     float: left !important;
-    margin-right: 1cm !important; }
+    margin-right: 1cm !important;
+    width: 5cm;
+    display: block; }
   .c-teaser-extended__toggle-link {
     display: none; }
   .c-teaser-extended__toggle-content {
@@ -13233,10 +13830,14 @@ caption {
   .c-teaser-extended__link-box {
     display: none; }
   .c-image-container__copyright-link {
-    display: none; }
+    display: none !important; }
   [data-toggle='lightbox']:before {
     display: none; }
   .c-quote__image {
-    display: none; } }
+    display: none; }
+  .c-quote__text {
+    margin-left: 0 !important; }
+  .c-quote__caption {
+    margin-left: 1cm !important; } }
 
 /*# sourceMappingURL=maps/main-theme1.css.map */

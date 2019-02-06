@@ -177,6 +177,12 @@ $form-button-padding-vertical: ($form-button-height - $form-button-font-size*1px
     @include formfield-text-standard;
 }
 
+// Textarea
+
+.c-form__textarea {
+    @include formfield-text-standard;
+}
+
 @include media-breakpoint-down(sm) {
     .c-form__row--inline {
         .c-form__input-text {

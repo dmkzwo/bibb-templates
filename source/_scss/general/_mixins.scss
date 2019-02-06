@@ -114,7 +114,11 @@
 @mixin link-auto-icon($paddingLeft, $multiplier: 1.25) {
     @include link-intern($paddingLeft);
     
-    &[href^='http'] {
+    //&[href^='http'] {
+    //    @include link-extern($paddingLeft * $multiplier);
+    //}
+    
+    &.external-link {
         @include link-extern($paddingLeft * $multiplier);
     }
     
@@ -129,7 +133,9 @@
     &[href$='.pdf'],
     &[href$='.zip'],
     &[href$='.doc'],
-    &[href$='.docx'] {
+    &[href$='.docx'],
+    &.download-link,
+    &.c-link-block__link--download {
         @include link-download($paddingLeft * $multiplier);
     }
 }
