@@ -115,6 +115,7 @@
 
     @include media-breakpoint-down(md) {
         margin-right: 20px;
+        margin-bottom: 20px;
         
         .c-image-container {
             width: $content-image-landscape-width;

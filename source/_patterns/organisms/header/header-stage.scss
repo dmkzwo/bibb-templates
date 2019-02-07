@@ -446,10 +446,10 @@ $stage2-image-height-xl: 400px;
 }
 
 // Stage Type 6 (FP)
-$stage6-image-height: 300px;
-$stage6-image-height-md: 350px;
-$stage6-image-height-lg: 440px;
-$stage6-image-height-xl: 540px;
+$stage6-image-height: $theme-stage-fp-image-height;
+$stage6-image-height-md: $theme-stage-fp-image-height-md;
+$stage6-image-height-lg: $theme-stage-fp-image-height-lg;
+$stage6-image-height-xl: $theme-stage-fp-image-height-xl;
 
 .fr-header-stage-type-6 {
     position: relative;
@@ -466,15 +466,15 @@ $stage6-image-height-xl: 540px;
 }
 
 .fr-header-stage-type-6__image-container {
-    background-position: center center;
+    background-position: $theme-stage-fp-background-position;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: $theme-stage-fp-background-size;
     display: flex;
     flex-direction: column;
     
     @include media-breakpoint-down(xxs) {
-        background-position: center top;
-        background-size: auto $stage2-image-height;
+        background-position: $theme-stage-fp-background-position-phone;
+        background-size: $theme-stage-fp-background-size-phone;
     }
 }
 

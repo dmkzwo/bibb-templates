@@ -1,3 +1,11 @@
+$main-navigation-barlink-lineheight: 25;
+$main-navigation-barlink-padding-top: 10;
+$main-navigation-barlink-padding-bottom: 13;
+
+$main-navigation-bar-height: 98;
+
+$main-navigation-bar-padding-top: $main-navigation-bar-height - $main-navigation-barlink-lineheight - $main-navigation-barlink-padding-top - $main-navigation-barlink-padding-bottom;
+
 // Mixins
 
 @mixin layer-one-column {
@@ -60,30 +68,48 @@ $header-inside-padding-top-sticky: 10px;
 
 .fr-main-navigation__header-inside {
     position: relative;
-    padding-top: $header-inside-padding-top-sticky;
     
-    @include media-breakpoint-up(md) {
-        padding-top: 40px;
+    .fr-main-navigation--bibb & {
+        padding-top: $header-inside-padding-top-sticky;
+    
+        @include media-breakpoint-up(md) {
+            padding-top: $main-navigation-bar-padding-top * 1px;
+        }
+    }
+    
+    .fr-main-navigation--fp & {
+        padding-top: $main-navigation-bar-padding-top * 1px;
     }
 }
 
 .fr-main-navigation__logo {
     position: absolute;
-    top: 15px + $header-inside-padding-top-sticky;
     left: 0;
     z-index: 1;
     
-    &--text {
-        top: 7px + $header-inside-padding-top-sticky;
-    }
-    
-    @include media-breakpoint-up(md) {
-        top: 45px;
+    .fr-main-navigation--bibb & {
+        top: 2px + $header-inside-padding-top-sticky;
         
         &--text {
-            top: 38px;
+            top: 7px + $header-inside-padding-top-sticky;
+        }
+        
+        @include media-breakpoint-up(md) {
+            top: 40px;
+            
+            &--text {
+                top: 38px;
+            }
         }
     }
+    
+    .fr-main-navigation--fp & {
+        top: $theme-logo-position-top;
+    }
+}
+
+.fr-main-navigation__logo-link {
+    display: inline-block;
 }
 
 .fr-main-navigation__logo-text-link {
@@ -91,6 +117,13 @@ $header-inside-padding-top-sticky: 10px;
     
     &:hover {
         color: $color-text-default;
+    }
+}
+
+.fr-main-navigation__logo-image {
+    .fr-main-navigation--fp & {
+        max-height: $theme-logo-max-height;
+        width: auto;
     }
 }
 
@@ -138,11 +171,11 @@ $header-inside-padding-top-sticky: 10px;
 }
 
 .fr-main-navigation__bar-link {
-    @include fs(19,25,bold);
+    @include fs(19,$main-navigation-barlink-lineheight,bold);
     
     display: inline-block;
     color: $theme-color-main-navigation-cl;
-    padding: 10px 15px 13px 15px;
+    padding: $main-navigation-barlink-padding-top * 1px 15px $main-navigation-barlink-padding-bottom * 1px 15px;
     
     &:hover,
     &:focus,

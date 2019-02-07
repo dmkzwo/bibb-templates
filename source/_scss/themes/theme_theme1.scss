@@ -13,6 +13,20 @@ $theme-color-main-navigation-cl: $keyColor1;
 $theme-color-main-navigation-link-cl: white;
 $theme-color-main-navigation-breadcrumb-border: #39699f;
 
+// Logo
+$theme-logo-position-top: 10px;
+$theme-logo-max-height: 78px;
+
+// Stage
+$theme-stage-fp-image-height: 350px;
+$theme-stage-fp-image-height-md: 350px;
+$theme-stage-fp-image-height-lg: 440px;
+$theme-stage-fp-image-height-xl: 540px;
+$theme-stage-fp-background-position: center center;
+$theme-stage-fp-background-size: cover;
+$theme-stage-fp-background-position-phone: center top;
+$theme-stage-fp-background-size-phone: auto $theme-stage-fp-image-height;
+
 // Breadcrumb navigation
 $theme-color-breadcrumb-navigation-bg: $keyColor1;
 $theme-color-breadcrumb-navigation-link-cl: white;

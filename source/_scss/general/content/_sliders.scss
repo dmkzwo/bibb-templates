@@ -34,6 +34,13 @@ $slider-dot-distance: 50px;
         
         @include media-breakpoint-up(sm) {
             overflow: visible;
+    
+            @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+                .fr-main-column &,
+                .fr-rc-column & {
+                    overflow: hidden;
+                }
+            }
         }
     }
     
@@ -47,6 +54,13 @@ $slider-dot-distance: 50px;
         
         &[aria-hidden='true'] {
             opacity: 0.2;
+    
+            @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+                .fr-main-column &,
+                .fr-rc-column & {
+                    opacity: 0;
+                }
+            }
         }
     }
     
@@ -113,6 +127,10 @@ $slider-dot-distance: 50px;
             left: 30px;
         }
     }
+}
+
+.slick-slider:not(.slick-vertical):not(.slick-stage).slider-moving .slick-slide {
+    opacity: 1;
 }
 
 // Vertical slider

@@ -96,7 +96,7 @@ const Lightbox = (($) => {
             let body = `<div class="modal-body">` + h4 + `<div class="ekko-lightbox-container"><div class="ekko-lightbox-item fade in show"></div><div class="ekko-lightbox-item fade"></div></div><p>${this._config.footer || "&nbsp;"}</p></div>`
 			let dialog = `<div class="modal-dialog" role="document"><div class="modal-content">${header}${body}</div></div>`
 
-			$(this._config.doc.body).append(`<div id="${this._modalId}" class="ekko-lightbox modal fade" tabindex="-1" tabindex="-1" role="dialog" aria-hidden="true">${dialog}</div>`)
+			$(this._config.doc.body).append(`<div id="${this._modalId}" class="ekko-lightbox modal" tabindex="-1" tabindex="-1" role="dialog" aria-hidden="true">${dialog}</div>`)
 
 			this._$modal = $(`#${this._modalId}`, this._config.doc)
 			this._$modalDialog = this._$modal.find('.modal-dialog').first()
