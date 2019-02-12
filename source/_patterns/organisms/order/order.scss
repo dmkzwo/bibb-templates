@@ -158,7 +158,7 @@
 
 .c-order-table__link {
     @include fs(15,21);
-    @include link-intern();
+    @include link-auto-icon(15);
     @include link-behaviour-std();
 }
 
@@ -171,7 +171,7 @@
 
 .c-order-table__detail-title-link {
     @include fs(22,26,conex-med);
-    @include link-intern();
+    @include link-auto-icon(15);
     @include link-behaviour-std();
     
     display: inline-block;
@@ -213,5 +213,5 @@
 .c-order-address__link {
     @include fs(15,21,med);
     @include link-behaviour-std();
-    @include link-intern();
+    @include link-auto-icon(15);
 }

@@ -27,7 +27,7 @@
         
         > a {
             @include fs(15,18,med);
-            @include link-intern;
+            @include link-auto-icon(15);
             @include link-behaviour-std;
         }
     }

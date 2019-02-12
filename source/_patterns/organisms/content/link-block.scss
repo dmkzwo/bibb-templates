@@ -39,12 +39,6 @@
     }
 }
 
-.c-link-block__link--intern {
-    &:before {
-        content: '»';
-    }
-}
-
 .c-link-block__link--download {
     @include icon(download, 14, 18);
     

@@ -442,7 +442,7 @@ $stage2-image-height-xl: 400px;
 .fr-header-stage-extension__link > a {
     @include fs(15, 21, med);
     @include link-behaviour-std($color-text-default);
-    @include link-intern(15);
+    @include link-auto-icon(15);
 }
 
 // Stage Type 6 (FP)
@@ -466,12 +466,18 @@ $stage6-image-height-xl: $theme-stage-fp-image-height-xl;
 }
 
 .fr-header-stage-type-6__image-container {
+    background-image: url($theme-stage-fp-background-image);
     background-position: $theme-stage-fp-background-position;
     background-repeat: no-repeat;
     background-size: $theme-stage-fp-background-size;
     display: flex;
     flex-direction: column;
     
+    @include media-breakpoint-between(xs,sm) {
+        background-position: right top;
+        background-size: auto 70%;
+    }
+
     @include media-breakpoint-down(xxs) {
         background-position: $theme-stage-fp-background-position-phone;
         background-size: $theme-stage-fp-background-size-phone;
@@ -532,10 +538,11 @@ $stage6-image-height-xl: $theme-stage-fp-image-height-xl;
 
 .fr-header-stage-type-6__text-container {
     background-color: $theme-color-stage-static-overlay-mobile-bg;
-    padding: 30px;
+    padding: 30px 0;
     
     @include media-breakpoint-up(md) {
         width: 50%;
+        padding: 30px;
         background-color: $theme-color-stage-static-overlay-bg;
     }
 }
@@ -565,7 +572,7 @@ $stage6-image-height-xl: $theme-stage-fp-image-height-xl;
 .fr-header-stage-type-6__link {
     @include fs(15, 21, med);
     @include link-behaviour-std($theme-color-stage-static-overlay-cl);
-    @include link-intern(15);
+    @include link-auto-icon(15);
     
     color: $theme-color-stage-static-overlay-mobile-cl;
     
@@ -577,9 +584,11 @@ $stage6-image-height-xl: $theme-stage-fp-image-height-xl;
 // Stage Type 7 (News)
 
 .fr-header-stage-type-7 {
+    background-image: url($theme-stage-fp-background-image);
     background-repeat: no-repeat;
-    background-position: left center;
-    background-size: cover;
+    background-position: $theme-stage-fp-background-position;
+    //background-size: $theme-stage-fp-background-size;
+    background-color: $theme-color-stage-fp-news-background;
     padding: 106px 0 66px 0;
     height: 635px;
     border-bottom: 95px solid $theme-color-header-tab-content-border-bg;
@@ -602,7 +611,15 @@ $stage6-image-height-xl: $theme-stage-fp-image-height-xl;
         margin-bottom: 0;
     }
     
+    @include media-breakpoint-only(xl) {
+        background-size: $theme-stage-fp-news-background-size;
+    }
+    
+    @include media-breakpoint-only(lg) {
+    }
+    
     @include media-breakpoint-between(sm, md) {
+        background-size: $theme-stage-fp-news-background-size-tablet;
         height: auto;
         border-bottom: 0;
         padding-bottom: 0;
@@ -612,6 +629,7 @@ $stage6-image-height-xl: $theme-stage-fp-image-height-xl;
             padding-left: 10px;
             padding-right: 10px;
         }
+        
     }
     
     @include media-breakpoint-down(xs) {
@@ -694,7 +712,7 @@ $stage6-image-height-xl: $theme-stage-fp-image-height-xl;
     
     @include media-breakpoint-down(xs) {
         margin-left: 0;
-        padding: 44px 45px 34px 45px;
+        padding: 44px 15px 34px 15px;
         min-height: 0;
         background-color: $theme-color-header-tab-content-overlay-mobile-bg;
     }
@@ -755,7 +773,7 @@ $stage6-image-height-xl: $theme-stage-fp-image-height-xl;
 
 .fr-header-tab-content__link {
     @include fs(15, 19, med);
-    @include link-intern(15);
+    @include link-auto-icon(15);
     @include link-behaviour-std();
     
     color: $theme-color-header-tab-content-overlay-cl;
@@ -810,3 +828,96 @@ $stage6-image-height-xl: $theme-stage-fp-image-height-xl;
         }
     }
 }
+
+// Type 8 ---------------------------------------------------
+$stage8-image-height: 220px;
+$stage8-image-height-md: 220px;
+$stage8-image-height-lg: 220px;
+$stage8-image-height-xl: 220px;
+
+.fr-header-stage-type-8 {
+    position: relative;
+    
+    @include media-breakpoint-up(md) {
+        .c-image-container__copyright-layer {
+            width: 45%;
+        }
+    }
+}
+
+.fr-header-stage-type-8__image-container {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+    @include media-breakpoint-down(xxs) {
+        background-position: center top;
+        background-size: auto $stage8-image-height;
+    }
+}
+
+.fr-header-stage-type-8__image {
+    width: 100%;
+    height: $stage8-image-height;
+    
+    .c-image-container {
+        width: 100%;
+        height: inherit;
+    }
+    
+    img {
+        width: 100%;
+        height: inherit;
+        opacity: 0;
+    }
+    
+    @include media-breakpoint-only(md) {
+        height: $stage8-image-height-md;
+    }
+    
+    @include media-breakpoint-only(lg) {
+        height: $stage8-image-height-lg;
+    }
+    
+    @include media-breakpoint-up(xl) {
+        height: $stage8-image-height-xl;
+    }
+}
+
+.fr-header-stage-type-8__text-container {
+    width: 100%;
+    background-color: $theme-color-stage-bg;
+    padding: 30px 0;
+    
+    @include media-breakpoint-up(md) {
+        background-color: rgba($theme-color-stage-bg, 0.9);
+    }
+}
+
+.fr-header-stage-type-8__headline {
+    @include headline-large;
+    
+    color: $theme-color-stage-cl;
+    margin-bottom: 20px;
+}
+
+.fr-header-stage-type-8__intro,
+.fr-header-stage-type-8__link {
+    @include fs(17, 23);
+    
+    color: $theme-color-stage-cl;
+}
+
+.fr-header-stage-type-8__link {
+    @include link-behaviour-std($theme-color-stage-cl);
+}
+
+@include media-breakpoint-up(lg) {
+    .fr-header-stage-type-8__headline {
+        margin-bottom: 0;
+        padding-right: 58px;
+    }
+}
+

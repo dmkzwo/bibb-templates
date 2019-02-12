@@ -19,6 +19,12 @@ if (strpos($pageParam, 'theme') !== false) {
 if (strpos($pageParam, '-fp') !== false) {
     $theme = 'theme1';
 }
+if (strpos($pageParam, 'deqavet') !== false) {
+    $theme = 'theme-deqavet';
+}
+if (strpos($pageParam, 'foraus') !== false) {
+    $theme = 'theme-foraus';
+}
 if (strpos($pageParam, 'homepage') !== false) {
     $pageTypeClass = 'homepage';
 }

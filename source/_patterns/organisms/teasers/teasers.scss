@@ -175,7 +175,7 @@
         @include link-behaviour-std;
         
         &:not([href^='tel:']) {
-            @include link-intern(15);
+            @include link-auto-icon(15);
             
             display: block;
         }

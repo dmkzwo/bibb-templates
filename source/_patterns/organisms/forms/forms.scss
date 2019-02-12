@@ -347,7 +347,7 @@ $form-button-padding-vertical: ($form-button-height - $form-button-font-size*1px
 .c-form__button-add-link {
     @include fs(13, 21, conex-med);
     @include link-behaviour-std();
-    @include link-intern(15);
+    @include link-auto-icon(15);
     
     margin-top: 5px;
 }

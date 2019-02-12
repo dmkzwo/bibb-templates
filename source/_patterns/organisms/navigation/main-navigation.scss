@@ -242,6 +242,18 @@ $header-inside-padding-top-sticky: 10px;
     }
 }
 
+.hamburger-inner,
+.hamburger-inner:before,
+.hamburger-inner:after {
+    background-color: $theme-color-main-navigation-burger-color;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner:before,
+.hamburger.is-active .hamburger-inner:after {
+    background-color: $theme-color-main-navigation-burger-color;
+}
+
 // ++++ Close Link
 
 .fr-main-navigation__layer-close {

@@ -266,6 +266,30 @@ $pageInfo['pages-contentpage-standard-theme'] = [
     'screens' => []
 ];
 
+$pageInfo['pages-homepage-fp-deqavet'] = [
+    'headline' => 'Startseite (DEQA-VET)',
+    'description' => '',
+    'screens' => []
+];
+
+$pageInfo['pages-contentpage-standard-deqavet'] = [
+    'headline' => 'Inhaltsseite (DEQA-VET)',
+    'description' => '',
+    'screens' => []
+];
+
+$pageInfo['pages-homepage-fp-foraus'] = [
+    'headline' => 'Startseite (Foraus)',
+    'description' => '',
+    'screens' => []
+];
+
+$pageInfo['pages-contentpage-standard-foraus'] = [
+    'headline' => 'Inhaltsseite (Foraus)',
+    'description' => '',
+    'screens' => []
+];
+
 
 
 $pageInfo['pages-collection-headlines'] = [

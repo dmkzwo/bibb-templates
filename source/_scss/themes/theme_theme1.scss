@@ -11,7 +11,8 @@ $theme-color-top-navigation-link-user-bg: #424b4c;
 $theme-color-main-navigation-bg: $keyColor1;
 $theme-color-main-navigation-cl: $keyColor1;
 $theme-color-main-navigation-link-cl: white;
-$theme-color-main-navigation-breadcrumb-border: #39699f;
+$theme-color-main-navigation-breadcrumb-border: rgba(255,255,255,0.2);
+$theme-color-main-navigation-burger-color: #363636;
 
 // Logo
 $theme-logo-position-top: 10px;
@@ -22,10 +23,14 @@ $theme-stage-fp-image-height: 350px;
 $theme-stage-fp-image-height-md: 350px;
 $theme-stage-fp-image-height-lg: 440px;
 $theme-stage-fp-image-height-xl: 540px;
-$theme-stage-fp-background-position: center center;
-$theme-stage-fp-background-size: cover;
-$theme-stage-fp-background-position-phone: center top;
+$theme-stage-fp-background-position: left top;
+$theme-stage-fp-background-size: 100%;
+$theme-stage-fp-background-position-phone: right top;
 $theme-stage-fp-background-size-phone: auto $theme-stage-fp-image-height;
+$theme-stage-fp-background-image: '/images/header/foraus_background_image.svg';
+$theme-stage-fp-news-background-size: cover;
+$theme-stage-fp-news-background-size-tablet: auto 600px;
+$theme-color-stage-fp-news-background: #f0f7df;
 
 // Breadcrumb navigation
 $theme-color-breadcrumb-navigation-bg: $keyColor1;

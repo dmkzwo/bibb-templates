@@ -88,7 +88,11 @@
     "pages-homepage-standard",
     "pages-homepage-fp",
     "pages-homepage-fp-news",
-    "pages-collection-headlines"
+    "pages-collection-headlines",
+    "pages-contentpage-standard-deqavet",
+    "pages-contentpage-standard-foraus",
+    "pages-homepage-fp-deqavet",
+    "pages-homepage-fp-foraus"
   ],
   "serverOptions": {
     "wait": 1000,

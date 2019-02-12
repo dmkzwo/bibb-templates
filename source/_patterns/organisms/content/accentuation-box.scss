@@ -35,7 +35,7 @@
     li > a {
         @include fs(15, 21, med);
         @include link-behaviour-std;
-        @include link-intern(15);
+        @include link-auto-icon(15);
         
         color: inherit;
     }
