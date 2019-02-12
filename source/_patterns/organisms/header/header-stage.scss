@@ -615,9 +615,6 @@ $stage6-image-height-xl: $theme-stage-fp-image-height-xl;
         background-size: $theme-stage-fp-news-background-size;
     }
     
-    @include media-breakpoint-only(lg) {
-    }
-    
     @include media-breakpoint-between(sm, md) {
         background-size: $theme-stage-fp-news-background-size-tablet;
         height: auto;
@@ -629,7 +626,6 @@ $stage6-image-height-xl: $theme-stage-fp-image-height-xl;
             padding-left: 10px;
             padding-right: 10px;
         }
-        
     }
     
     @include media-breakpoint-down(xs) {
